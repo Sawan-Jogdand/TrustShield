@@ -1,0 +1,80 @@
+{
+  "metrics": {
+    "Wav2Vec2 Spectral Forensic Ensemble": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          99,
+          0
+        ],
+        [
+          0,
+          101
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0505,
+        0.0707,
+        0.0808,
+        0.1313,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.9109,
+        0.9505,
+        0.9703,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "pitch_jitter_score",
+      "importance": 0.2849
+    },
+    {
+      "feature": "spectral_rolloff_anomaly",
+      "importance": 0.2797
+    },
+    {
+      "feature": "spectral_centroid_shift",
+      "importance": 0.2459
+    },
+    {
+      "feature": "zero_crossing_rate_std",
+      "importance": 0.1137
+    },
+    {
+      "feature": "mfcc_variance",
+      "importance": 0.055
+    },
+    {
+      "feature": "harmonic_to_noise_ratio",
+      "importance": 0.0207
+    }
+  ],
+  "features": [
+    "mfcc_variance",
+    "spectral_centroid_shift",
+    "spectral_rolloff_anomaly",
+    "zero_crossing_rate_std",
+    "pitch_jitter_score",
+    "harmonic_to_noise_ratio"
+  ],
+  "dataset_size": 1000
+}

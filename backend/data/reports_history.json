@@ -1,0 +1,189 @@
+[
+  {
+    "modality": "Text",
+    "prediction": "REAL",
+    "verdict": "Authentic Message Content",
+    "verdict_summary": "Confidence: 74.8% \u2014 Content appears consistent with legitimate, benign communication",
+    "confidence": 74.8,
+    "fake_signal_strength": 25.2,
+    "risk_level": "MEDIUM",
+    "trust_score": 75,
+    "category": "Legitimate Message",
+    "processing_time": "0.11s",
+    "analysis_engine": "TrustShield-ScamGuard-NLP-v2",
+    "metrics": {
+      "urgency_score": 0.0,
+      "has_suspicious_url": false,
+      "detected_urls": [],
+      "detected_scam_intents": []
+    },
+    "forensic_features": [
+      {
+        "name": "Urgency Tone",
+        "value": "Neutral",
+        "status": "Smooth"
+      },
+      {
+        "name": "URL / Domain Risk",
+        "value": "Safe / None",
+        "status": "Consistent"
+      },
+      {
+        "name": "Intent Category",
+        "value": "Legitimate Message",
+        "status": "Natural"
+      },
+      {
+        "name": "Coercion Indicators",
+        "value": "0 markers",
+        "status": "Organic"
+      }
+    ],
+    "id": "REP-TS-AD126B",
+    "timestamp": "2026-08-26 22:47:41",
+    "input_preview": "Subject: [GitHub] Sudo email verification code\n\nPlease verify your identity, Sawan-Jogdand\n\u00a0\n\nHere is your GitHub sudo a..."
+  },
+  {
+    "modality": "Text",
+    "prediction": "SCAM",
+    "verdict": "Suspicious Scam Threat Detected",
+    "verdict_summary": "Confidence: 83.8% \u2014 Strong indicators of coercive financial/phishing scam detected",
+    "confidence": 83.8,
+    "fake_signal_strength": 83.8,
+    "risk_level": "CRITICAL",
+    "trust_score": 16,
+    "category": "Banking Phishing",
+    "processing_time": "0.1s",
+    "analysis_engine": "TrustShield-ScamGuard-NLP-v2",
+    "metrics": {
+      "urgency_score": 0.56,
+      "has_suspicious_url": false,
+      "detected_urls": [
+        "https://www.rfc-editor.org/info/rfc7505"
+      ],
+      "detected_scam_intents": [
+        "Banking Phishing"
+      ]
+    },
+    "forensic_features": [
+      {
+        "name": "Urgency Tone",
+        "value": "Moderate",
+        "status": "Suspicious"
+      },
+      {
+        "name": "URL / Domain Risk",
+        "value": "Verified",
+        "status": "Consistent"
+      },
+      {
+        "name": "Intent Category",
+        "value": "Banking Phishing",
+        "status": "Inconsistent"
+      },
+      {
+        "name": "Coercion Indicators",
+        "value": "2 markers",
+        "status": "Warped"
+      }
+    ],
+    "id": "REP-TS-118846",
+    "timestamp": "2026-08-26 22:44:09",
+    "input_preview": "Subject: Urgent: Your Bank Account Will Be Suspended\n\nAddress not found\n\nYour message wasn't delivered to security-alert..."
+  },
+  {
+    "modality": "Text",
+    "prediction": "SCAM",
+    "verdict": "Suspicious Scam Threat Detected",
+    "verdict_summary": "Confidence: 92.0% \u2014 Strong indicators of coercive financial/phishing scam detected",
+    "confidence": 92.0,
+    "fake_signal_strength": 92.0,
+    "risk_level": "CRITICAL",
+    "trust_score": 8,
+    "category": "Banking Phishing",
+    "processing_time": "0.06s",
+    "analysis_engine": "TrustShield-ScamGuard-NLP-v2",
+    "metrics": {
+      "urgency_score": 1.0,
+      "has_suspicious_url": false,
+      "detected_urls": [
+        "http://secure-bank-verification.example.com"
+      ],
+      "detected_scam_intents": [
+        "Banking Phishing"
+      ]
+    },
+    "forensic_features": [
+      {
+        "name": "Urgency Tone",
+        "value": "Severe",
+        "status": "Artificial"
+      },
+      {
+        "name": "URL / Domain Risk",
+        "value": "Verified",
+        "status": "Consistent"
+      },
+      {
+        "name": "Intent Category",
+        "value": "Banking Phishing",
+        "status": "Inconsistent"
+      },
+      {
+        "name": "Coercion Indicators",
+        "value": "4 markers",
+        "status": "Warped"
+      }
+    ],
+    "id": "REP-TS-441001",
+    "timestamp": "2026-08-26 22:43:48",
+    "input_preview": "Subject: Urgent: Your Bank Account Will Be Suspended\n\nDear Customer,\n\nWe detected unusual activity on your bank account...."
+  },
+  {
+    "modality": "Text",
+    "prediction": "SCAM",
+    "verdict": "Suspicious Scam Threat Detected",
+    "verdict_summary": "Confidence: 61.8% \u2014 Strong indicators of coercive financial/phishing scam detected",
+    "confidence": 61.8,
+    "fake_signal_strength": 61.8,
+    "risk_level": "HIGH",
+    "trust_score": 38,
+    "category": "Malicious Communication",
+    "processing_time": "0.07s",
+    "analysis_engine": "TrustShield-ScamGuard-NLP-v2",
+    "metrics": {
+      "urgency_score": 0.0,
+      "has_suspicious_url": false,
+      "detected_urls": [
+        "https://www.linkedin.com/in/sawan-jogdand-a47a60293",
+        "https://github.com/Sawan-Jogdand"
+      ],
+      "detected_scam_intents": []
+    },
+    "forensic_features": [
+      {
+        "name": "Urgency Tone",
+        "value": "Neutral",
+        "status": "Smooth"
+      },
+      {
+        "name": "URL / Domain Risk",
+        "value": "Verified",
+        "status": "Consistent"
+      },
+      {
+        "name": "Intent Category",
+        "value": "Malicious Communication",
+        "status": "Inconsistent"
+      },
+      {
+        "name": "Coercion Indicators",
+        "value": "0 markers",
+        "status": "Organic"
+      }
+    ],
+    "id": "REP-TS-473AB9",
+    "timestamp": "2026-08-26 22:41:21",
+    "input_preview": "Subject: Application for Research Internship in AI & Deep Learning for Protein Modeling\n\nDear Prof. Quang-Thai Ho,\n\nI ho..."
+  }
+]

@@ -1,0 +1,1001 @@
+sample_id,mfcc_variance,spectral_centroid_shift,spectral_rolloff_anomaly,zero_crossing_rate_std,pitch_jitter_score,harmonic_to_noise_ratio,frequency_consistency,noise_pattern,ai_artifact_detected,is_synthetic,synthetic_confidence,trust_score,risk_level,verdict
+AUD-20000,61.157,0.1666,0.169,0.0811,0.4223,11.36,Natural,Organic,No,0,0.04,93,LOW,Authentic Voice Content
+AUD-20001,93.876,0.3881,0.0982,0.0941,0.5918,15.29,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20002,43.712,0.5249,0.6122,0.0161,0.0845,26.72,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8964,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20003,40.677,0.565,0.6031,0.0238,0.094,30.19,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8336,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20004,14.682,0.6297,0.9661,0.0099,0.116,29.27,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9081,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20005,69.258,0.1811,0.1974,0.1105,0.4962,17.18,Natural,Organic,No,0,0.0764,92,LOW,Authentic Voice Content
+AUD-20006,86.062,0.134,0.3262,0.072,0.4013,15.27,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20007,45.747,0.7972,0.8371,0.0244,0.0791,11.76,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9709,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20008,54.006,0.5898,0.8714,0.0408,0.058,23.57,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9064,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20009,83.922,0.2982,0.1676,0.092,0.3015,21.48,Natural,Organic,No,0,0.1324,90,LOW,Authentic Voice Content
+AUD-20010,94.089,0.2193,0.0581,0.0545,0.5234,9.47,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20011,58.188,0.2359,0.2069,0.0637,0.4114,13.74,Natural,Organic,No,0,0.078,92,LOW,Authentic Voice Content
+AUD-20012,113.883,0.3506,0.1677,0.0631,0.541,16.17,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20013,104.832,0.2216,0.0233,0.0654,0.4312,21.34,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20014,98.169,0.2076,0.1707,0.0598,0.1946,15.09,Natural,Organic,No,0,0.2617,76,LOW,Authentic Voice Content
+AUD-20015,73.464,0.2185,0.0726,0.0691,0.4613,10.91,Natural,Organic,No,0,0.0313,93,LOW,Authentic Voice Content
+AUD-20016,99.901,0.1903,0.2235,0.0553,0.2656,13.62,Natural,Organic,No,0,0.0713,99,LOW,Authentic Voice Content
+AUD-20017,46.732,0.9108,0.7007,0.0175,0.089,24.98,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.933,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20018,44.032,0.3132,0.1475,0.0771,0.389,10.12,Natural,Organic,No,0,0.0932,88,LOW,Authentic Voice Content
+AUD-20019,46.395,0.9215,0.8379,0.0383,0.174,32.03,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.944,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20020,87.926,0.1999,0.1289,0.0986,0.6302,16.33,Natural,Organic,No,0,0.0825,89,LOW,Authentic Voice Content
+AUD-20021,70.777,0.2357,0.2055,0.0355,0.468,16.46,Natural,Organic,No,0,0.1473,82,LOW,Authentic Voice Content
+AUD-20022,45.993,0.8534,0.7856,0.013,0.1124,23.5,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8996,22,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20023,82.275,0.2107,0.1038,0.0941,0.4861,12.55,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20024,27.257,0.7118,0.6423,0.0126,0.0612,31.64,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.6646,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20025,59.197,0.2641,0.1558,0.0912,0.5979,11.44,Natural,Organic,No,0,0.0382,94,LOW,Authentic Voice Content
+AUD-20026,105.262,0.1592,0.302,0.0928,0.5653,23.38,Natural,Organic,No,0,0.0259,95,LOW,Authentic Voice Content
+AUD-20027,41.873,0.54,0.8838,0.0264,0.1593,35.16,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.775,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20028,52.299,0.6275,0.7031,0.0425,0.1482,29.25,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.809,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20029,113.28,0.115,0.0969,0.0967,0.6566,12.12,Natural,Organic,No,0,0.0525,93,LOW,Authentic Voice Content
+AUD-20030,85.978,0.2913,0.1991,0.1095,0.3168,23.78,Natural,Organic,No,0,0.0396,99,LOW,Authentic Voice Content
+AUD-20031,65.533,0.2895,0.2345,0.0965,0.4346,9.28,Natural,Organic,No,0,0.0533,95,LOW,Authentic Voice Content
+AUD-20032,72.478,0.2301,0.1281,0.0899,0.4382,18.26,Natural,Organic,No,0,0.1479,81,LOW,Authentic Voice Content
+AUD-20033,94.661,0.3021,0.2585,0.0762,0.5546,19.54,Natural,Organic,No,0,0.033,99,LOW,Authentic Voice Content
+AUD-20034,75.675,0.1754,0.1882,0.0927,0.5403,16.36,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20035,49.664,0.5231,0.7371,0.0424,0.0995,26.05,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20036,85.778,0.1277,0.0393,0.1369,0.3205,16.65,Natural,Organic,No,0,0.0401,91,LOW,Authentic Voice Content
+AUD-20037,64.582,0.265,0.2359,0.0625,0.4925,11.69,Natural,Organic,No,0,0.0222,99,LOW,Authentic Voice Content
+AUD-20038,76.835,0.2704,0.158,0.1234,0.5539,16.2,Natural,Organic,No,0,0.0738,97,LOW,Authentic Voice Content
+AUD-20039,100.19,0.2601,0.0986,0.0763,0.4397,17.83,Natural,Organic,No,0,0.1126,86,LOW,Authentic Voice Content
+AUD-20040,106.837,0.2413,0.1073,0.0986,0.4202,11.11,Natural,Organic,No,0,0.0663,90,LOW,Authentic Voice Content
+AUD-20041,49.714,0.6763,0.809,0.0357,0.1197,30.97,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8155,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20042,42.838,0.659,0.5519,0.0148,0.098,26.95,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8733,18,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20043,78.573,0.1327,0.058,0.0936,0.4351,14.81,Natural,Organic,No,0,0.0819,93,LOW,Authentic Voice Content
+AUD-20044,34.434,0.5226,0.83,0.0267,0.1278,30.92,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9167,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20045,78.388,0.3964,0.1079,0.076,0.6228,15.31,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20046,89.14,0.3175,0.1287,0.1029,0.4605,16.7,Natural,Organic,No,0,0.1322,90,LOW,Authentic Voice Content
+AUD-20047,32.773,0.6784,0.7687,0.0051,0.1319,27.24,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20048,38.858,0.7207,0.5538,0.0383,0.131,32.42,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7776,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20049,98.472,0.1369,0.1366,0.0551,0.428,25.22,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20050,51.124,0.4107,0.6335,0.0304,0.1085,32.55,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8066,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20051,110.834,0.3173,0.2852,0.0625,0.3767,18.06,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20052,47.023,0.6301,0.791,0.0369,0.0509,22.69,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20053,60.714,0.6751,0.6385,0.015,0.1002,33.06,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20054,18.244,0.6426,0.7765,0.0334,0.1193,31.55,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9827,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20055,63.301,0.314,0.1187,0.0842,0.5941,22.31,Natural,Organic,No,0,0.0806,95,LOW,Authentic Voice Content
+AUD-20056,40.438,0.6419,0.7403,0.014,0.1174,27.49,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8357,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20057,38.831,1.0,0.7055,0.023,0.0714,32.28,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9253,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20058,88.595,0.1429,0.1999,0.0554,0.3813,20.41,Natural,Organic,No,0,0.0668,92,LOW,Authentic Voice Content
+AUD-20059,97.56,0.1351,0.1273,0.0687,0.5845,17.22,Natural,Organic,No,0,0.0611,94,LOW,Authentic Voice Content
+AUD-20060,49.356,0.6897,0.615,0.0336,0.1037,21.22,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20061,79.214,0.2358,0.1044,0.1074,0.4621,15.98,Natural,Organic,No,0,0.0967,86,LOW,Authentic Voice Content
+AUD-20062,88.353,0.1226,0.1035,0.0766,0.7589,17.07,Natural,Organic,No,0,0.1067,92,LOW,Authentic Voice Content
+AUD-20063,39.854,0.6511,0.9241,0.0135,0.1557,23.68,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8577,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20064,65.212,0.186,0.2345,0.0927,0.5398,12.84,Natural,Organic,No,0,0.0905,90,LOW,Authentic Voice Content
+AUD-20065,67.284,0.3074,0.2962,0.0621,0.3413,16.66,Natural,Organic,No,0,0.0767,92,LOW,Authentic Voice Content
+AUD-20066,43.877,0.9287,0.9684,0.0262,0.0642,32.59,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8268,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20067,63.217,0.199,0.184,0.1124,0.3293,19.08,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20068,45.446,0.2165,0.2652,0.105,0.242,15.34,Natural,Organic,No,0,0.1261,87,LOW,Authentic Voice Content
+AUD-20069,34.44,0.7253,0.8129,0.0129,0.0654,25.86,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7594,13,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20070,42.38,0.5053,0.7977,0.0142,0.1025,27.66,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8303,10,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20071,20.829,0.5403,0.693,0.0236,0.1187,37.18,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8366,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20072,105.107,0.1572,0.2668,0.0746,0.3636,18.28,Natural,Organic,No,0,0.0478,98,LOW,Authentic Voice Content
+AUD-20073,115.504,0.1255,0.1295,0.102,0.585,19.53,Natural,Organic,No,0,0.1016,92,LOW,Authentic Voice Content
+AUD-20074,36.308,0.493,0.7693,0.0152,0.0908,31.24,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9066,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20075,31.943,0.7841,0.817,0.0448,0.1153,20.4,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9538,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20076,96.488,0.1895,0.1161,0.0697,0.6134,23.95,Natural,Organic,No,0,0.0459,97,LOW,Authentic Voice Content
+AUD-20077,84.793,0.1396,0.0626,0.062,0.5043,18.1,Natural,Organic,No,0,0.1241,86,LOW,Authentic Voice Content
+AUD-20078,38.996,0.7719,0.8838,0.026,0.1182,26.76,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8646,21,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20079,41.566,0.4919,0.7631,0.031,0.121,21.44,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20080,85.909,0.1113,0.0,0.1253,0.32,17.56,Natural,Organic,No,0,0.1687,85,LOW,Authentic Voice Content
+AUD-20081,79.705,0.2206,0.3795,0.0864,0.2943,19.8,Natural,Organic,No,0,0.1113,87,LOW,Authentic Voice Content
+AUD-20082,33.058,0.6289,0.7664,0.029,0.0401,31.44,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7883,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20083,116.58,0.2857,0.1264,0.1048,0.4811,17.17,Natural,Organic,No,0,0.0245,94,LOW,Authentic Voice Content
+AUD-20084,53.954,0.2375,0.133,0.0822,0.6195,20.65,Natural,Organic,No,0,0.0471,99,LOW,Authentic Voice Content
+AUD-20085,105.423,0.2374,0.2684,0.0822,0.5858,12.1,Natural,Organic,No,0,0.116,89,LOW,Authentic Voice Content
+AUD-20086,52.096,0.8695,0.7715,0.0111,0.1799,22.31,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20087,112.48,0.2801,0.2003,0.0325,0.7271,21.86,Natural,Organic,No,0,0.0208,96,LOW,Authentic Voice Content
+AUD-20088,29.764,0.6599,0.8565,0.0168,0.0489,30.54,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8583,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20089,67.62,0.0822,0.158,0.1025,0.4706,15.56,Natural,Organic,No,0,0.0546,92,LOW,Authentic Voice Content
+AUD-20090,53.622,0.481,0.8549,0.037,0.1163,27.99,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20091,95.803,0.2683,0.1854,0.1369,0.5704,9.03,Natural,Organic,No,0,0.1055,87,LOW,Authentic Voice Content
+AUD-20092,30.982,0.8141,0.6031,0.0277,0.1491,22.8,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8268,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20093,52.639,0.6859,0.7995,0.026,0.1121,28.43,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7117,31,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20094,103.225,0.3008,0.167,0.0944,0.5723,10.09,Natural,Organic,No,0,0.0765,89,LOW,Authentic Voice Content
+AUD-20095,97.414,0.309,0.0942,0.0718,0.4201,14.58,Natural,Organic,No,0,0.023,96,LOW,Authentic Voice Content
+AUD-20096,26.729,0.8901,0.7837,0.0196,0.0706,23.06,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8236,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20097,101.861,0.2383,0.172,0.0969,0.5443,18.14,Natural,Organic,No,0,0.0319,91,LOW,Authentic Voice Content
+AUD-20098,85.719,0.1158,0.1709,0.0852,0.396,20.6,Natural,Organic,No,0,0.0269,99,LOW,Authentic Voice Content
+AUD-20099,35.666,0.7664,0.7509,0.0247,0.161,24.86,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7914,11,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20100,93.985,0.2716,0.2047,0.0557,0.4421,14.8,Natural,Organic,No,0,0.1225,88,LOW,Authentic Voice Content
+AUD-20101,68.718,0.2263,0.2025,0.0952,0.4363,25.52,Natural,Organic,No,0,0.1413,82,LOW,Authentic Voice Content
+AUD-20102,77.429,0.2049,0.185,0.0391,0.741,21.32,Natural,Organic,No,0,0.0472,95,LOW,Authentic Voice Content
+AUD-20103,40.735,0.7494,0.7919,0.0142,0.069,24.33,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8941,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20104,33.008,0.7167,0.7723,0.0362,0.1473,22.04,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9284,18,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20105,60.184,0.0616,0.2118,0.1283,0.6955,17.97,Natural,Organic,No,0,0.0572,91,LOW,Authentic Voice Content
+AUD-20106,53.747,0.6115,0.6993,0.0209,0.0968,25.92,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9109,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20107,23.985,0.7828,0.6098,0.0307,0.1384,25.98,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20108,44.335,0.52,0.8713,0.0313,0.1146,24.68,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9707,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20109,40.47,0.5621,0.6246,0.019,0.1061,27.65,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9381,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20110,26.885,0.7018,0.7325,0.0439,0.1151,35.28,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.766,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20111,36.548,0.5259,0.6649,0.0263,0.0896,31.98,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9666,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20112,98.544,0.1418,0.1058,0.0589,0.418,24.6,Natural,Organic,No,0,0.0382,97,LOW,Authentic Voice Content
+AUD-20113,79.222,0.2296,0.2538,0.0803,0.4586,19.01,Natural,Organic,No,0,0.0977,91,LOW,Authentic Voice Content
+AUD-20114,36.375,0.7514,0.5544,0.0258,0.1018,22.98,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8653,21,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20115,23.676,0.6323,0.6712,0.0102,0.1075,30.0,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9294,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20116,27.002,0.9352,0.8419,0.0182,0.0933,29.7,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8796,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20117,75.563,0.2573,0.2149,0.1017,0.4304,14.7,Natural,Organic,No,0,0.0687,93,LOW,Authentic Voice Content
+AUD-20118,22.935,0.8246,0.5451,0.0212,0.0985,28.24,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8365,11,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20119,32.42,0.5873,0.7126,0.0395,0.1039,29.54,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8186,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20120,44.188,0.7309,0.7899,0.0149,0.1011,26.26,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20121,37.141,0.6554,0.724,0.0251,0.1157,21.29,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8467,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20122,76.876,0.3025,0.1801,0.0806,0.5057,19.66,Natural,Organic,No,0,0.0217,98,LOW,Authentic Voice Content
+AUD-20123,38.365,0.9029,0.8613,0.0282,0.1801,33.68,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.7427,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20124,26.089,0.4665,0.9531,0.0222,0.1285,33.86,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8205,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20125,27.689,0.8507,0.7196,0.0053,0.1423,23.69,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.909,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20126,34.972,0.8909,0.7245,0.0083,0.1121,27.16,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7843,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20127,63.936,0.5759,0.746,0.0184,0.0712,19.18,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9116,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20128,86.48,0.1823,0.2144,0.1034,0.5306,20.94,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20129,36.576,0.4793,0.5426,0.0186,0.1244,28.68,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20130,51.469,0.8007,0.7598,0.0185,0.1395,23.55,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9068,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20131,89.363,0.3076,0.1896,0.093,0.3667,8.01,Natural,Organic,No,0,0.0639,89,LOW,Authentic Voice Content
+AUD-20132,100.345,0.0891,0.2602,0.0669,0.5341,22.44,Natural,Organic,No,0,0.0803,89,LOW,Authentic Voice Content
+AUD-20133,95.161,0.3303,0.2254,0.0787,0.672,14.21,Natural,Organic,No,0,0.0542,96,LOW,Authentic Voice Content
+AUD-20134,33.719,0.5674,0.7789,0.0237,0.116,35.43,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8119,9,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20135,60.659,0.3684,0.1785,0.0681,0.6366,19.44,Natural,Organic,No,0,0.0549,92,LOW,Authentic Voice Content
+AUD-20136,51.779,0.5459,0.4422,0.0106,0.0482,23.64,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8226,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20137,77.423,0.2083,0.0951,0.0745,0.5364,16.4,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20138,55.655,0.845,0.5875,0.0383,0.0877,28.8,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20139,48.89,0.8643,0.8982,0.0233,0.1504,25.87,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9634,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20140,92.993,0.1033,0.1924,0.0241,0.3718,15.14,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20141,43.711,0.9523,0.7855,0.0356,0.0997,31.91,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8138,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20142,29.366,0.4134,0.5971,0.0298,0.1152,26.87,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.6915,27,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20143,51.409,0.544,0.5276,0.0215,0.1467,28.1,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9302,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20144,59.463,0.7773,0.8139,0.0304,0.0808,27.61,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9234,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20145,46.346,0.8864,0.789,0.017,0.1035,30.14,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7274,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20146,20.094,0.5042,0.7343,0.0303,0.1024,32.3,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20147,39.927,0.4817,0.816,0.0215,0.1426,25.06,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8013,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20148,87.887,0.1877,0.2732,0.131,0.3968,19.47,Natural,Organic,No,0,0.1681,79,LOW,Authentic Voice Content
+AUD-20149,33.307,0.7698,0.6941,0.026,0.1183,26.41,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9568,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20150,53.746,0.4442,0.8838,0.0224,0.1664,29.93,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9078,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20151,60.251,0.5326,0.5588,0.0344,0.1226,23.74,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9403,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20152,40.376,0.5696,0.88,0.0231,0.102,28.75,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9124,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20153,48.688,0.6913,0.704,0.0248,0.0626,28.18,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20154,34.822,0.7519,0.7986,0.0311,0.1546,27.48,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.6992,27,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20155,58.661,0.7715,0.5631,0.0149,0.0898,31.6,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9462,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20156,97.728,0.1348,0.1824,0.0886,0.5195,16.25,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20157,81.028,0.0473,0.1238,0.0971,0.273,16.81,Natural,Organic,No,0,0.0445,95,LOW,Authentic Voice Content
+AUD-20158,34.39,0.7374,0.6157,0.0259,0.1281,29.78,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7576,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20159,41.228,0.5908,0.5976,0.0318,0.1482,30.93,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20160,98.092,0.2766,0.3013,0.1061,0.403,21.66,Natural,Organic,No,0,0.1302,90,LOW,Authentic Voice Content
+AUD-20161,36.19,0.7409,0.7153,0.0252,0.1255,17.03,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8506,17,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20162,35.48,0.9017,0.5697,0.0267,0.1021,22.77,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9273,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20163,45.541,0.6371,0.5693,0.026,0.1636,28.56,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8588,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20164,43.549,0.6914,0.693,0.02,0.0916,34.75,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8026,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20165,23.508,0.6868,0.6527,0.0172,0.072,20.83,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9465,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20166,102.454,0.2133,0.0683,0.066,0.5485,9.42,Natural,Organic,No,0,0.0475,91,LOW,Authentic Voice Content
+AUD-20167,95.914,0.3241,0.2116,0.0979,0.5439,17.31,Natural,Organic,No,0,0.0835,92,LOW,Authentic Voice Content
+AUD-20168,86.739,0.1387,0.0806,0.0903,0.2207,15.65,Natural,Organic,No,0,0.0898,95,LOW,Authentic Voice Content
+AUD-20169,55.611,0.6816,0.762,0.0451,0.1408,24.15,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.7164,35,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20170,73.419,0.0739,0.1852,0.1247,0.5086,12.07,Natural,Organic,No,0,0.0468,95,LOW,Authentic Voice Content
+AUD-20171,30.88,0.3312,0.657,0.0275,0.146,27.06,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9122,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20172,53.766,0.793,0.7127,0.0328,0.1088,28.44,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8078,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20173,46.459,0.6845,0.5198,0.0288,0.1551,20.35,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9149,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20174,33.418,0.666,0.799,0.0095,0.1893,30.98,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9485,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20175,80.849,0.0977,0.1279,0.1329,0.731,15.59,Natural,Organic,No,0,0.0996,93,LOW,Authentic Voice Content
+AUD-20176,90.14,0.1723,0.1763,0.0976,0.6217,17.25,Natural,Organic,No,0,0.0563,94,LOW,Authentic Voice Content
+AUD-20177,74.251,0.2532,0.1834,0.0899,0.3828,18.7,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20178,44.548,0.2082,0.1822,0.0372,0.603,16.1,Natural,Organic,No,0,0.0289,99,LOW,Authentic Voice Content
+AUD-20179,106.934,0.2447,0.1631,0.0544,0.5434,17.83,Natural,Organic,No,0,0.0713,95,LOW,Authentic Voice Content
+AUD-20180,101.824,0.2543,0.2265,0.0682,0.4409,16.93,Natural,Organic,No,0,0.0631,91,LOW,Authentic Voice Content
+AUD-20181,23.582,0.6387,0.6221,0.0279,0.1004,31.88,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8395,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20182,68.966,0.2291,0.1826,0.0623,0.4609,18.48,Natural,Organic,No,0,0.029,94,LOW,Authentic Voice Content
+AUD-20183,99.095,0.2338,0.1649,0.0865,0.3418,16.01,Natural,Organic,No,0,0.0443,92,LOW,Authentic Voice Content
+AUD-20184,51.332,0.5671,0.4252,0.0196,0.0703,21.4,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9889,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20185,37.964,0.861,0.8494,0.0225,0.1761,25.13,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9261,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20186,62.172,0.555,0.7241,0.0137,0.1463,25.67,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8572,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20187,35.118,0.6998,0.6853,0.0248,0.0746,22.05,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9444,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20188,74.518,0.2305,0.2599,0.0593,0.4131,16.49,Natural,Organic,No,0,0.0353,94,LOW,Authentic Voice Content
+AUD-20189,40.279,0.8311,0.5734,0.0258,0.0321,34.41,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20190,33.929,0.7063,0.7108,0.0273,0.0269,30.13,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20191,32.598,0.6514,0.7329,0.0186,0.1406,32.06,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7688,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20192,28.704,0.7519,0.6465,0.0143,0.1338,31.45,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9675,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20193,42.023,0.5633,0.77,0.0329,0.0823,28.16,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.6611,38,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20194,36.204,0.5906,0.6997,0.0197,0.1275,26.24,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.906,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20195,33.938,0.65,0.8752,0.029,0.0539,22.34,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8365,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20196,27.41,0.6576,0.5704,0.013,0.0879,26.38,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8457,8,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20197,116.44,0.2886,0.227,0.0991,0.2225,23.93,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20198,20.01,0.7657,0.7235,0.027,0.1394,27.7,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9853,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20199,130.878,0.4103,0.1768,0.128,0.5369,19.47,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20200,34.879,0.4582,0.6615,0.0249,0.0918,24.87,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9066,18,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20201,80.695,0.2824,0.203,0.0979,0.7127,16.43,Natural,Organic,No,0,0.127,89,LOW,Authentic Voice Content
+AUD-20202,47.848,0.5899,0.6937,0.0337,0.179,31.94,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.771,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20203,80.036,0.2614,0.1765,0.0611,0.4854,16.58,Natural,Organic,No,0,0.0834,93,LOW,Authentic Voice Content
+AUD-20204,84.977,0.1784,0.2682,0.0926,0.3425,11.56,Natural,Organic,No,0,0.0903,97,LOW,Authentic Voice Content
+AUD-20205,48.962,0.7281,0.9347,0.0137,0.1061,32.12,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.938,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20206,48.757,0.5322,0.8455,0.027,0.1676,17.29,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8521,17,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20207,93.811,0.2367,0.2205,0.0689,0.4256,14.79,Natural,Organic,No,0,0.1642,84,LOW,Authentic Voice Content
+AUD-20208,68.974,0.2272,0.1603,0.1174,0.4094,18.16,Natural,Organic,No,0,0.065,96,LOW,Authentic Voice Content
+AUD-20209,86.485,0.1963,0.0903,0.0961,0.5149,20.93,Natural,Organic,No,0,0.0118,96,LOW,Authentic Voice Content
+AUD-20210,62.08,0.3355,0.7178,0.0259,0.0913,40.93,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9214,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20211,36.808,0.5247,0.6717,0.0272,0.119,32.26,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20212,38.696,0.6419,0.7955,0.0311,0.1668,30.28,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7141,34,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20213,87.925,0.2569,0.2228,0.0779,0.2316,23.99,Natural,Organic,No,0,0.0173,99,LOW,Authentic Voice Content
+AUD-20214,58.707,0.3733,0.5185,0.0309,0.0844,26.23,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8336,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20215,102.46,0.1198,0.2352,0.0765,0.5478,18.26,Natural,Organic,No,0,0.1567,86,LOW,Authentic Voice Content
+AUD-20216,24.894,0.8289,0.6307,0.0083,0.161,29.68,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.7603,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20217,42.182,0.6055,0.63,0.0343,0.1082,23.89,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7877,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20218,40.15,0.6491,0.5498,0.0268,0.1258,25.19,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20219,115.448,0.0053,0.1868,0.0829,0.5244,13.95,Natural,Organic,No,0,0.1477,84,LOW,Authentic Voice Content
+AUD-20220,40.255,0.5322,0.6384,0.0204,0.1438,25.44,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8273,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20221,32.919,0.7348,0.8002,0.0191,0.1476,25.31,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8261,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20222,41.857,0.6814,0.8154,0.0357,0.0852,30.37,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9556,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20223,46.278,0.6798,0.6698,0.0278,0.0967,24.29,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9486,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20224,53.577,0.5758,0.733,0.0171,0.1792,22.17,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7371,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20225,56.234,0.7955,0.7357,0.0277,0.1947,25.61,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9312,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20226,57.549,0.4835,0.7233,0.0268,0.1581,23.37,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9329,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20227,18.83,0.6227,0.7605,0.0279,0.0406,32.43,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9447,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20228,49.32,0.4434,0.8828,0.008,0.1594,26.25,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.7965,27,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20229,38.553,0.8598,0.5841,0.0286,0.0886,19.82,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8828,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20230,95.654,0.2264,0.4093,0.0974,0.4284,11.96,Natural,Organic,No,0,0.1199,93,LOW,Authentic Voice Content
+AUD-20231,42.516,0.5738,0.7093,0.0238,0.098,30.06,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9083,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20232,46.153,0.7083,0.6921,0.0215,0.1262,32.49,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8739,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20233,66.092,0.2382,0.2244,0.1214,0.679,22.64,Natural,Organic,No,0,0.0652,93,LOW,Authentic Voice Content
+AUD-20234,37.086,0.4955,0.7083,0.0094,0.1226,31.2,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20235,51.602,0.857,0.5097,0.0364,0.1155,30.83,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7785,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20236,43.754,0.7844,0.6472,0.0248,0.1148,30.77,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8859,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20237,50.397,0.7237,0.9033,0.0332,0.082,28.14,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7556,13,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20238,43.163,0.5528,0.5499,0.0229,0.1226,30.28,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8229,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20239,58.76,0.6024,0.7299,0.0235,0.103,23.32,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9279,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20240,39.592,0.8084,0.5146,0.0224,0.0821,24.57,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.896,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20241,82.995,0.2697,0.2179,0.0802,0.5281,16.81,Natural,Organic,No,0,0.0502,91,LOW,Authentic Voice Content
+AUD-20242,87.331,0.2934,0.192,0.0997,0.3862,15.76,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20243,34.494,0.6986,0.8684,0.0361,0.1298,24.02,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.758,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20244,41.834,0.7474,0.8999,0.0312,0.1512,39.04,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20245,39.254,0.6473,0.8277,0.0279,0.2004,19.27,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8501,18,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20246,99.885,0.2723,0.1625,0.1359,0.6506,17.03,Natural,Organic,No,0,0.0533,98,LOW,Authentic Voice Content
+AUD-20247,83.75,0.2668,0.1761,0.0574,0.5124,16.87,Natural,Organic,No,0,0.0571,91,LOW,Authentic Voice Content
+AUD-20248,97.064,0.1678,0.0922,0.1042,0.3589,10.05,Natural,Organic,No,0,0.0697,92,LOW,Authentic Voice Content
+AUD-20249,54.123,0.6626,0.7149,0.0257,0.1643,30.31,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8504,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20250,113.282,0.2553,0.3255,0.1049,0.5347,20.11,Natural,Organic,No,0,0.0842,88,LOW,Authentic Voice Content
+AUD-20251,95.094,0.3292,0.1548,0.0625,0.6374,18.53,Natural,Organic,No,0,0.0666,92,LOW,Authentic Voice Content
+AUD-20252,53.781,0.5525,0.7454,0.0178,0.1008,28.89,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9052,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20253,28.004,0.4682,0.8976,0.0193,0.0871,25.66,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8436,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20254,38.648,0.6057,0.4862,0.0207,0.0788,23.93,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8975,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20255,82.614,0.4224,0.092,0.1115,0.4223,16.11,Natural,Organic,No,0,0.1127,86,LOW,Authentic Voice Content
+AUD-20256,58.568,0.3205,0.1826,0.1062,0.5103,21.18,Natural,Organic,No,0,0.0481,92,LOW,Authentic Voice Content
+AUD-20257,55.323,0.8263,0.8037,0.0203,0.1285,31.81,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8831,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20258,75.675,0.063,0.2401,0.0942,0.6016,14.56,Natural,Organic,No,0,0.073,90,LOW,Authentic Voice Content
+AUD-20259,72.514,0.3097,0.1557,0.0555,0.5939,11.27,Natural,Organic,No,0,0.01,93,LOW,Authentic Voice Content
+AUD-20260,116.067,0.149,0.0,0.0733,0.4896,12.58,Natural,Organic,No,0,0.0961,89,LOW,Authentic Voice Content
+AUD-20261,91.757,0.2656,0.0242,0.0342,0.5324,23.91,Natural,Organic,No,0,0.0336,97,LOW,Authentic Voice Content
+AUD-20262,25.932,0.7721,0.7084,0.0393,0.0519,30.33,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9895,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20263,18.595,0.8042,0.8287,0.0219,0.1401,21.26,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9164,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20264,89.584,0.285,0.3135,0.1054,0.5722,20.17,Natural,Organic,No,0,0.089,89,LOW,Authentic Voice Content
+AUD-20265,115.412,0.2262,0.1329,0.072,0.435,14.92,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20266,34.637,0.669,0.7021,0.0207,0.1493,22.49,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20267,39.91,0.4453,0.6987,0.0156,0.1242,20.66,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8591,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20268,76.496,0.236,0.1989,0.027,0.456,18.57,Natural,Organic,No,0,0.0814,95,LOW,Authentic Voice Content
+AUD-20269,26.028,0.5252,0.6452,0.0369,0.0888,25.77,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8238,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20270,45.36,0.6404,0.8287,0.0156,0.06,28.86,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9048,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20271,56.351,0.3347,0.2209,0.0494,0.3508,18.07,Natural,Organic,No,0,0.066,95,LOW,Authentic Voice Content
+AUD-20272,63.067,0.6768,0.7003,0.0226,0.1203,38.15,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8486,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20273,82.262,0.1537,0.194,0.0907,0.4616,13.62,Natural,Organic,No,0,0.0231,93,LOW,Authentic Voice Content
+AUD-20274,72.561,0.3293,0.248,0.0559,0.6618,16.83,Natural,Organic,No,0,0.031,95,LOW,Authentic Voice Content
+AUD-20275,45.086,0.6675,0.643,0.0324,0.1498,25.07,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9858,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20276,85.415,0.2862,0.3274,0.1049,0.5499,13.67,Natural,Organic,No,0,0.0181,95,LOW,Authentic Voice Content
+AUD-20277,44.155,0.6913,0.7433,0.0369,0.0244,26.04,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9528,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20278,82.767,0.1488,0.213,0.1089,0.646,19.01,Natural,Organic,No,0,0.0735,88,LOW,Authentic Voice Content
+AUD-20279,41.734,0.7921,0.8798,0.0178,0.1095,26.63,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8412,13,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20280,50.25,0.6673,0.6181,0.0324,0.1533,29.87,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8489,13,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20281,45.956,0.6152,0.7707,0.0342,0.1306,26.69,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20282,32.141,0.6613,0.8766,0.0251,0.0533,27.73,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.851,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20283,38.241,0.6335,0.7696,0.015,0.1437,32.52,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8702,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20284,70.569,0.2884,0.0922,0.0922,0.4828,16.11,Natural,Organic,No,0,0.0651,97,LOW,Authentic Voice Content
+AUD-20285,34.707,0.7646,1.0,0.0174,0.1298,26.22,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9394,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20286,119.366,0.0983,0.2184,0.0277,0.4541,20.06,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20287,44.177,0.6549,0.5164,0.0191,0.1294,25.89,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.7313,33,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20288,73.443,0.1858,0.1978,0.0816,0.5091,18.7,Natural,Organic,No,0,0.1326,86,LOW,Authentic Voice Content
+AUD-20289,21.02,0.7492,0.8886,0.0248,0.1644,28.4,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.891,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20290,37.781,0.664,0.7659,0.0111,0.091,26.61,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9479,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20291,44.728,0.7418,0.5538,0.0364,0.1762,26.51,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8736,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20292,43.791,0.7702,0.7816,0.0233,0.1075,26.77,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9035,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20293,79.686,0.211,0.1358,0.0907,0.5932,16.25,Natural,Organic,No,0,0.1727,82,LOW,Authentic Voice Content
+AUD-20294,78.218,0.1964,0.0929,0.1175,0.4441,19.03,Natural,Organic,No,0,0.0402,93,LOW,Authentic Voice Content
+AUD-20295,70.567,0.289,0.2514,0.1031,0.4996,17.61,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20296,81.271,0.2794,0.0924,0.0628,0.3519,11.79,Natural,Organic,No,0,0.0391,98,LOW,Authentic Voice Content
+AUD-20297,45.432,0.6863,0.6751,0.0262,0.1336,27.63,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7847,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20298,94.949,0.1951,0.1353,0.0939,0.3547,16.14,Natural,Organic,No,0,0.0194,99,LOW,Authentic Voice Content
+AUD-20299,79.576,0.2624,0.0801,0.0878,0.4163,17.48,Natural,Organic,No,0,0.1141,87,LOW,Authentic Voice Content
+AUD-20300,43.46,0.5482,0.8363,0.0413,0.123,33.69,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8488,9,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20301,42.256,0.6999,0.8561,0.0144,0.1537,25.89,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9016,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20302,42.813,0.6659,0.6912,0.0327,0.1575,22.15,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8397,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20303,39.086,0.5896,0.6581,0.0204,0.1308,32.24,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8185,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20304,121.364,0.3098,0.2274,0.0719,0.6111,17.97,Natural,Organic,No,0,0.0436,95,LOW,Authentic Voice Content
+AUD-20305,51.497,0.6227,0.6859,0.0142,0.127,21.87,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9101,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20306,40.292,0.5388,0.9113,0.0371,0.1737,30.29,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20307,38.569,0.7395,0.7842,0.0283,0.152,30.54,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8242,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20308,96.19,0.2356,0.3444,0.0766,0.3959,17.0,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20309,99.934,0.2617,0.0758,0.0579,0.4406,18.69,Natural,Organic,No,0,0.0257,99,LOW,Authentic Voice Content
+AUD-20310,42.28,0.6272,0.7588,0.0071,0.0336,28.6,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8743,19,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20311,49.46,0.6772,0.659,0.0349,0.1379,32.68,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.91,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20312,42.649,0.8344,0.6025,0.0153,0.0358,22.95,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.828,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20313,37.87,0.7343,0.7109,0.0284,0.1836,29.93,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8418,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20314,38.049,0.7392,0.5807,0.0179,0.1468,27.13,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8493,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20315,111.124,0.2182,0.3291,0.0608,0.4693,11.94,Natural,Organic,No,0,0.0426,94,LOW,Authentic Voice Content
+AUD-20316,30.308,0.6477,0.8093,0.0191,0.0719,32.89,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7626,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20317,87.028,0.2814,0.2222,0.109,0.314,18.13,Natural,Organic,No,0,0.1153,98,LOW,Authentic Voice Content
+AUD-20318,44.422,0.7864,0.6639,0.0149,0.0735,30.92,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8681,23,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20319,108.529,0.2912,0.1136,0.103,0.4854,15.44,Natural,Organic,No,0,0.041,94,LOW,Authentic Voice Content
+AUD-20320,108.675,0.1399,0.1049,0.109,0.444,15.99,Natural,Organic,No,0,0.0241,96,LOW,Authentic Voice Content
+AUD-20321,92.493,0.211,0.1461,0.0896,0.6109,16.26,Natural,Organic,No,0,0.1615,83,LOW,Authentic Voice Content
+AUD-20322,51.478,0.6295,0.7924,0.0264,0.0457,25.59,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9148,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20323,71.213,0.213,0.1871,0.056,0.2961,21.63,Natural,Organic,No,0,0.011,98,LOW,Authentic Voice Content
+AUD-20324,62.674,0.2582,0.1653,0.0788,0.5182,11.39,Natural,Organic,No,0,0.0661,88,LOW,Authentic Voice Content
+AUD-20325,86.457,0.2214,0.2041,0.0866,0.4657,14.32,Natural,Organic,No,0,0.0232,96,LOW,Authentic Voice Content
+AUD-20326,60.712,0.674,0.7299,0.0289,0.1062,23.7,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8684,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20327,73.313,0.1724,0.0993,0.0887,0.3834,17.66,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20328,78.646,0.2496,0.1784,0.0676,0.3377,16.24,Natural,Organic,No,0,0.09,91,LOW,Authentic Voice Content
+AUD-20329,99.737,0.2119,0.2443,0.0673,0.7458,14.97,Natural,Organic,No,0,0.0796,86,LOW,Authentic Voice Content
+AUD-20330,71.6,0.1297,0.2611,0.0737,0.3525,18.53,Natural,Organic,No,0,0.1085,86,LOW,Authentic Voice Content
+AUD-20331,49.172,0.8277,0.7345,0.0334,0.1507,27.3,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7958,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20332,85.686,0.2718,0.1603,0.106,0.4834,19.72,Natural,Organic,No,0,0.0985,94,LOW,Authentic Voice Content
+AUD-20333,72.916,0.017,0.1545,0.0374,0.511,16.37,Natural,Organic,No,0,0.0917,93,LOW,Authentic Voice Content
+AUD-20334,116.772,0.3508,0.0871,0.0614,0.4454,14.74,Natural,Organic,No,0,0.0894,97,LOW,Authentic Voice Content
+AUD-20335,55.437,0.4803,0.9166,0.0324,0.1127,26.3,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8931,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20336,51.327,0.5352,0.5877,0.0222,0.1491,25.96,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9764,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20337,30.638,0.7929,0.5057,0.0322,0.093,26.48,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8235,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20338,72.176,0.2885,0.1561,0.1277,0.5365,13.49,Natural,Organic,No,0,0.0495,92,LOW,Authentic Voice Content
+AUD-20339,42.8,0.6993,0.6401,0.0181,0.1012,30.98,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7118,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20340,43.096,0.6721,0.8623,0.0264,0.0872,23.66,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9633,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20341,63.675,0.2705,0.2366,0.1025,0.5044,17.92,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20342,85.762,0.3469,0.1171,0.0656,0.5057,19.06,Natural,Organic,No,0,0.0502,96,LOW,Authentic Voice Content
+AUD-20343,37.912,0.671,0.8095,0.0315,0.1151,26.15,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.961,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20344,83.803,0.2825,0.1983,0.0929,0.4013,22.29,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20345,49.929,0.7796,0.6005,0.0237,0.0543,25.35,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8415,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20346,54.433,0.2723,0.2364,0.0999,0.5395,21.7,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20347,59.337,0.8878,0.6684,0.0172,0.138,33.57,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8758,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20348,43.521,0.7053,0.8642,0.0222,0.0677,27.06,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9189,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20349,74.308,0.17,0.115,0.0632,0.6632,17.8,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20350,76.297,0.2237,0.2378,0.0889,0.4177,9.32,Natural,Organic,No,0,0.0969,90,LOW,Authentic Voice Content
+AUD-20351,85.061,0.2092,0.1899,0.0725,0.3131,15.2,Natural,Organic,No,0,0.0474,91,LOW,Authentic Voice Content
+AUD-20352,38.535,0.6907,0.6304,0.0288,0.1166,28.67,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8041,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20353,101.834,0.1881,0.0665,0.0752,0.3603,15.45,Natural,Organic,No,0,0.0773,94,LOW,Authentic Voice Content
+AUD-20354,29.181,0.8214,0.8158,0.034,0.0781,29.89,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8774,18,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20355,97.695,0.3203,0.2554,0.0858,0.5528,16.11,Natural,Organic,No,0,0.1276,84,LOW,Authentic Voice Content
+AUD-20356,106.717,0.323,0.2782,0.0703,0.3926,18.04,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20357,48.512,0.615,0.696,0.0221,0.1013,25.35,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9611,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20358,115.617,0.0982,0.0881,0.1077,0.3395,19.05,Natural,Organic,No,0,0.0628,89,LOW,Authentic Voice Content
+AUD-20359,129.695,0.076,0.182,0.0827,0.4144,18.25,Natural,Organic,No,0,0.0152,99,LOW,Authentic Voice Content
+AUD-20360,44.711,0.3723,0.5006,0.0127,0.0914,26.91,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9529,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20361,76.388,0.1092,0.1276,0.0976,0.652,15.65,Natural,Organic,No,0,0.0749,90,LOW,Authentic Voice Content
+AUD-20362,89.229,0.245,0.1184,0.0927,0.4998,16.65,Natural,Organic,No,0,0.0257,92,LOW,Authentic Voice Content
+AUD-20363,80.043,0.1865,0.215,0.0704,0.3452,14.03,Natural,Organic,No,0,0.0824,89,LOW,Authentic Voice Content
+AUD-20364,24.211,0.7128,0.4938,0.0299,0.0588,33.92,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8197,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20365,73.598,0.2443,0.2023,0.0814,0.3006,11.23,Natural,Organic,No,0,0.01,94,LOW,Authentic Voice Content
+AUD-20366,73.29,0.2467,0.2844,0.0807,0.5248,13.69,Natural,Organic,No,0,0.0899,93,LOW,Authentic Voice Content
+AUD-20367,97.674,0.15,0.1876,0.0963,0.7196,21.47,Natural,Organic,No,0,0.1013,92,LOW,Authentic Voice Content
+AUD-20368,111.13,0.1061,0.218,0.1106,0.2981,14.45,Natural,Organic,No,0,0.0246,98,LOW,Authentic Voice Content
+AUD-20369,96.671,0.1977,0.0711,0.0696,0.4174,17.0,Natural,Organic,No,0,0.0166,93,LOW,Authentic Voice Content
+AUD-20370,20.393,0.6293,0.6403,0.0313,0.1247,27.55,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9293,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20371,34.293,0.6661,0.7587,0.0386,0.0723,22.13,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8987,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20372,33.84,0.631,0.7548,0.0082,0.1386,29.06,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9268,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20373,85.578,0.2925,0.2285,0.0651,0.6187,15.14,Natural,Organic,No,0,0.1516,81,LOW,Authentic Voice Content
+AUD-20374,105.637,0.2075,0.2069,0.0664,0.5476,14.17,Natural,Organic,No,0,0.1086,89,LOW,Authentic Voice Content
+AUD-20375,68.163,0.1169,0.1437,0.0946,0.2865,16.24,Natural,Organic,No,0,0.1027,90,LOW,Authentic Voice Content
+AUD-20376,48.07,0.7896,0.8223,0.0195,0.1488,29.84,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8554,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20377,40.317,0.7734,0.9365,0.0224,0.1427,25.16,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.7449,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20378,26.316,0.5438,0.7437,0.0225,0.147,27.8,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.922,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20379,106.743,0.1119,0.1428,0.0922,0.3809,17.17,Natural,Organic,No,0,0.1431,87,LOW,Authentic Voice Content
+AUD-20380,55.555,0.3773,0.218,0.1046,0.6021,19.88,Natural,Organic,No,0,0.0883,92,LOW,Authentic Voice Content
+AUD-20381,62.415,0.2045,0.1779,0.1267,0.6044,19.78,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20382,37.793,0.8334,0.763,0.0361,0.1378,31.52,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9025,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20383,110.905,0.2001,0.1793,0.1091,0.5247,14.53,Natural,Organic,No,0,0.0824,88,LOW,Authentic Voice Content
+AUD-20384,35.317,0.758,0.5985,0.0411,0.1024,31.74,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8509,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20385,70.764,0.2532,0.2051,0.051,0.4094,13.08,Natural,Organic,No,0,0.0395,94,LOW,Authentic Voice Content
+AUD-20386,105.206,0.3062,0.2094,0.079,0.6266,14.93,Natural,Organic,No,0,0.1329,85,LOW,Authentic Voice Content
+AUD-20387,85.873,0.2417,0.2916,0.0682,0.5239,11.45,Natural,Organic,No,0,0.1154,85,LOW,Authentic Voice Content
+AUD-20388,37.606,0.6382,0.5971,0.0238,0.1328,32.36,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8564,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20389,38.097,0.9292,0.5467,0.0206,0.0967,22.92,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8204,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20390,36.445,0.9679,0.795,0.0312,0.0846,24.64,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.955,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20391,39.934,0.6753,0.527,0.0238,0.1659,36.92,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20392,35.686,0.6139,0.8263,0.0353,0.1157,23.59,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9374,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20393,80.02,0.2956,0.184,0.0864,0.4798,15.87,Natural,Organic,No,0,0.0691,91,LOW,Authentic Voice Content
+AUD-20394,74.071,0.3065,0.1916,0.0923,0.5204,17.18,Natural,Organic,No,0,0.029,96,LOW,Authentic Voice Content
+AUD-20395,98.741,0.2659,0.2723,0.0669,0.4988,15.52,Natural,Organic,No,0,0.0626,90,LOW,Authentic Voice Content
+AUD-20396,84.686,0.2028,0.1442,0.0868,0.5819,18.5,Natural,Organic,No,0,0.0545,92,LOW,Authentic Voice Content
+AUD-20397,24.368,0.7616,0.8258,0.0145,0.1507,29.85,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.795,31,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20398,32.625,0.5776,0.6089,0.0231,0.1387,32.49,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8828,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20399,33.229,0.9435,0.606,0.0235,0.1469,34.42,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20400,86.496,0.4401,0.0949,0.0939,0.5918,19.63,Natural,Organic,No,0,0.0515,92,LOW,Authentic Voice Content
+AUD-20401,27.127,0.7334,0.6197,0.036,0.1204,33.51,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7489,28,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20402,93.764,0.1893,0.29,0.069,0.6596,15.95,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20403,54.288,0.9602,0.9352,0.032,0.0853,24.45,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20404,64.541,0.0567,0.0403,0.0923,0.4067,15.63,Natural,Organic,No,0,0.0313,95,LOW,Authentic Voice Content
+AUD-20405,86.775,0.2231,0.117,0.0621,0.4846,10.68,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20406,59.085,0.4692,0.4867,0.0335,0.1696,31.76,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9658,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20407,64.464,0.2678,0.1619,0.0884,0.4656,22.81,Natural,Organic,No,0,0.0981,86,LOW,Authentic Voice Content
+AUD-20408,42.571,0.8167,0.6537,0.013,0.1445,32.95,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20409,49.096,0.6774,0.6543,0.0338,0.1188,25.35,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8621,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20410,48.007,0.4854,0.7925,0.0194,0.0866,22.62,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9178,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20411,70.16,0.149,0.1101,0.0972,0.4541,16.99,Natural,Organic,No,0,0.0254,95,LOW,Authentic Voice Content
+AUD-20412,42.301,0.7155,0.7407,0.0209,0.1344,23.5,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8982,17,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20413,41.001,0.5712,0.6905,0.0302,0.1351,23.87,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8819,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20414,53.488,0.6767,0.6285,0.0362,0.1392,29.93,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8409,8,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20415,35.145,0.6184,0.7487,0.0375,0.123,25.71,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8156,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20416,105.418,0.2334,0.0718,0.0737,0.4501,12.94,Natural,Organic,No,0,0.0628,89,LOW,Authentic Voice Content
+AUD-20417,76.536,0.1916,0.1839,0.0713,0.4473,19.61,Natural,Organic,No,0,0.0897,94,LOW,Authentic Voice Content
+AUD-20418,32.628,0.6937,0.5624,0.0282,0.1283,30.02,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20419,31.495,0.7153,0.7599,0.0199,0.0986,29.6,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8483,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20420,49.055,0.4944,0.7144,0.0248,0.0534,34.34,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9685,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20421,102.878,0.2919,0.243,0.0552,0.3439,16.09,Natural,Organic,No,0,0.089,92,LOW,Authentic Voice Content
+AUD-20422,57.201,0.1467,0.1699,0.0948,0.3338,16.26,Natural,Organic,No,0,0.0631,95,LOW,Authentic Voice Content
+AUD-20423,41.934,0.6545,0.6353,0.0276,0.1568,27.14,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9302,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20424,19.797,0.7047,0.7638,0.0207,0.0971,18.96,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8884,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20425,56.211,0.6555,0.5118,0.0193,0.1779,33.35,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9066,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20426,61.662,0.2559,0.0461,0.0809,0.5766,14.79,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20427,26.465,0.6701,0.7356,0.03,0.137,24.16,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9025,17,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20428,37.695,0.6076,0.688,0.0266,0.0757,28.75,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8866,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20429,117.634,0.1502,0.1847,0.098,0.4343,16.09,Natural,Organic,No,0,0.0433,97,LOW,Authentic Voice Content
+AUD-20430,34.564,0.5904,0.7642,0.0441,0.1071,27.1,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9348,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20431,52.601,0.5318,1.0,0.0074,0.1387,27.09,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8583,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20432,41.23,0.6437,0.9248,0.0213,0.0974,30.87,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8578,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20433,47.979,0.9683,0.6209,0.0097,0.1032,25.86,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20434,66.018,0.679,0.9271,0.0221,0.0996,24.81,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.7512,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20435,74.918,0.1912,0.2536,0.0646,0.39,19.79,Natural,Organic,No,0,0.1146,87,LOW,Authentic Voice Content
+AUD-20436,68.917,0.3429,0.1477,0.0525,0.2833,19.87,Natural,Organic,No,0,0.0582,93,LOW,Authentic Voice Content
+AUD-20437,83.439,0.1195,0.1428,0.0992,0.5383,17.02,Natural,Organic,No,0,0.1308,87,LOW,Authentic Voice Content
+AUD-20438,41.19,0.2502,0.8971,0.0458,0.1186,26.39,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8072,11,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20439,57.285,0.6973,0.7572,0.0319,0.131,26.73,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.894,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20440,55.617,0.7896,0.7317,0.0329,0.1087,37.47,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9433,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20441,124.509,0.3353,0.1412,0.0943,0.52,16.54,Natural,Organic,No,0,0.0963,95,LOW,Authentic Voice Content
+AUD-20442,116.695,0.1256,0.1696,0.0612,0.5587,10.23,Natural,Organic,No,0,0.0298,99,LOW,Authentic Voice Content
+AUD-20443,97.582,0.1507,0.0338,0.0924,0.5112,17.66,Natural,Organic,No,0,0.1179,90,LOW,Authentic Voice Content
+AUD-20444,121.866,0.1144,0.2419,0.1185,0.3621,14.62,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20445,117.093,0.253,0.053,0.088,0.2847,18.14,Natural,Organic,No,0,0.01,94,LOW,Authentic Voice Content
+AUD-20446,88.267,0.1544,0.1265,0.0796,0.5323,20.52,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20447,118.896,0.0394,0.155,0.0795,0.5903,18.64,Natural,Organic,No,0,0.0451,99,LOW,Authentic Voice Content
+AUD-20448,64.795,0.5069,0.7575,0.0264,0.1333,33.69,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9193,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20449,25.625,0.5996,0.6781,0.0281,0.0982,28.46,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.901,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20450,95.283,0.3346,0.0363,0.1174,0.4992,16.12,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20451,78.598,0.2356,0.0,0.0614,0.4823,12.6,Natural,Organic,No,0,0.0729,97,LOW,Authentic Voice Content
+AUD-20452,22.778,0.6444,0.602,0.0241,0.1379,21.43,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8296,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20453,40.228,0.6086,0.6327,0.0189,0.0715,35.92,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8888,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20454,39.72,0.6158,0.6071,0.0253,0.1713,28.73,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9639,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20455,39.606,0.5693,0.7296,0.0243,0.1633,26.34,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9406,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20456,76.497,0.2385,0.1323,0.0935,0.6056,13.93,Natural,Organic,No,0,0.0949,91,LOW,Authentic Voice Content
+AUD-20457,46.658,0.6729,0.7151,0.0205,0.1916,33.72,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9145,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20458,135.225,0.2438,0.2803,0.081,0.2724,14.94,Natural,Organic,No,0,0.0332,96,LOW,Authentic Voice Content
+AUD-20459,31.921,0.6683,0.7269,0.0129,0.0854,25.21,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20460,45.531,0.4213,0.1331,0.0672,0.383,20.35,Natural,Organic,No,0,0.0692,97,LOW,Authentic Voice Content
+AUD-20461,53.751,0.473,0.4209,0.0278,0.0745,23.16,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8132,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20462,77.26,0.2506,0.2693,0.0336,0.3681,16.63,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20463,63.149,0.7065,1.0,0.0311,0.072,28.22,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9199,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20464,42.969,0.8443,0.5453,0.0208,0.1515,21.82,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.7872,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20465,41.367,0.7422,0.6748,0.0219,0.1123,28.83,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9484,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20466,101.383,0.0113,0.094,0.0933,0.3371,15.77,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20467,34.762,0.6129,0.639,0.0106,0.0217,31.63,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9165,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20468,86.088,0.2669,0.0968,0.1111,0.424,14.46,Natural,Organic,No,0,0.0539,91,LOW,Authentic Voice Content
+AUD-20469,48.67,0.6593,0.7321,0.0352,0.0008,29.67,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20470,104.757,0.1503,0.1715,0.0571,0.5901,13.7,Natural,Organic,No,0,0.1586,88,LOW,Authentic Voice Content
+AUD-20471,62.35,0.2357,0.2497,0.1221,0.4346,16.69,Natural,Organic,No,0,0.0808,96,LOW,Authentic Voice Content
+AUD-20472,50.625,1.0,0.674,0.0321,0.1586,24.11,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8559,20,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20473,23.194,0.6889,0.5421,0.0168,0.1428,22.2,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8667,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20474,93.882,0.1403,0.2534,0.0978,0.4932,19.51,Natural,Organic,No,0,0.0883,90,LOW,Authentic Voice Content
+AUD-20475,36.63,0.7193,0.579,0.0234,0.2065,33.41,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9747,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20476,98.808,0.301,0.165,0.0859,0.4469,21.33,Natural,Organic,No,0,0.062,91,LOW,Authentic Voice Content
+AUD-20477,38.226,0.7677,0.5966,0.0271,0.1055,28.66,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8765,20,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20478,14.841,0.6864,0.7019,0.0172,0.0802,31.76,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.99,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20479,22.168,0.7412,0.7766,0.0211,0.0975,28.18,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9457,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20480,87.094,0.1324,0.1026,0.0862,0.3348,12.92,Natural,Organic,No,0,0.0187,97,LOW,Authentic Voice Content
+AUD-20481,84.947,0.2652,0.2062,0.0399,0.412,17.52,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20482,111.267,0.1964,0.1764,0.0899,0.7078,14.75,Natural,Organic,No,0,0.1152,89,LOW,Authentic Voice Content
+AUD-20483,37.209,0.5947,0.8308,0.0281,0.119,26.16,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8871,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20484,63.956,0.2645,0.0932,0.0609,0.5626,17.9,Natural,Organic,No,0,0.0743,90,LOW,Authentic Voice Content
+AUD-20485,26.472,0.4502,0.9718,0.0142,0.1321,25.06,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8158,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20486,97.306,0.2151,0.1263,0.097,0.2749,15.96,Natural,Organic,No,0,0.0928,86,LOW,Authentic Voice Content
+AUD-20487,112.529,0.206,0.1717,0.0645,0.5535,20.4,Natural,Organic,No,0,0.0498,99,LOW,Authentic Voice Content
+AUD-20488,37.974,0.5344,0.6444,0.0245,0.1238,33.48,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.7272,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20489,33.442,0.7599,0.8085,0.0185,0.0988,40.66,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9781,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20490,131.349,0.3123,0.2529,0.0846,0.4139,12.54,Natural,Organic,No,0,0.0647,90,LOW,Authentic Voice Content
+AUD-20491,47.74,0.5737,0.6962,0.0333,0.08,27.48,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8997,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20492,97.872,0.2399,0.3246,0.0862,0.528,16.62,Natural,Organic,No,0,0.0613,99,LOW,Authentic Voice Content
+AUD-20493,49.684,0.9721,0.7151,0.0253,0.0674,31.99,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9452,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20494,42.501,0.1717,0.2304,0.0941,0.5296,16.92,Natural,Organic,No,0,0.0165,98,LOW,Authentic Voice Content
+AUD-20495,58.723,0.2155,0.2552,0.0884,0.3678,21.55,Natural,Organic,No,0,0.0342,97,LOW,Authentic Voice Content
+AUD-20496,35.572,0.5706,0.832,0.03,0.1571,27.5,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7657,12,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20497,111.689,0.3228,0.2207,0.095,0.3511,11.23,Natural,Organic,No,0,0.1508,87,LOW,Authentic Voice Content
+AUD-20498,81.828,0.2775,0.3332,0.1141,0.2431,21.04,Natural,Organic,No,0,0.0372,95,LOW,Authentic Voice Content
+AUD-20499,84.411,0.2152,0.1761,0.0798,0.4222,16.89,Natural,Organic,No,0,0.2405,76,LOW,Authentic Voice Content
+AUD-20500,39.61,0.7226,0.4791,0.0208,0.1435,24.78,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8775,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20501,37.561,0.8858,0.7835,0.0127,0.1308,27.0,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8857,19,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20502,15.246,0.5357,0.6296,0.0319,0.1388,31.13,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9853,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20503,85.748,0.318,0.1218,0.0841,0.5398,16.86,Natural,Organic,No,0,0.0834,83,LOW,Authentic Voice Content
+AUD-20504,88.706,0.2384,0.2785,0.0942,0.6685,18.74,Natural,Organic,No,0,0.0193,97,LOW,Authentic Voice Content
+AUD-20505,37.133,0.6812,0.5463,0.0286,0.1174,28.82,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20506,72.964,0.277,0.2298,0.0633,0.6378,17.77,Natural,Organic,No,0,0.0481,97,LOW,Authentic Voice Content
+AUD-20507,49.111,0.599,0.6349,0.0272,0.2128,24.29,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7427,34,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20508,73.124,0.2781,0.1085,0.0846,0.5158,16.11,Natural,Organic,No,0,0.1303,83,LOW,Authentic Voice Content
+AUD-20509,44.486,0.7274,0.7261,0.0307,0.1093,32.99,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8331,10,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20510,116.069,0.1922,0.0608,0.0882,0.546,18.64,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20511,71.243,0.3484,0.1226,0.0871,0.3906,13.21,Natural,Organic,No,0,0.0424,96,LOW,Authentic Voice Content
+AUD-20512,70.301,0.2233,0.2431,0.0964,0.517,19.73,Natural,Organic,No,0,0.077,94,LOW,Authentic Voice Content
+AUD-20513,42.196,0.6191,0.6894,0.03,0.1426,22.53,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9792,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20514,40.611,0.5616,0.5655,0.0122,0.1157,30.14,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7276,29,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20515,110.749,0.1169,0.2344,0.0638,0.3386,18.57,Natural,Organic,No,0,0.0896,89,LOW,Authentic Voice Content
+AUD-20516,33.144,0.5662,0.7073,0.0343,0.1214,31.89,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7794,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20517,44.579,0.6816,0.7475,0.033,0.1777,30.41,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9156,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20518,76.384,0.2626,0.1665,0.0719,0.2802,19.86,Natural,Organic,No,0,0.0327,91,LOW,Authentic Voice Content
+AUD-20519,88.222,0.2059,0.219,0.0965,0.4124,18.49,Natural,Organic,No,0,0.0329,97,LOW,Authentic Voice Content
+AUD-20520,37.017,0.7835,0.5955,0.018,0.1174,37.2,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.6851,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20521,79.923,0.1692,0.0961,0.0955,0.333,14.94,Natural,Organic,No,0,0.0181,95,LOW,Authentic Voice Content
+AUD-20522,22.167,0.6391,0.8138,0.0272,0.1315,25.04,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8848,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20523,37.168,0.5437,0.4923,0.023,0.1394,32.12,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8363,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20524,43.82,0.8598,0.696,0.0406,0.0819,28.97,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8341,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20525,89.825,0.2427,0.1673,0.0902,0.5334,9.86,Natural,Organic,No,0,0.0261,95,LOW,Authentic Voice Content
+AUD-20526,34.261,0.9776,0.7805,0.022,0.1753,24.57,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.833,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20527,25.728,0.6944,0.8851,0.0294,0.1297,23.56,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8783,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20528,60.593,0.3023,0.1618,0.1063,0.7723,19.19,Natural,Organic,No,0,0.0611,88,LOW,Authentic Voice Content
+AUD-20529,96.371,0.195,0.1544,0.0776,0.3911,16.16,Natural,Organic,No,0,0.0813,87,LOW,Authentic Voice Content
+AUD-20530,42.579,0.6944,0.5916,0.0251,0.1556,22.78,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7761,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20531,37.467,0.5659,0.7345,0.0143,0.059,26.84,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20532,71.498,0.2271,0.1122,0.0911,0.6753,17.39,Natural,Organic,No,0,0.1648,83,LOW,Authentic Voice Content
+AUD-20533,39.125,0.9205,0.8671,0.0149,0.1482,27.66,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8869,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20534,64.872,0.705,0.7767,0.026,0.1258,34.36,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8443,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20535,48.987,0.2945,0.6335,0.0356,0.0802,28.97,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.931,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20536,57.867,0.8653,0.824,0.0305,0.0974,36.05,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8753,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20537,80.787,0.1485,0.1608,0.0943,0.5068,13.18,Natural,Organic,No,0,0.0977,88,LOW,Authentic Voice Content
+AUD-20538,95.767,0.2562,0.1912,0.1051,0.3711,14.47,Natural,Organic,No,0,0.0527,96,LOW,Authentic Voice Content
+AUD-20539,94.293,0.3332,0.2945,0.0988,0.5217,14.34,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20540,50.1,0.8375,0.5974,0.0192,0.098,23.2,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.89,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20541,26.323,0.9728,0.7701,0.0192,0.108,29.83,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9023,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20542,53.594,0.5157,0.792,0.0242,0.1025,28.3,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20543,118.933,0.3016,0.2099,0.0705,0.3418,15.02,Natural,Organic,No,0,0.0449,94,LOW,Authentic Voice Content
+AUD-20544,86.282,0.1007,0.2144,0.0766,0.3178,14.66,Natural,Organic,No,0,0.0109,99,LOW,Authentic Voice Content
+AUD-20545,47.729,0.761,0.6211,0.0313,0.0732,24.36,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20546,38.355,0.786,0.8193,0.0289,0.0671,26.95,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8408,11,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20547,104.383,0.2307,0.229,0.1007,0.5182,16.94,Natural,Organic,No,0,0.1231,89,LOW,Authentic Voice Content
+AUD-20548,51.064,0.8601,0.5078,0.0244,0.0632,32.1,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8798,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20549,91.304,0.1779,0.0771,0.1024,0.6834,16.31,Natural,Organic,No,0,0.0749,89,LOW,Authentic Voice Content
+AUD-20550,58.952,0.5347,0.7222,0.0197,0.0875,24.38,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8048,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20551,74.875,0.2192,0.1314,0.1047,0.56,14.2,Natural,Organic,No,0,0.0619,95,LOW,Authentic Voice Content
+AUD-20552,53.511,0.7351,0.6581,0.0142,0.1159,28.34,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8632,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20553,71.619,0.2146,0.2647,0.0838,0.3906,16.69,Natural,Organic,No,0,0.055,92,LOW,Authentic Voice Content
+AUD-20554,73.692,0.1922,0.1134,0.1088,0.3329,22.88,Natural,Organic,No,0,0.0645,90,LOW,Authentic Voice Content
+AUD-20555,126.402,0.3077,0.1159,0.0877,0.4763,15.72,Natural,Organic,No,0,0.1245,89,LOW,Authentic Voice Content
+AUD-20556,64.898,0.0845,0.1409,0.1127,0.4581,7.38,Natural,Organic,No,0,0.0995,86,LOW,Authentic Voice Content
+AUD-20557,77.563,0.2146,0.2019,0.0802,0.4504,20.28,Natural,Organic,No,0,0.028,96,LOW,Authentic Voice Content
+AUD-20558,27.522,0.7732,0.6504,0.025,0.1057,26.0,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8211,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20559,87.588,0.3195,0.1713,0.0603,0.5241,20.07,Natural,Organic,No,0,0.075,92,LOW,Authentic Voice Content
+AUD-20560,55.108,0.4358,0.599,0.0343,0.0872,23.19,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8389,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20561,75.109,0.1983,0.1721,0.1121,0.5525,12.18,Natural,Organic,No,0,0.0572,96,LOW,Authentic Voice Content
+AUD-20562,48.996,0.4614,0.6611,0.017,0.1294,31.93,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8969,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20563,50.783,0.5898,0.7439,0.0212,0.1394,24.63,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.94,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20564,53.491,0.5267,0.8867,0.0262,0.1494,28.88,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8761,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20565,56.675,0.8712,0.7971,0.0227,0.1477,32.64,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20566,103.182,0.3142,0.0789,0.0625,0.5178,10.54,Natural,Organic,No,0,0.0952,94,LOW,Authentic Voice Content
+AUD-20567,32.172,0.682,0.5478,0.022,0.1139,23.38,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.856,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20568,40.83,0.6476,0.9306,0.0217,0.1416,30.55,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20569,15.298,0.6557,0.7356,0.0246,0.119,25.79,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8074,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20570,37.91,0.7697,0.7343,0.0197,0.1657,16.43,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9263,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20571,67.583,0.2022,0.1834,0.0564,0.507,17.92,Natural,Organic,No,0,0.0912,94,LOW,Authentic Voice Content
+AUD-20572,85.831,0.2971,0.1735,0.0968,0.5172,17.76,Natural,Organic,No,0,0.1037,85,LOW,Authentic Voice Content
+AUD-20573,48.032,0.5909,0.4478,0.0451,0.1233,26.65,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9082,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20574,47.788,0.8112,0.6054,0.0265,0.0667,34.04,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9363,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20575,36.015,0.4882,0.815,0.016,0.0896,26.26,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8483,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20576,87.996,0.1741,0.2025,0.0593,0.5394,20.18,Natural,Organic,No,0,0.18,85,LOW,Authentic Voice Content
+AUD-20577,53.538,0.6417,0.8495,0.014,0.1816,31.18,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20578,35.803,0.5789,0.7129,0.0301,0.1183,30.43,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9177,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20579,33.765,0.5441,0.5505,0.0297,0.0965,21.62,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9729,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20580,54.987,0.1669,0.2542,0.0712,0.192,15.6,Natural,Organic,No,0,0.0602,93,LOW,Authentic Voice Content
+AUD-20581,40.488,0.8147,0.767,0.025,0.1911,29.03,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20582,37.603,0.8321,0.6733,0.0276,0.1432,28.68,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9245,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20583,69.175,0.1964,0.3312,0.0937,0.5424,14.96,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20584,93.982,0.2328,0.2158,0.0908,0.3545,15.12,Natural,Organic,No,0,0.0304,95,LOW,Authentic Voice Content
+AUD-20585,41.529,0.6755,0.6815,0.0256,0.1966,30.48,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20586,29.88,0.8301,0.6536,0.0168,0.1475,27.53,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8091,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20587,79.548,0.2019,0.1235,0.0831,0.2911,13.85,Natural,Organic,No,0,0.0415,93,LOW,Authentic Voice Content
+AUD-20588,99.681,0.2013,0.2465,0.0779,0.5034,18.02,Natural,Organic,No,0,0.1053,85,LOW,Authentic Voice Content
+AUD-20589,120.844,0.3571,0.0881,0.0546,0.3033,18.2,Natural,Organic,No,0,0.0568,95,LOW,Authentic Voice Content
+AUD-20590,84.865,0.2707,0.149,0.0784,0.4005,11.41,Natural,Organic,No,0,0.0628,97,LOW,Authentic Voice Content
+AUD-20591,92.223,0.2038,0.1615,0.0884,0.6477,26.7,Natural,Organic,No,0,0.1174,87,LOW,Authentic Voice Content
+AUD-20592,88.48,0.3191,0.0712,0.0705,0.6169,15.97,Natural,Organic,No,0,0.025,98,LOW,Authentic Voice Content
+AUD-20593,104.985,0.1882,0.2181,0.0654,0.4968,20.0,Natural,Organic,No,0,0.109,90,LOW,Authentic Voice Content
+AUD-20594,54.373,0.7936,0.6473,0.0321,0.037,30.16,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20595,36.482,0.4883,0.9778,0.0215,0.1034,30.52,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8168,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20596,117.268,0.1416,0.1448,0.1134,0.5874,14.87,Natural,Organic,No,0,0.1069,89,LOW,Authentic Voice Content
+AUD-20597,85.843,0.215,0.127,0.0534,0.5643,15.52,Natural,Organic,No,0,0.01,94,LOW,Authentic Voice Content
+AUD-20598,75.583,0.2522,0.0774,0.0613,0.422,13.72,Natural,Organic,No,0,0.0694,95,LOW,Authentic Voice Content
+AUD-20599,41.183,0.4749,0.6092,0.0173,0.1045,17.21,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.923,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20600,54.856,0.454,0.2318,0.1069,0.5862,17.01,Natural,Organic,No,0,0.0371,94,LOW,Authentic Voice Content
+AUD-20601,84.776,0.2291,0.1215,0.0851,0.5711,15.56,Natural,Organic,No,0,0.0538,99,LOW,Authentic Voice Content
+AUD-20602,50.726,0.7771,0.7544,0.0229,0.1573,26.76,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8897,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20603,64.324,0.2718,0.3027,0.065,0.4461,22.36,Natural,Organic,No,0,0.143,80,LOW,Authentic Voice Content
+AUD-20604,33.861,0.7748,0.8761,0.0134,0.0993,32.34,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9387,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20605,39.716,0.6957,0.7099,0.0296,0.0985,31.8,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8735,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20606,36.281,0.4699,0.6712,0.0286,0.0619,30.14,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9589,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20607,35.905,0.9652,0.8834,0.0254,0.1907,26.0,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9819,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20608,4.7,0.6461,0.7434,0.0229,0.1357,20.64,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.809,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20609,97.679,0.3558,0.1058,0.0704,0.5696,19.31,Natural,Organic,No,0,0.081,93,LOW,Authentic Voice Content
+AUD-20610,99.097,0.2471,0.2359,0.08,0.404,16.87,Natural,Organic,No,0,0.01,94,LOW,Authentic Voice Content
+AUD-20611,96.446,0.121,0.1829,0.0819,0.4051,20.54,Natural,Organic,No,0,0.0363,97,LOW,Authentic Voice Content
+AUD-20612,78.777,0.1374,0.0913,0.0521,0.5955,14.61,Natural,Organic,No,0,0.0575,89,LOW,Authentic Voice Content
+AUD-20613,51.814,0.2512,0.1949,0.0942,0.2965,11.37,Natural,Organic,No,0,0.1462,81,LOW,Authentic Voice Content
+AUD-20614,20.677,0.5136,0.6207,0.0224,0.162,25.84,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8147,24,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20615,31.529,0.6653,0.8935,0.0159,0.0717,28.11,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9517,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20616,86.02,0.3444,0.1462,0.0913,0.4576,18.28,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20617,85.362,0.2885,0.152,0.086,0.5828,15.71,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20618,49.759,0.8777,0.706,0.0266,0.1147,33.16,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.6597,33,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20619,60.952,0.2802,0.1277,0.0576,0.4077,20.39,Natural,Organic,No,0,0.1381,86,LOW,Authentic Voice Content
+AUD-20620,65.643,0.101,0.2974,0.0706,0.3966,13.64,Natural,Organic,No,0,0.085,91,LOW,Authentic Voice Content
+AUD-20621,56.229,0.9527,0.8375,0.0309,0.0952,24.79,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7923,34,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20622,81.435,0.0925,0.2275,0.0964,0.5293,22.06,Natural,Organic,No,0,0.0232,96,LOW,Authentic Voice Content
+AUD-20623,23.501,0.6012,0.6775,0.0277,0.0724,32.37,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9136,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20624,86.174,0.2541,0.2711,0.1124,0.5286,19.51,Natural,Organic,No,0,0.1064,87,LOW,Authentic Voice Content
+AUD-20625,72.232,0.2853,0.1516,0.0716,0.4596,11.84,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20626,84.684,0.2405,0.1548,0.1175,0.4691,21.12,Natural,Organic,No,0,0.0247,95,LOW,Authentic Voice Content
+AUD-20627,86.43,0.3543,0.229,0.0835,0.5371,17.25,Natural,Organic,No,0,0.0427,89,LOW,Authentic Voice Content
+AUD-20628,36.982,0.666,0.5228,0.0313,0.113,32.92,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8823,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20629,49.024,0.6769,0.7383,0.0235,0.1575,38.09,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9266,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20630,36.506,0.6661,0.9137,0.0303,0.1993,26.99,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8944,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20631,78.75,0.2377,0.1022,0.0248,0.4485,14.61,Natural,Organic,No,0,0.0965,84,LOW,Authentic Voice Content
+AUD-20632,71.665,0.1595,0.1699,0.0905,0.4798,16.19,Natural,Organic,No,0,0.0916,84,LOW,Authentic Voice Content
+AUD-20633,54.313,0.3148,0.1598,0.0774,0.3652,15.6,Natural,Organic,No,0,0.0403,94,LOW,Authentic Voice Content
+AUD-20634,102.73,0.0584,0.1372,0.0793,0.5405,9.48,Natural,Organic,No,0,0.0586,96,LOW,Authentic Voice Content
+AUD-20635,37.303,0.7243,0.7871,0.0177,0.1384,29.8,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7875,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20636,108.533,0.226,0.2118,0.0405,0.4851,17.89,Natural,Organic,No,0,0.0168,95,LOW,Authentic Voice Content
+AUD-20637,34.984,0.8188,0.4244,0.0241,0.1489,29.02,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20638,50.521,0.5604,0.6235,0.0162,0.1799,32.33,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8756,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20639,77.803,0.2194,0.0572,0.0852,0.407,17.92,Natural,Organic,No,0,0.1334,82,LOW,Authentic Voice Content
+AUD-20640,83.942,0.344,0.2003,0.0558,0.747,19.7,Natural,Organic,No,0,0.055,96,LOW,Authentic Voice Content
+AUD-20641,88.713,0.0151,0.193,0.1012,0.3492,8.3,Natural,Organic,No,0,0.1277,87,LOW,Authentic Voice Content
+AUD-20642,49.406,0.2414,0.1941,0.0935,0.5511,15.09,Natural,Organic,No,0,0.0189,99,LOW,Authentic Voice Content
+AUD-20643,62.029,0.0994,0.2761,0.1029,0.3443,11.98,Natural,Organic,No,0,0.0774,92,LOW,Authentic Voice Content
+AUD-20644,98.374,0.0818,0.2928,0.094,0.4302,16.64,Natural,Organic,No,0,0.0815,91,LOW,Authentic Voice Content
+AUD-20645,50.677,0.2992,0.713,0.0364,0.0826,23.28,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8491,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20646,52.897,0.0861,0.1127,0.1152,0.4325,11.07,Natural,Organic,No,0,0.0259,97,LOW,Authentic Voice Content
+AUD-20647,39.343,0.7685,0.5051,0.0272,0.1345,33.72,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9233,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20648,88.657,0.1374,0.1803,0.0591,0.4884,13.86,Natural,Organic,No,0,0.1578,80,LOW,Authentic Voice Content
+AUD-20649,105.707,0.0695,0.1424,0.0791,0.6361,19.23,Natural,Organic,No,0,0.1342,86,LOW,Authentic Voice Content
+AUD-20650,89.119,0.2109,0.1165,0.0644,0.468,18.27,Natural,Organic,No,0,0.1295,88,LOW,Authentic Voice Content
+AUD-20651,41.671,0.4084,0.6267,0.0359,0.0862,37.72,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9412,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20652,125.542,0.2175,0.2307,0.0531,0.6339,23.17,Natural,Organic,No,0,0.0903,95,LOW,Authentic Voice Content
+AUD-20653,34.284,0.9781,0.5061,0.016,0.1334,28.55,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7879,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20654,62.533,0.1135,0.1795,0.0904,0.365,21.1,Natural,Organic,No,0,0.0968,90,LOW,Authentic Voice Content
+AUD-20655,64.593,0.2265,0.1436,0.0765,0.3365,13.79,Natural,Organic,No,0,0.0735,96,LOW,Authentic Voice Content
+AUD-20656,51.862,0.956,0.6728,0.0458,0.1223,31.47,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.857,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20657,25.755,0.5818,0.7994,0.02,0.1362,27.69,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.94,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20658,26.893,0.7713,0.6777,0.0294,0.1763,35.5,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9624,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20659,48.139,0.6015,0.6425,0.0247,0.1292,29.29,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8953,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20660,81.176,0.3085,0.155,0.0949,0.3561,9.29,Natural,Organic,No,0,0.1739,91,LOW,Authentic Voice Content
+AUD-20661,69.418,0.176,0.164,0.0998,0.446,18.28,Natural,Organic,No,0,0.0268,99,LOW,Authentic Voice Content
+AUD-20662,82.871,0.0772,0.2134,0.1033,0.2317,19.08,Natural,Organic,No,0,0.055,89,LOW,Authentic Voice Content
+AUD-20663,55.939,0.7543,0.9484,0.0329,0.1024,26.36,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8398,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20664,103.257,0.2434,0.1141,0.0689,0.4653,18.83,Natural,Organic,No,0,0.0539,95,LOW,Authentic Voice Content
+AUD-20665,18.888,0.666,0.8449,0.0334,0.0863,30.62,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.905,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20666,76.526,0.308,0.1698,0.096,0.3984,15.65,Natural,Organic,No,0,0.0376,94,LOW,Authentic Voice Content
+AUD-20667,46.842,0.8445,1.0,0.0212,0.103,31.93,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9658,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20668,40.469,0.7975,0.8456,0.0357,0.1416,25.38,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7934,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20669,86.83,0.2155,0.1815,0.0966,0.3867,17.46,Natural,Organic,No,0,0.047,99,LOW,Authentic Voice Content
+AUD-20670,21.97,0.8586,0.7637,0.0292,0.1934,22.4,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.928,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20671,104.76,0.2749,0.1945,0.0404,0.4456,10.33,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20672,84.985,0.1183,0.156,0.0758,0.3044,17.9,Natural,Organic,No,0,0.1278,85,LOW,Authentic Voice Content
+AUD-20673,48.914,0.5915,0.7331,0.032,0.0948,30.19,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8837,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20674,34.623,0.5996,0.5595,0.0227,0.1051,28.21,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9081,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20675,30.087,0.523,0.637,0.0322,0.0636,24.96,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9213,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20676,29.563,0.7926,0.6368,0.0279,0.066,27.07,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8102,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20677,81.967,0.1823,0.2521,0.0737,0.4428,12.37,Natural,Organic,No,0,0.115,82,LOW,Authentic Voice Content
+AUD-20678,124.706,0.141,0.2445,0.0727,0.5171,11.75,Natural,Organic,No,0,0.0805,98,LOW,Authentic Voice Content
+AUD-20679,26.206,0.6239,0.6063,0.0119,0.1272,21.95,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20680,85.85,0.096,0.283,0.0756,0.5122,19.15,Natural,Organic,No,0,0.0654,94,LOW,Authentic Voice Content
+AUD-20681,28.13,0.7924,0.8119,0.0343,0.0776,26.74,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8715,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20682,37.288,0.2331,0.2172,0.0526,0.5809,11.67,Natural,Organic,No,0,0.0849,89,LOW,Authentic Voice Content
+AUD-20683,83.228,0.3563,0.2059,0.0441,0.6697,17.99,Natural,Organic,No,0,0.0219,99,LOW,Authentic Voice Content
+AUD-20684,72.399,0.2235,0.2387,0.0755,0.4106,16.61,Natural,Organic,No,0,0.0703,93,LOW,Authentic Voice Content
+AUD-20685,92.287,0.13,0.1565,0.0961,0.4068,15.71,Natural,Organic,No,0,0.0375,99,LOW,Authentic Voice Content
+AUD-20686,22.013,0.5281,0.752,0.0344,0.1317,33.13,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9384,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20687,92.213,0.2486,0.126,0.0826,0.4132,12.0,Natural,Organic,No,0,0.02,95,LOW,Authentic Voice Content
+AUD-20688,91.002,0.1573,0.096,0.1123,0.3997,17.44,Natural,Organic,No,0,0.0354,98,LOW,Authentic Voice Content
+AUD-20689,62.368,0.1994,0.2225,0.0965,0.6251,20.33,Natural,Organic,No,0,0.0667,89,LOW,Authentic Voice Content
+AUD-20690,49.269,0.6149,0.6076,0.0204,0.1614,33.6,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8584,17,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20691,45.327,1.0,0.854,0.0271,0.1038,35.0,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8123,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20692,104.955,0.3723,0.2166,0.0955,0.4307,17.08,Natural,Organic,No,0,0.0388,93,LOW,Authentic Voice Content
+AUD-20693,78.498,0.1695,0.2977,0.0713,0.3098,17.69,Natural,Organic,No,0,0.0372,95,LOW,Authentic Voice Content
+AUD-20694,37.32,0.9222,0.9327,0.0185,0.0343,29.8,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8395,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20695,100.031,0.2647,0.1498,0.0903,0.4367,15.5,Natural,Organic,No,0,0.0831,85,LOW,Authentic Voice Content
+AUD-20696,98.82,0.1422,0.3122,0.0942,0.5007,19.68,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20697,76.451,0.1705,0.1599,0.0996,0.437,15.5,Natural,Organic,No,0,0.0921,89,LOW,Authentic Voice Content
+AUD-20698,65.589,0.2314,0.1282,0.0684,0.5033,22.68,Natural,Organic,No,0,0.01,93,LOW,Authentic Voice Content
+AUD-20699,112.482,0.2942,0.1581,0.0935,0.4262,18.62,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20700,44.161,0.9669,0.6679,0.0146,0.1481,22.24,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.852,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20701,15.038,0.5292,0.8795,0.0411,0.0663,22.5,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9761,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20702,28.666,0.5602,0.5353,0.0352,0.0897,30.97,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7532,13,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20703,48.296,0.9705,0.7428,0.028,0.2209,29.88,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8201,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20704,71.041,0.3848,0.2023,0.0744,0.3983,19.75,Natural,Organic,No,0,0.0632,93,LOW,Authentic Voice Content
+AUD-20705,88.596,0.236,0.1536,0.1043,0.4356,14.98,Natural,Organic,No,0,0.0116,98,LOW,Authentic Voice Content
+AUD-20706,21.312,0.5766,0.5594,0.0191,0.1689,28.17,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9194,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20707,45.558,0.7919,0.9371,0.0195,0.0344,27.12,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8306,14,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20708,70.954,0.2891,0.3121,0.0534,0.6267,14.92,Natural,Organic,No,0,0.0487,97,LOW,Authentic Voice Content
+AUD-20709,85.438,0.2174,0.1138,0.1392,0.453,7.27,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20710,45.415,0.5995,0.5093,0.0207,0.1342,26.9,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8317,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20711,109.019,0.0642,0.3616,0.0629,0.4807,10.1,Natural,Organic,No,0,0.1006,89,LOW,Authentic Voice Content
+AUD-20712,67.034,0.2185,0.1809,0.0719,0.3557,14.55,Natural,Organic,No,0,0.0735,94,LOW,Authentic Voice Content
+AUD-20713,36.794,0.6282,0.7007,0.0357,0.1187,31.02,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7573,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20714,37.281,0.7886,0.6474,0.0296,0.0715,32.6,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8795,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20715,46.35,0.6219,0.6729,0.0405,0.0687,29.77,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20716,62.84,0.2789,0.2846,0.0639,0.5538,16.25,Natural,Organic,No,0,0.1112,82,LOW,Authentic Voice Content
+AUD-20717,27.335,0.6246,0.5528,0.0342,0.1513,29.81,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8653,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20718,89.833,0.2195,0.0,0.0808,0.6333,19.51,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20719,96.483,0.2876,0.0973,0.1067,0.4819,19.64,Natural,Organic,No,0,0.1296,91,LOW,Authentic Voice Content
+AUD-20720,59.403,0.965,0.7321,0.0236,0.083,25.5,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.7661,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20721,31.663,0.1145,0.1313,0.0794,0.5489,14.87,Natural,Organic,No,0,0.0733,89,LOW,Authentic Voice Content
+AUD-20722,115.689,0.2576,0.2668,0.0875,0.4619,16.89,Natural,Organic,No,0,0.1091,82,LOW,Authentic Voice Content
+AUD-20723,45.386,0.7471,0.7482,0.0348,0.1104,29.86,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9323,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20724,38.69,0.6268,0.9035,0.0218,0.2411,32.01,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7161,26,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20725,41.765,0.4239,0.7081,0.0271,0.1239,27.62,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8875,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20726,71.63,0.1658,0.132,0.1098,0.5229,15.92,Natural,Organic,No,0,0.1106,92,LOW,Authentic Voice Content
+AUD-20727,40.383,0.6495,0.5032,0.0153,0.0755,34.65,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.874,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20728,90.545,0.2258,0.0782,0.0681,0.433,19.7,Natural,Organic,No,0,0.1123,89,LOW,Authentic Voice Content
+AUD-20729,99.7,0.0152,0.3168,0.047,0.6805,19.57,Natural,Organic,No,0,0.152,86,LOW,Authentic Voice Content
+AUD-20730,129.617,0.2783,0.219,0.09,0.5861,17.6,Natural,Organic,No,0,0.0966,87,LOW,Authentic Voice Content
+AUD-20731,83.829,0.1629,0.1112,0.1117,0.5112,20.73,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20732,34.525,0.8298,0.7171,0.0162,0.1032,36.17,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8885,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20733,38.605,0.7758,0.7967,0.0359,0.111,23.2,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8932,23,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20734,54.74,0.6362,0.6144,0.0128,0.1149,32.25,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8762,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20735,78.824,0.1409,0.1774,0.0769,0.4727,16.67,Natural,Organic,No,0,0.0184,96,LOW,Authentic Voice Content
+AUD-20736,73.873,0.1161,0.0966,0.0987,0.6435,15.49,Natural,Organic,No,0,0.1068,88,LOW,Authentic Voice Content
+AUD-20737,88.8,0.2094,0.1024,0.0683,0.3998,16.88,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20738,41.045,0.7539,0.9795,0.022,0.0472,28.64,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9469,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20739,101.788,0.2825,0.1258,0.1042,0.3012,16.65,Natural,Organic,No,0,0.1288,89,LOW,Authentic Voice Content
+AUD-20740,63.605,0.1878,0.0808,0.1048,0.434,14.95,Natural,Organic,No,0,0.149,85,LOW,Authentic Voice Content
+AUD-20741,52.925,0.4736,0.7383,0.0349,0.1179,24.89,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8433,16,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20742,48.111,0.6889,0.9209,0.018,0.1547,29.08,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8871,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20743,34.842,0.633,0.8422,0.0198,0.1729,35.15,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8248,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20744,24.137,0.6807,0.6239,0.0116,0.1155,29.99,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20745,55.482,0.2178,0.127,0.0986,0.6176,16.03,Natural,Organic,No,0,0.0397,93,LOW,Authentic Voice Content
+AUD-20746,84.249,0.0808,0.1064,0.0232,0.4283,17.21,Natural,Organic,No,0,0.1364,83,LOW,Authentic Voice Content
+AUD-20747,85.075,0.2534,0.1452,0.0725,0.4863,19.03,Natural,Organic,No,0,0.01,97,LOW,Authentic Voice Content
+AUD-20748,69.717,0.2944,0.1098,0.0982,0.4728,18.32,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20749,59.976,0.3267,0.1643,0.088,0.4565,18.11,Natural,Organic,No,0,0.051,98,LOW,Authentic Voice Content
+AUD-20750,65.689,0.2301,0.1588,0.0546,0.546,13.96,Natural,Organic,No,0,0.0948,89,LOW,Authentic Voice Content
+AUD-20751,37.56,0.6337,0.6966,0.0131,0.1573,24.15,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9315,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20752,33.393,0.9768,0.7191,0.0194,0.0712,24.82,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9207,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20753,48.941,0.6184,0.7437,0.0327,0.1434,35.9,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9644,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20754,54.765,0.7497,0.7493,0.0191,0.1267,34.53,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8561,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20755,59.705,0.8678,0.7854,0.0322,0.1632,36.76,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8799,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20756,39.568,0.5194,0.8286,0.0315,0.1023,31.88,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8253,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20757,42.124,0.8374,1.0,0.0194,0.1136,28.44,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9502,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20758,89.842,0.1566,0.1724,0.0971,0.5194,16.87,Natural,Organic,No,0,0.1352,83,LOW,Authentic Voice Content
+AUD-20759,83.766,0.2071,0.1271,0.0685,0.4636,17.09,Natural,Organic,No,0,0.0926,94,LOW,Authentic Voice Content
+AUD-20760,82.244,0.0713,0.2767,0.0641,0.4029,17.42,Natural,Organic,No,0,0.13,86,LOW,Authentic Voice Content
+AUD-20761,113.026,0.1614,0.1491,0.0919,0.4228,17.67,Natural,Organic,No,0,0.1176,88,LOW,Authentic Voice Content
+AUD-20762,39.905,0.5367,0.7296,0.0149,0.1578,28.66,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7494,32,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20763,97.808,0.1753,0.2571,0.1273,0.6333,19.89,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20764,23.537,0.6321,0.8364,0.0317,0.0789,30.83,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8273,9,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20765,71.69,0.1528,0.1857,0.0936,0.48,19.37,Natural,Organic,No,0,0.0447,91,LOW,Authentic Voice Content
+AUD-20766,113.922,0.3375,0.1272,0.0616,0.3706,16.94,Natural,Organic,No,0,0.077,86,LOW,Authentic Voice Content
+AUD-20767,20.633,0.8254,0.4744,0.0204,0.1985,26.67,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8806,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20768,96.693,0.2821,0.2255,0.0853,0.5655,14.64,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20769,44.177,0.8428,0.8545,0.0287,0.1688,26.92,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8493,9,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20770,38.907,0.5374,0.7695,0.0352,0.1606,33.79,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9835,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20771,70.638,0.1926,0.1437,0.1015,0.5236,12.9,Natural,Organic,No,0,0.0929,90,LOW,Authentic Voice Content
+AUD-20772,92.364,0.1004,0.2336,0.0644,0.4427,17.44,Natural,Organic,No,0,0.129,83,LOW,Authentic Voice Content
+AUD-20773,80.516,0.1197,0.1132,0.119,0.4859,16.76,Natural,Organic,No,0,0.0531,97,LOW,Authentic Voice Content
+AUD-20774,39.997,0.4277,0.7843,0.0182,0.0941,33.45,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9539,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20775,36.473,0.5301,0.6658,0.0292,0.1361,28.09,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.7791,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20776,55.504,0.7403,0.7707,0.0069,0.1165,32.97,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.7822,29,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20777,124.69,0.2201,0.1369,0.0818,0.6616,16.96,Natural,Organic,No,0,0.0565,93,LOW,Authentic Voice Content
+AUD-20778,42.377,0.682,0.9195,0.0166,0.1226,16.51,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8759,21,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20779,24.331,0.658,0.9745,0.012,0.1658,30.71,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8635,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20780,88.861,0.2905,0.0911,0.0588,0.5424,14.54,Natural,Organic,No,0,0.1175,90,LOW,Authentic Voice Content
+AUD-20781,38.861,0.805,0.4775,0.0293,0.1115,24.63,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9432,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20782,80.722,0.2037,0.1868,0.0619,0.6358,18.12,Natural,Organic,No,0,0.0965,88,LOW,Authentic Voice Content
+AUD-20783,69.751,0.1493,0.1639,0.0821,0.6781,17.65,Natural,Organic,No,0,0.0579,91,LOW,Authentic Voice Content
+AUD-20784,137.513,0.2048,0.1923,0.0889,0.2319,10.95,Natural,Organic,No,0,0.1547,86,LOW,Authentic Voice Content
+AUD-20785,58.724,0.7436,0.6279,0.025,0.0962,28.72,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8789,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20786,70.637,0.1998,0.1184,0.0603,0.3959,15.13,Natural,Organic,No,0,0.1011,84,LOW,Authentic Voice Content
+AUD-20787,56.91,0.249,0.19,0.086,0.5269,10.89,Natural,Organic,No,0,0.0794,87,LOW,Authentic Voice Content
+AUD-20788,41.659,0.7013,0.8941,0.0344,0.1423,29.82,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9358,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20789,92.836,0.2773,0.1705,0.0426,0.3186,19.12,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20790,19.787,0.6961,0.7048,0.0261,0.1606,28.12,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8452,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20791,56.815,0.5987,0.7098,0.023,0.0854,19.97,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9138,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20792,53.296,0.5309,0.7259,0.0251,0.0718,33.23,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9054,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20793,90.786,0.299,0.1222,0.0545,0.483,12.25,Natural,Organic,No,0,0.0438,91,LOW,Authentic Voice Content
+AUD-20794,40.302,0.8446,0.6702,0.0283,0.0888,24.39,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.722,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20795,28.588,0.8499,0.8686,0.0279,0.1655,33.89,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8705,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20796,24.35,0.6292,0.6173,0.019,0.0827,26.89,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20797,60.478,0.7778,0.6229,0.0127,0.1372,34.8,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9257,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20798,92.251,0.3057,0.1402,0.1137,0.5246,14.68,Natural,Organic,No,0,0.1199,82,LOW,Authentic Voice Content
+AUD-20799,79.717,0.2657,0.2044,0.13,0.3567,16.7,Natural,Organic,No,0,0.141,85,LOW,Authentic Voice Content
+AUD-20800,26.227,0.5682,0.8421,0.0204,0.1565,29.62,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.821,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20801,53.177,0.7324,0.539,0.0353,0.1365,29.3,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9443,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20802,105.136,0.2659,0.2715,0.0767,0.5579,19.21,Natural,Organic,No,0,0.0661,94,LOW,Authentic Voice Content
+AUD-20803,88.505,0.2328,0.0851,0.0999,0.7183,12.23,Natural,Organic,No,0,0.0888,92,LOW,Authentic Voice Content
+AUD-20804,78.926,0.2479,0.2362,0.1103,0.3824,17.84,Natural,Organic,No,0,0.0166,99,LOW,Authentic Voice Content
+AUD-20805,85.328,0.1375,0.1561,0.1004,0.5591,16.47,Natural,Organic,No,0,0.064,93,LOW,Authentic Voice Content
+AUD-20806,60.242,0.2151,0.2894,0.0841,0.3332,16.11,Natural,Organic,No,0,0.0625,96,LOW,Authentic Voice Content
+AUD-20807,41.029,0.684,0.5346,0.0293,0.1425,33.03,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.6597,32,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20808,45.702,0.7996,0.5263,0.0291,0.1163,23.2,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20809,76.657,0.2979,0.1491,0.0834,0.5765,18.51,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20810,41.332,0.6478,0.7967,0.0283,0.1408,25.19,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8622,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20811,60.497,0.5418,0.6154,0.0248,0.121,31.8,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8752,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20812,91.238,0.276,0.1716,0.0742,0.454,20.9,Natural,Organic,No,0,0.0834,91,LOW,Authentic Voice Content
+AUD-20813,83.903,0.1887,0.2849,0.1075,0.3436,18.58,Natural,Organic,No,0,0.0372,99,LOW,Authentic Voice Content
+AUD-20814,67.202,0.1918,0.0186,0.0696,0.325,20.43,Natural,Organic,No,0,0.015,99,LOW,Authentic Voice Content
+AUD-20815,49.583,0.5019,0.637,0.0284,0.1628,20.77,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.928,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20816,41.318,0.4919,0.7399,0.0331,0.1033,28.77,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7986,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20817,70.848,0.0706,0.182,0.0892,0.5982,18.11,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20818,77.016,0.263,0.1718,0.0795,0.5174,16.58,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20819,97.108,0.1498,0.1681,0.1318,0.1997,17.14,Natural,Organic,No,0,0.0113,99,LOW,Authentic Voice Content
+AUD-20820,99.011,0.0185,0.1173,0.1174,0.6275,14.66,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20821,46.739,0.0853,0.1603,0.1232,0.6834,22.26,Natural,Organic,No,0,0.1274,89,LOW,Authentic Voice Content
+AUD-20822,40.52,0.7518,0.6533,0.003,0.18,24.77,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8677,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20823,102.093,0.207,0.2532,0.1175,0.371,14.66,Natural,Organic,No,0,0.1023,89,LOW,Authentic Voice Content
+AUD-20824,75.637,0.2275,0.1321,0.0793,0.592,19.97,Natural,Organic,No,0,0.0513,93,LOW,Authentic Voice Content
+AUD-20825,43.186,0.6585,0.7491,0.0208,0.1334,24.67,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8578,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20826,84.199,0.1991,0.1395,0.1017,0.4367,20.03,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20827,43.672,0.7443,0.6229,0.0255,0.1439,31.45,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8879,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20828,45.035,0.7025,0.93,0.0204,0.1472,28.17,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8943,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20829,37.28,0.4909,0.6751,0.0122,0.1278,29.56,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8974,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20830,107.522,0.2221,0.0713,0.0925,0.5684,19.53,Natural,Organic,No,0,0.0832,90,LOW,Authentic Voice Content
+AUD-20831,24.843,0.5379,0.551,0.0339,0.1373,19.44,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.7666,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20832,45.521,0.6717,0.6418,0.0294,0.1406,21.63,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8857,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20833,82.054,0.2227,0.2046,0.1052,0.4227,18.36,Natural,Organic,No,0,0.0246,99,LOW,Authentic Voice Content
+AUD-20834,50.482,0.8332,0.7147,0.0232,0.1162,25.94,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7669,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20835,105.404,0.28,0.0922,0.0947,0.5872,21.13,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20836,26.608,0.6012,0.5568,0.0432,0.1224,27.92,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.7906,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20837,40.452,0.5855,0.7717,0.0113,0.0918,30.38,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.811,4,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20838,42.802,0.6277,0.6155,0.0241,0.1407,24.39,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.955,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20839,52.877,0.8179,0.6333,0.0226,0.1193,34.48,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7948,23,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20840,36.706,0.577,0.6427,0.0367,0.1277,32.71,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9121,12,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20841,39.566,0.7585,0.7736,0.0204,0.1254,22.41,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8647,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20842,86.255,0.2769,0.2878,0.1195,0.3383,21.24,Natural,Organic,No,0,0.1296,88,LOW,Authentic Voice Content
+AUD-20843,47.611,0.8309,0.757,0.0144,0.191,31.36,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8608,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20844,82.31,0.191,0.1589,0.0983,0.3949,20.08,Natural,Organic,No,0,0.0841,93,LOW,Authentic Voice Content
+AUD-20845,57.65,0.1431,0.1826,0.0992,0.6142,19.89,Natural,Organic,No,0,0.0897,91,LOW,Authentic Voice Content
+AUD-20846,69.179,0.232,0.2129,0.0455,0.7106,14.14,Natural,Organic,No,0,0.01,95,LOW,Authentic Voice Content
+AUD-20847,88.698,0.316,0.1714,0.0635,0.3297,15.32,Natural,Organic,No,0,0.1407,82,LOW,Authentic Voice Content
+AUD-20848,111.158,0.24,0.1137,0.104,0.4523,14.81,Natural,Organic,No,0,0.0574,99,LOW,Authentic Voice Content
+AUD-20849,39.534,0.6917,0.7327,0.0242,0.1502,36.11,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8782,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20850,81.385,0.0366,0.1645,0.0909,0.4236,12.91,Natural,Organic,No,0,0.0934,87,LOW,Authentic Voice Content
+AUD-20851,87.841,0.226,0.0288,0.0796,0.4677,11.93,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20852,83.29,0.2922,0.182,0.1293,0.485,18.22,Natural,Organic,No,0,0.1601,85,LOW,Authentic Voice Content
+AUD-20853,47.527,0.6648,0.5734,0.0238,0.1791,32.07,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20854,98.655,0.1475,0.1418,0.0836,0.5486,19.15,Natural,Organic,No,0,0.112,85,LOW,Authentic Voice Content
+AUD-20855,33.609,0.6934,0.8215,0.0214,0.123,21.63,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20856,37.393,0.7855,0.8668,0.0296,0.0806,29.71,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.9087,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20857,38.17,0.605,0.705,0.0074,0.102,35.18,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8417,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20858,104.391,0.2551,0.3006,0.1113,0.5715,18.78,Natural,Organic,No,0,0.1391,88,LOW,Authentic Voice Content
+AUD-20859,107.988,0.0,0.1566,0.0775,0.5689,14.52,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20860,68.16,0.2216,0.039,0.0781,0.4765,11.48,Natural,Organic,No,0,0.129,88,LOW,Authentic Voice Content
+AUD-20861,105.429,0.2197,0.123,0.0957,0.1913,12.86,Natural,Organic,No,0,0.0384,98,LOW,Authentic Voice Content
+AUD-20862,49.457,0.7524,0.691,0.0231,0.0997,21.32,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8866,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20863,85.143,0.2894,0.257,0.0876,0.3363,19.93,Natural,Organic,No,0,0.0269,96,LOW,Authentic Voice Content
+AUD-20864,119.08,0.1871,0.2712,0.0865,0.587,11.07,Natural,Organic,No,0,0.0329,92,LOW,Authentic Voice Content
+AUD-20865,39.735,0.5975,0.6709,0.023,0.0599,30.92,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9899,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20866,54.861,0.8974,0.8806,0.0204,0.0537,26.46,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8455,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20867,70.954,0.2344,0.3312,0.0743,0.3324,10.89,Natural,Organic,No,0,0.0491,93,LOW,Authentic Voice Content
+AUD-20868,96.893,0.1819,0.2818,0.0372,0.5838,18.98,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20869,83.666,0.2168,0.2759,0.0932,0.4494,19.53,Natural,Organic,No,0,0.1113,89,LOW,Authentic Voice Content
+AUD-20870,29.33,0.6276,0.689,0.0321,0.1052,30.79,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8643,20,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20871,41.365,0.5576,0.8431,0.025,0.1253,28.45,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.7925,17,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20872,47.095,0.6582,0.5962,0.0358,0.1657,24.36,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8835,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20873,101.304,0.2192,0.2041,0.0529,0.4081,11.18,Natural,Organic,No,0,0.1399,86,LOW,Authentic Voice Content
+AUD-20874,63.115,0.712,0.7013,0.028,0.1217,29.08,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9278,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20875,28.153,0.5099,0.6462,0.0339,0.1073,25.33,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8865,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20876,49.048,0.5778,0.6323,0.0367,0.0808,29.6,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8704,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20877,38.896,0.8054,0.4749,0.0284,0.1322,30.15,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8025,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20878,45.179,0.7043,0.6357,0.0257,0.0887,34.76,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8626,19,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20879,75.701,0.132,0.3104,0.0935,0.3089,15.55,Natural,Organic,No,0,0.1273,88,LOW,Authentic Voice Content
+AUD-20880,115.934,0.1658,0.1991,0.0929,0.6178,14.38,Natural,Organic,No,0,0.0813,88,LOW,Authentic Voice Content
+AUD-20881,86.788,0.3032,0.1881,0.1022,0.4124,17.18,Natural,Organic,No,0,0.0202,94,LOW,Authentic Voice Content
+AUD-20882,103.786,0.1907,0.0357,0.0292,0.6042,21.18,Natural,Organic,No,0,0.0704,85,LOW,Authentic Voice Content
+AUD-20883,76.126,0.2184,0.2614,0.1091,0.4537,20.83,Natural,Organic,No,0,0.1044,85,LOW,Authentic Voice Content
+AUD-20884,41.748,0.9588,0.679,0.0314,0.1077,29.74,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7665,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20885,45.318,0.5903,0.7878,0.0193,0.1411,18.77,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9127,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20886,49.287,0.6694,0.5992,0.03,0.1426,24.69,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8395,21,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20887,35.436,0.531,0.4826,0.0265,0.1007,31.22,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9535,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20888,42.782,0.9101,0.8154,0.0149,0.1544,28.81,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8325,6,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20889,30.332,0.6568,0.627,0.0223,0.1771,27.96,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.7558,27,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20890,102.494,0.2619,0.1448,0.0939,0.642,18.39,Natural,Organic,No,0,0.035,95,LOW,Authentic Voice Content
+AUD-20891,105.874,0.2189,0.0759,0.1059,0.5238,19.7,Natural,Organic,No,0,0.0136,92,LOW,Authentic Voice Content
+AUD-20892,86.824,0.2318,0.134,0.0486,0.5043,20.6,Natural,Organic,No,0,0.0523,95,LOW,Authentic Voice Content
+AUD-20893,94.019,0.2673,0.1159,0.1194,0.5059,14.68,Natural,Organic,No,0,0.1131,90,LOW,Authentic Voice Content
+AUD-20894,87.799,0.3426,0.2059,0.103,0.4061,16.35,Natural,Organic,No,0,0.0401,91,LOW,Authentic Voice Content
+AUD-20895,99.358,0.1483,0.2693,0.0678,0.4467,13.82,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20896,62.625,0.9633,0.8566,0.0272,0.063,35.69,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.881,21,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20897,49.751,0.326,0.8634,0.031,0.1533,27.68,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8319,10,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20898,45.17,0.7762,0.707,0.032,0.1604,32.97,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9717,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20899,33.884,0.7603,0.87,0.0326,0.0702,32.44,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7903,20,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20900,90.166,0.1754,0.0992,0.0631,0.4657,17.0,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20901,40.832,0.7838,0.5121,0.0325,0.1604,26.78,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8779,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20902,46.708,0.7194,0.6872,0.0386,0.153,27.85,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8526,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20903,38.123,0.6144,0.6986,0.03,0.1739,30.99,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7611,29,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20904,50.161,0.2993,0.1782,0.1083,0.6789,11.03,Natural,Organic,No,0,0.0656,91,LOW,Authentic Voice Content
+AUD-20905,32.641,0.2505,0.2465,0.0824,0.4787,11.9,Natural,Organic,No,0,0.076,85,LOW,Authentic Voice Content
+AUD-20906,74.238,0.2883,0.1976,0.0626,0.5499,23.22,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20907,66.393,0.355,0.1627,0.0757,0.4487,20.73,Natural,Organic,No,0,0.0454,96,LOW,Authentic Voice Content
+AUD-20908,122.304,0.2353,0.2446,0.0664,0.5021,21.61,Natural,Organic,No,0,0.1079,87,LOW,Authentic Voice Content
+AUD-20909,84.936,0.2613,0.2537,0.1055,0.4235,10.13,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20910,36.126,0.8431,0.6508,0.008,0.1011,28.57,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8771,6,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20911,107.084,0.1918,0.1326,0.0919,0.725,15.88,Natural,Organic,No,0,0.0799,84,LOW,Authentic Voice Content
+AUD-20912,115.674,0.2575,0.2216,0.0384,0.5365,14.21,Natural,Organic,No,0,0.0673,90,LOW,Authentic Voice Content
+AUD-20913,94.852,0.1404,0.242,0.117,0.5346,20.28,Natural,Organic,No,0,0.03,93,LOW,Authentic Voice Content
+AUD-20914,28.726,0.5649,0.5855,0.0298,0.1429,23.18,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8419,7,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20915,39.66,0.9224,0.6459,0.0235,0.0826,29.07,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8273,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20916,41.188,0.9651,0.5236,0.0364,0.1046,25.03,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8371,6,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20917,88.765,0.1626,0.2551,0.099,0.6436,15.56,Natural,Organic,No,0,0.08,90,LOW,Authentic Voice Content
+AUD-20918,88.828,0.1923,0.1453,0.0911,0.4355,15.77,Natural,Organic,No,0,0.0421,98,LOW,Authentic Voice Content
+AUD-20919,99.506,0.1298,0.072,0.0852,0.4806,15.84,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20920,78.754,0.2859,0.1234,0.0829,0.5627,16.45,Natural,Organic,No,0,0.1356,86,LOW,Authentic Voice Content
+AUD-20921,38.888,0.6754,0.5673,0.0177,0.0601,28.04,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.9883,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20922,121.553,0.2584,0.2192,0.0728,0.3982,11.94,Natural,Organic,No,0,0.116,91,LOW,Authentic Voice Content
+AUD-20923,52.553,0.6351,0.5563,0.0441,0.1184,20.86,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20924,54.775,0.6237,0.7442,0.0252,0.0381,20.0,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7983,9,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20925,101.664,0.2551,0.2027,0.0782,0.5105,16.3,Natural,Organic,No,0,0.01,99,LOW,Authentic Voice Content
+AUD-20926,91.995,0.0964,0.2201,0.079,0.631,19.99,Natural,Organic,No,0,0.1564,83,LOW,Authentic Voice Content
+AUD-20927,39.318,0.8628,0.7572,0.0194,0.114,34.3,Anomalous Harmonic,Artificial Dither,Yes (Neural Vocoder),1,0.8607,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20928,125.939,0.164,0.1819,0.1011,0.5344,20.5,Natural,Organic,No,0,0.0953,83,LOW,Authentic Voice Content
+AUD-20929,71.045,0.1365,0.1699,0.0541,0.5117,15.18,Natural,Organic,No,0,0.01,96,LOW,Authentic Voice Content
+AUD-20930,69.013,0.2364,0.174,0.0674,0.6544,13.27,Natural,Organic,No,0,0.09,89,LOW,Authentic Voice Content
+AUD-20931,37.63,0.7876,0.8551,0.0212,0.0721,26.56,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8197,18,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20932,110.928,0.3514,0.1674,0.0526,0.8189,16.14,Natural,Organic,No,0,0.0716,93,LOW,Authentic Voice Content
+AUD-20933,65.356,0.0731,0.1591,0.0827,0.7128,15.91,Natural,Organic,No,0,0.0262,99,LOW,Authentic Voice Content
+AUD-20934,27.183,0.5045,0.7598,0.0106,0.1752,26.46,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.9553,5,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20935,61.189,0.2008,0.113,0.0927,0.5386,18.83,Natural,Organic,No,0,0.01,93,LOW,Authentic Voice Content
+AUD-20936,48.427,0.771,0.8462,0.0101,0.1184,24.87,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9487,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20937,102.875,0.2118,0.0747,0.1028,0.5553,15.81,Natural,Organic,No,0,0.1457,84,LOW,Authentic Voice Content
+AUD-20938,89.704,0.257,0.1828,0.0718,0.4466,13.29,Natural,Organic,No,0,0.01,98,LOW,Authentic Voice Content
+AUD-20939,40.991,0.6147,0.8499,0.0154,0.1491,30.27,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.943,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20940,24.692,0.6152,0.7986,0.0208,0.1208,23.45,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.9388,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20941,52.598,0.7092,0.6685,0.0187,0.1227,38.91,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8807,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20942,29.87,0.746,0.4034,0.0175,0.1185,23.28,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.8795,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20943,63.966,0.3278,0.2756,0.0602,0.2719,21.26,Natural,Organic,No,0,0.0972,89,LOW,Authentic Voice Content
+AUD-20944,80.757,0.1858,0.1612,0.0973,0.4902,16.43,Natural,Organic,No,0,0.0172,99,LOW,Authentic Voice Content
+AUD-20945,54.849,0.7424,0.6497,0.0173,0.1544,30.19,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8603,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20946,43.713,0.6684,0.7445,0.0437,0.2082,29.54,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.7462,19,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20947,42.936,0.668,0.7517,0.0263,0.1207,25.05,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9619,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20948,89.604,0.1346,0.1345,0.0557,0.4363,17.65,Natural,Organic,No,0,0.0144,99,LOW,Authentic Voice Content
+AUD-20949,101.897,0.1221,0.2695,0.0724,0.5396,19.77,Natural,Organic,No,0,0.1166,85,LOW,Authentic Voice Content
+AUD-20950,82.506,0.2233,0.1384,0.1039,0.4854,21.46,Natural,Organic,No,0,0.0861,87,LOW,Authentic Voice Content
+AUD-20951,27.965,0.8607,0.9309,0.0197,0.1761,25.65,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7975,15,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20952,47.281,0.3947,0.8093,0.0335,0.1631,35.57,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9115,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20953,41.739,0.7444,0.7028,0.0346,0.142,33.43,Synthetic Phase,Synthetic Floor,Yes (Neural Vocoder),1,0.8755,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20954,42.831,0.74,0.8575,0.0277,0.1228,28.79,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20955,30.86,0.639,0.6689,0.0176,0.0631,29.12,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8876,14,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20956,62.012,0.1314,0.1974,0.0455,0.4592,15.15,Natural,Organic,No,0,0.1498,85,LOW,Authentic Voice Content
+AUD-20957,35.459,0.6963,0.6382,0.0283,0.1451,26.71,Synthetic Phase,Artificial Dither,Yes (Neural Vocoder),1,0.8618,16,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20958,92.533,0.273,0.215,0.0602,0.4942,14.56,Natural,Organic,No,0,0.0445,91,LOW,Authentic Voice Content
+AUD-20959,39.475,0.55,0.5922,0.0372,0.119,30.85,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.871,21,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20960,92.59,0.2676,0.1331,0.0705,0.3227,18.72,Natural,Organic,No,0,0.0876,95,LOW,Authentic Voice Content
+AUD-20961,44.097,0.8245,0.6694,0.0265,0.1318,25.16,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.8513,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20962,67.494,0.3389,0.1685,0.0932,0.451,19.33,Natural,Organic,No,0,0.1472,87,LOW,Authentic Voice Content
+AUD-20963,103.613,0.2131,0.2142,0.0943,0.5028,6.37,Natural,Organic,No,0,0.0777,91,LOW,Authentic Voice Content
+AUD-20964,91.228,0.1583,0.046,0.0659,0.5424,14.58,Natural,Organic,No,0,0.0497,89,LOW,Authentic Voice Content
+AUD-20965,13.399,0.64,0.6498,0.0045,0.1722,19.72,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.8866,10,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20966,80.337,0.2466,0.0988,0.1042,0.4263,20.35,Natural,Organic,No,0,0.0304,95,LOW,Authentic Voice Content
+AUD-20967,32.336,0.7719,0.6541,0.0318,0.1242,32.64,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7902,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20968,98.921,0.3237,0.17,0.1037,0.4746,15.38,Natural,Organic,No,0,0.1589,82,LOW,Authentic Voice Content
+AUD-20969,78.483,0.1817,0.1968,0.1109,0.4042,16.16,Natural,Organic,No,0,0.046,94,LOW,Authentic Voice Content
+AUD-20970,73.302,0.0528,0.2027,0.1184,0.5939,23.12,Natural,Organic,No,0,0.109,91,LOW,Authentic Voice Content
+AUD-20971,95.509,0.1846,0.2573,0.067,0.4933,15.66,Natural,Organic,No,0,0.0919,90,LOW,Authentic Voice Content
+AUD-20972,51.497,0.6543,0.6708,0.02,0.1214,27.59,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.9306,8,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20973,45.654,0.4436,0.5774,0.0168,0.1462,30.4,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9189,15,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20974,74.171,0.3055,0.1543,0.0963,0.6559,21.02,Natural,Organic,No,0,0.1397,83,LOW,Authentic Voice Content
+AUD-20975,34.33,0.5961,0.8431,0.024,0.1383,30.29,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.8576,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20976,38.503,0.7661,0.6649,0.0296,0.1311,27.29,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.914,11,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20977,33.951,0.4804,0.6825,0.0179,0.1472,21.35,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20978,42.396,0.7485,0.7191,0.0225,0.1304,28.87,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.9043,9,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20979,59.521,0.2288,0.2204,0.0665,0.3278,17.36,Natural,Organic,No,0,0.1191,87,LOW,Authentic Voice Content
+AUD-20980,28.153,0.7897,0.9447,0.022,0.1447,42.46,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.714,25,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20981,56.334,0.2869,0.1856,0.0839,0.3374,17.71,Natural,Organic,No,0,0.0952,96,LOW,Authentic Voice Content
+AUD-20982,75.644,0.1326,0.2116,0.118,0.4176,12.13,Natural,Organic,No,0,0.0778,96,LOW,Authentic Voice Content
+AUD-20983,107.73,0.1143,0.1392,0.0773,0.5806,19.52,Natural,Organic,No,0,0.1927,80,LOW,Authentic Voice Content
+AUD-20984,83.607,0.2796,0.109,0.0666,0.5601,15.22,Natural,Organic,No,0,0.0149,99,LOW,Authentic Voice Content
+AUD-20985,43.269,0.7174,0.7982,0.0304,0.0527,24.68,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.8543,24,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20986,83.224,0.0375,0.1815,0.071,0.5153,15.61,Natural,Organic,No,0,0.1638,86,LOW,Authentic Voice Content
+AUD-20987,49.28,0.8009,0.9881,0.0348,0.1162,25.16,Vocoder Residual,Synthetic Floor,Yes (Neural Vocoder),1,0.7715,22,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20988,87.0,0.1523,0.3143,0.0697,0.3577,22.16,Natural,Organic,No,0,0.0388,96,LOW,Authentic Voice Content
+AUD-20989,88.325,0.1526,0.119,0.0992,0.251,17.83,Natural,Organic,No,0,0.0483,98,LOW,Authentic Voice Content
+AUD-20990,44.689,0.8041,0.5712,0.0406,0.126,15.26,Vocoder Residual,Digital Void,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20991,41.919,0.6051,0.7828,0.0264,0.0879,26.34,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.9555,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20992,71.988,0.3236,0.1357,0.1144,0.3333,12.41,Natural,Organic,No,0,0.0414,95,LOW,Authentic Voice Content
+AUD-20993,69.592,0.3046,0.0544,0.07,0.6754,17.32,Natural,Organic,No,0,0.0142,96,LOW,Authentic Voice Content
+AUD-20994,43.933,0.7824,0.8422,0.0233,0.0024,21.66,Anomalous Harmonic,Synthetic Floor,Yes (Neural Vocoder),1,0.9273,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20995,24.524,0.5868,0.6465,0.0309,0.0982,28.21,Vocoder Residual,Artificial Dither,Yes (Neural Vocoder),1,0.99,4,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20996,56.2,0.7095,0.6958,0.0299,0.1427,34.88,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.7318,30,HIGH,Synthetic Voice / Deepfake Audio
+AUD-20997,50.724,0.5553,0.7419,0.0166,0.1354,25.95,Synthetic Phase,Digital Void,Yes (Neural Vocoder),1,0.9214,7,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20998,47.532,0.5864,0.704,0.0363,0.1519,26.78,Anomalous Harmonic,Digital Void,Yes (Neural Vocoder),1,0.8652,13,CRITICAL,Synthetic Voice / Deepfake Audio
+AUD-20999,99.458,0.2008,0.2034,0.0812,0.4796,22.09,Natural,Organic,No,0,0.1305,82,LOW,Authentic Voice Content

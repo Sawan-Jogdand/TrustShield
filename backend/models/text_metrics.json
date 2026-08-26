@@ -1,0 +1,377 @@
+{
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          120,
+          0
+        ],
+        [
+          0,
+          120
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1167,
+        0.2167,
+        0.3333,
+        0.4417,
+        0.5667,
+        0.6667,
+        0.775,
+        0.9
+      ],
+      "tpr": [
+        0.0,
+        0.0167,
+        0.0417,
+        0.0833,
+        0.1917,
+        0.225,
+        0.25,
+        0.275,
+        0.3167,
+        0.3417,
+        0.4083,
+        0.4333,
+        0.4833,
+        0.5083,
+        0.5417,
+        0.6,
+        0.6417,
+        0.6667,
+        0.75,
+        0.9167,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          120,
+          0
+        ],
+        [
+          0,
+          120
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0333,
+        0.0917,
+        0.175,
+        0.2333,
+        0.375,
+        0.5667,
+        0.8333,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.0333,
+        0.1,
+        0.1417,
+        0.1833,
+        0.225,
+        0.2667,
+        0.3333,
+        0.4167,
+        0.45,
+        0.475,
+        0.5417,
+        0.625,
+        0.675,
+        0.7667,
+        0.8167,
+        0.875,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          120,
+          0
+        ],
+        [
+          0,
+          120
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.075,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.8333,
+        0.9083,
+        0.975,
+        0.9917,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "TrustShield NLP Ensemble": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          120,
+          0
+        ],
+        [
+          0,
+          120
+        ]
+      ]
+    }
+  },
+  "top_features": {
+    "scam_indicators": [
+      {
+        "word": "http",
+        "weight": 1.4145
+      },
+      {
+        "word": "000",
+        "weight": 1.3141
+      },
+      {
+        "word": "claim",
+        "weight": 1.2202
+      },
+      {
+        "word": "immediately",
+        "weight": 1.0968
+      },
+      {
+        "word": "update",
+        "weight": 1.0657
+      },
+      {
+        "word": "https",
+        "weight": 1.042
+      },
+      {
+        "word": "urgent",
+        "weight": 1.0121
+      },
+      {
+        "word": "tax",
+        "weight": 0.9219
+      },
+      {
+        "word": "giveaway",
+        "weight": 0.8928
+      },
+      {
+        "word": "daily",
+        "weight": 0.8867
+      },
+      {
+        "word": "login",
+        "weight": 0.8739
+      },
+      {
+        "word": "crypto",
+        "weight": 0.8641
+      },
+      {
+        "word": "online",
+        "weight": 0.8339
+      },
+      {
+        "word": "kyc",
+        "weight": 0.8175
+      },
+      {
+        "word": "usps",
+        "weight": 0.7818
+      },
+      {
+        "word": "verify",
+        "weight": 0.7367
+      },
+      {
+        "word": "alert",
+        "weight": 0.7356
+      },
+      {
+        "word": "bank security",
+        "weight": 0.6855
+      },
+      {
+        "word": "500",
+        "weight": 0.6818
+      },
+      {
+        "word": "telegram",
+        "weight": 0.6729
+      }
+    ],
+    "legit_indicators": [
+      {
+        "word": "pm",
+        "weight": 1.6896
+      },
+      {
+        "word": "meeting",
+        "weight": 1.6617
+      },
+      {
+        "word": "00",
+        "weight": 1.6329
+      },
+      {
+        "word": "10",
+        "weight": 1.6026
+      },
+      {
+        "word": "00 pm",
+        "weight": 1.4132
+      },
+      {
+        "word": "code",
+        "weight": 1.2394
+      },
+      {
+        "word": "app",
+        "weight": 1.1609
+      },
+      {
+        "word": "official",
+        "weight": 1.1609
+      },
+      {
+        "word": "tomorrow",
+        "weight": 1.0577
+      },
+      {
+        "word": "resolved rate",
+        "weight": 1.0299
+      },
+      {
+        "word": "reaching",
+        "weight": 1.0299
+      },
+      {
+        "word": "rate service",
+        "weight": 1.0299
+      },
+      {
+        "word": "ticket",
+        "weight": 1.0299
+      },
+      {
+        "word": "resolved",
+        "weight": 1.0299
+      },
+      {
+        "word": "rate",
+        "weight": 1.0299
+      },
+      {
+        "word": "reaching customer",
+        "weight": 1.0299
+      },
+      {
+        "word": "customer support",
+        "weight": 1.0299
+      },
+      {
+        "word": "thanks",
+        "weight": 1.0299
+      },
+      {
+        "word": "thanks reaching",
+        "weight": 1.0299
+      },
+      {
+        "word": "support ticket",
+        "weight": 1.0299
+      }
+    ]
+  },
+  "dataset_size": 1200
+}

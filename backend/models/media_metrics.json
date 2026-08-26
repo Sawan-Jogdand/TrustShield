@@ -1,0 +1,120 @@
+{
+  "metrics": {
+    "Forensic Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          149,
+          0
+        ],
+        [
+          0,
+          151
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0201,
+        0.0336,
+        0.0403,
+        0.0537,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.9536,
+        0.9801,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Gradient Boosting Forensics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          149,
+          0
+        ],
+        [
+          0,
+          151
+        ]
+      ],
+      "fpr": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "lighting_inconsistency",
+      "importance": 0.3629
+    },
+    {
+      "feature": "facial_symmetry_deviation",
+      "importance": 0.2408
+    },
+    {
+      "feature": "noise_pattern_residual",
+      "importance": 0.1765
+    },
+    {
+      "feature": "ela_difference_mean",
+      "importance": 0.0904
+    },
+    {
+      "feature": "fft_high_freq_ratio",
+      "importance": 0.0609
+    },
+    {
+      "feature": "color_space_variance",
+      "importance": 0.0419
+    },
+    {
+      "feature": "edge_blending_score",
+      "importance": 0.0266
+    },
+    {
+      "feature": "blink_rate_anomaly",
+      "importance": 0.0001
+    },
+    {
+      "feature": "temporal_jitter",
+      "importance": 0.0
+    }
+  ],
+  "features": [
+    "edge_blending_score",
+    "facial_symmetry_deviation",
+    "lighting_inconsistency",
+    "ela_difference_mean",
+    "fft_high_freq_ratio",
+    "noise_pattern_residual",
+    "color_space_variance",
+    "temporal_jitter",
+    "blink_rate_anomaly"
+  ],
+  "dataset_size": 1500
+}
