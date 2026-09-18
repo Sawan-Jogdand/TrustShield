@@ -11,6 +11,13 @@ from pydantic import BaseModel
 
 from ml.forensic_engine import TrustShieldForensicEngine
 
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from main import app
+
 app = FastAPI(title="Trust Shield Multimodal Scam & Deepfake Detection API", version="2.0.0")
 
 # Enable CORS for frontend development
@@ -177,28 +184,33 @@ async def analyze_media_endpoint(
     is_fake: Optional[bool] = Form(None),
     file: Optional[UploadFile] = File(None)
 ):
-    modality_lower = modality.lower()
+    modality_lower = modality.lower().strip()
     file_bytes = None
     if file:
         file_bytes = await file.read()
         target_name = file.filename
     else:
-        target_name = filename or ("Image_1.jpeg" if modality_lower == "image" else ("Video_2.mp4" if modality_lower == "video" else "Audio_3.wav"))
+        target_name = filename or ("Image_1.jpeg" if any(k in modality_lower for k in ["img", "image"]) else ("Video_2.mp4" if any(k in modality_lower for k in ["vid", "video"]) else "Audio_3.wav"))
 
-    if "image" in modality_lower:
+    if any(k in modality_lower for k in ["img", "image"]):
         result = TrustShieldForensicEngine.analyze_image(image_bytes=file_bytes, filename=target_name, is_fake_preset=is_fake)
-    elif "video" in modality_lower:
+    elif any(k in modality_lower for k in ["vid", "video"]):
         result = TrustShieldForensicEngine.analyze_video(video_bytes=file_bytes, filename=target_name, is_fake_preset=is_fake)
-    elif "audio" in modality_lower:
+    elif any(k in modality_lower for k in ["aud", "audio"]):
         result = TrustShieldForensicEngine.analyze_audio(audio_bytes=file_bytes, filename=target_name, is_fake_preset=is_fake)
+    elif any(k in modality_lower for k in ["txt", "text"]):
+        text_content = file_bytes.decode('utf-8', errors='ignore') if file_bytes else (filename or "")
+        result = TrustShieldForensicEngine.analyze_text(text_content)
+        result["target"] = target_name
     else:
-        raise HTTPException(status_code=400, detail=f"Unsupported media modality: {modality}")
+        # Fallback to image analyzer if unknown
+        result = TrustShieldForensicEngine.analyze_image(image_bytes=file_bytes, filename=target_name, is_fake_preset=is_fake)
 
     result["id"] = f"REP-TS-{uuid.uuid4().hex[:6].upper()}"
     result["timestamp"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     result["target"] = target_name
     result["operator"] = "Trust Shield Forensic Analyst"
-    result["status"] = "Threat Flagged" if result["prediction"] in ["FAKE", "SCAM"] else "Verified Clean"
+    result["status"] = "Threat Flagged" if result.get("prediction") in ["FAKE", "SCAM"] else "Verified Clean"
     
     # Auto-save report
     save_report_item(result)

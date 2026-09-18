@@ -3,6 +3,47 @@
    All classes are prefixed with  ts-  to avoid site collisions.
    ═══════════════════════════════════════════════════════════════════ */
 
+/* ── Flagged WhatsApp Sidebar Chat List Preview ─────────────────── */
+
+.ts-chatlist-scam-preview {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  padding: 1px 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  font-weight: 500 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 4px rgba(220, 38, 38, 0.4) !important;
+  transition: all 0.2s ease !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+}
+
+.ts-chatlist-scam-preview * {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.ts-chatlist-scam-preview span {
+  color: #ffffff !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+.ts-chatlist-scam-preview svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  flex-shrink: 0 !important;
+}
+
 /* ── Flagged WhatsApp Message Bubble ────────────────────────────── */
 
 .ts-flagged-bubble {

@@ -25,8 +25,12 @@
         "https://web.whatsapp.com/*",
         "https://*.web.whatsapp.com/*"
       ],
-      "js": ["whatsapp_content.js"],
-      "css": ["content.css"]
+      "js": [
+        "whatsapp_content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
     },
     {
       "matches": [
@@ -35,8 +39,12 @@
         "https://outlook.office.com/*",
         "https://outlook.office365.com/*"
       ],
-      "js": ["email_content.js"],
-      "css": ["content.css"]
+      "js": [
+        "email_content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
     }
   ],
   "action": {

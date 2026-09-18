@@ -52,29 +52,97 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
     }
   };
 
+  // Trigger Forensic Neural Analysis
+  const triggerAnalysis = async (fileToScan, modalityToScan, customText) => {
+    const file = fileToScan || uploadedFile;
+    const mod = modalityToScan || activeModality;
+    const text = customText !== undefined ? customText : inputText;
+
+    if (!file && (!text.trim() || mod !== 'TEXT')) return;
+
+    setIsScanning(true);
+    setScanProgress(0);
+
+    const progressTimer = setInterval(() => {
+      setScanProgress((prev) => {
+        if (prev >= 90) {
+          clearInterval(progressTimer);
+          return 90;
+        }
+        return prev + 20;
+      });
+    }, 100);
+
+    try {
+      if (mod === 'TEXT') {
+        const textToAnalyze = text.trim();
+        const res = await fetch('/api/analyze/text', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: textToAnalyze })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setActiveAnalysis(data);
+          if (onSetCurrentReport) onSetCurrentReport(data);
+        }
+      } else {
+        const formData = new FormData();
+        formData.append('modality', mod);
+        formData.append('filename', file ? file.name : `file_${Date.now()}`);
+        if (file) {
+          formData.append('file', file);
+        }
+        const res = await fetch('/api/analyze/media', {
+          method: 'POST',
+          body: formData
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setActiveAnalysis(data);
+          if (onSetCurrentReport) onSetCurrentReport(data);
+        } else {
+          console.error('Media analysis API returned error:', res.status, res.statusText);
+        }
+      }
+    } catch (e) {
+      console.log('Error during neural scan:', e);
+    } finally {
+      setTimeout(() => {
+        setScanProgress(100);
+        setIsScanning(false);
+      }, 400);
+    }
+  };
+
   // Handle File Selection
   const handleFileChange = (file) => {
     if (!file) return;
     setUploadedFile(file);
     const url = URL.createObjectURL(file);
     setFilePreviewUrl(url);
-    setActiveAnalysis(null);
 
-    // Auto-detect modality tab
+    let detectedMod = activeModality;
     if (file.type.startsWith('image/')) {
+      detectedMod = 'IMG';
       setActiveModality('IMG');
     } else if (file.type.startsWith('video/')) {
+      detectedMod = 'VID';
       setActiveModality('VID');
     } else if (file.type.startsWith('audio/')) {
+      detectedMod = 'AUD';
       setActiveModality('AUD');
     } else if (file.type.startsWith('text/') || file.name.endsWith('.txt') || file.name.endsWith('.csv')) {
+      detectedMod = 'TXT';
       setActiveModality('TXT');
-    } else if (file.type.startsWith('text/')) {
-      setActiveModality('TEXT');
-      const reader = new FileReader();
-      reader.onload = (e) => setInputText(e.target.result);
-      reader.readAsText(file);
     }
+
+    // Automatically trigger forensic neural analysis upon upload
+    triggerAnalysis(file, detectedMod);
+  };
+
+  const handleRunAnalysis = () => {
+    triggerAnalysis();
   };
 
   const handleRemoveFile = () => {
@@ -103,62 +171,6 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
     setIsDragOver(false);
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       handleFileChange(e.dataTransfer.files[0]);
-    }
-  };
-
-  // Run Forensic Neural Analysis
-  const handleRunAnalysis = async () => {
-    if (!uploadedFile && (!inputText.trim() || activeModality !== 'TEXT')) return;
-    setIsScanning(true);
-    setScanProgress(0);
-
-    const progressTimer = setInterval(() => {
-      setScanProgress((prev) => {
-        if (prev >= 90) {
-          clearInterval(progressTimer);
-          return 90;
-        }
-        return prev + 18;
-      });
-    }, 120);
-
-    try {
-      if (activeModality === 'TEXT') {
-        const textToAnalyze = inputText.trim();
-        const res = await fetch('/api/analyze/text', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text: textToAnalyze })
-        });
-        if (res.ok) {
-          const data = await res.json();
-          setActiveAnalysis(data);
-          if (onSetCurrentReport) onSetCurrentReport(data);
-        }
-      } else {
-        const formData = new FormData();
-        formData.append('modality', activeModality);
-        formData.append('filename', uploadedFile ? uploadedFile.name : `file_${Date.now()}`);
-        if (uploadedFile) {
-          formData.append('file', uploadedFile);
-        }
-        const res = await fetch('/api/analyze/media', {
-          method: 'POST',
-          body: formData
-        });
-        if (res.ok) {
-          const data = await res.json();
-          setActiveAnalysis(data);
-          if (onSetCurrentReport) onSetCurrentReport(data);
-        }
-      }
-    } catch (e) {
-      console.log('Error during neural scan:', e);
-    } finally {
-      setTimeout(() => {
-        setScanProgress(100);
-        setIsScanning(false);
-      }, 500);
     }
   };
 
@@ -348,36 +360,43 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
 
             </div>
 
-            {/* Target Filename & Replace Trigger */}
-            <div className="flex items-center justify-between text-xs pt-1">
-              <span className="font-semibold text-slate-700 font-mono truncate max-w-[220px]">
-                {uploadedFile ? uploadedFile.name : (inputText ? 'Text Input Buffer' : 'No File Selected')}
-              </span>
+            {/* Target Filename & Replace Trigger (Only visible when a file is selected) */}
+            {uploadedFile && (
+              <div className="flex items-center justify-between text-xs py-2 px-3 bg-slate-50 border border-slate-200/80 rounded-xl">
+                <div className="flex items-center gap-2 truncate">
+                  <FileCheck className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                  <span className="font-semibold text-slate-800 font-mono truncate max-w-[200px]">
+                    {uploadedFile.name}
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-sans">
+                    ({(uploadedFile.size / 1024).toFixed(1)} KB)
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-3">
-                {(uploadedFile || inputText) && (
+                <div className="flex items-center gap-3">
                   <button
+                    type="button"
                     onClick={handleRemoveFile}
-                    className="text-rose-600 hover:text-rose-700 font-bold flex items-center gap-1"
+                    className="text-rose-600 hover:text-rose-700 font-bold flex items-center gap-1 cursor-pointer transition-colors"
                   >
                     <Trash2 className="w-3.5 h-3.5" />
                     <span>Remove</span>
                   </button>
-                )}
 
-                <label className="text-sky-600 hover:text-sky-700 font-bold cursor-pointer hover:underline flex items-center gap-1">
-                  <UploadCloud className="w-3.5 h-3.5" />
-                  <span>{uploadedFile ? 'Replace' : 'Upload File'}</span>
-                  <input
-                    ref={fileInputRef}
-                    type="file"
-                    onChange={(e) => handleFileChange(e.target.files[0])}
-                    className="hidden"
-                    accept={getAcceptedExtensions()}
-                  />
-                </label>
+                  <label className="text-sky-600 hover:text-sky-700 font-bold cursor-pointer hover:underline flex items-center gap-1 transition-colors">
+                    <UploadCloud className="w-3.5 h-3.5" />
+                    <span>Replace</span>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      onChange={(e) => handleFileChange(e.target.files[0])}
+                      className="hidden"
+                      accept={getAcceptedExtensions()}
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* "Initialize Neural Analysis" Button (Matching Reference Design) */}
             <button

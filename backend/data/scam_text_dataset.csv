@@ -96,6 +96,7 @@ Thanks for reaching out to customer support. Your ticket #67068 has been resolve
 "Reminder: Your dentist appointment with Dr. Smith is scheduled for tomorrow at 2:30 PM. Reply 1 to confirm, 2 to reschedule.",Legitimate Service,0,0.224,LOW
 "Dear Customer, Your debit card ending in 8503 is locked. Click http://usps-delivery-portal.cc to update KYC within 24 hours.",Banking Phishing,1,0.8,HIGH
 Your monthly bank statement for account ending in 5468 is now ready to view in the official mobile banking app.,Legitimate Banking,0,0.34,LOW
+
 Zoom meeting invitation: Weekly Engineering Sync on Thursday at 3:00 PM EST. Join with meeting ID 3822.,Legitimate Work,0,0.32,LOW
 "Reminder: Your dentist appointment with Dr. Smith is scheduled for tomorrow at 2:30 PM. Reply 1 to confirm, 2 to reschedule.",Legitimate Service,0,0.227,LOW
 Thanks for reaching out to customer support. Your ticket #82924 has been resolved. Please rate our service.,Legitimate Support,0,0.062,LOW

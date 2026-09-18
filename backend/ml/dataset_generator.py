@@ -9,56 +9,85 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # 1. TEXT SCAM DATASET GENERATION
-def generate_text_dataset(n_samples=1200):
+def generate_text_dataset(n_samples=1600):
     scam_templates = [
         # Banking & KYC Scams
         ("URGENT: Your {bank} account has been suspended due to suspicious activity. Verify immediately at {url} to avoid permanent deactivation.", "Banking Phishing", 1),
-        ("Dear Customer, Your debit card ending in {digits} is locked. Click {url} to update KYC within 24 hours.", "Banking Phishing", 1),
-        ("ALERT: An unauthorized transaction of ${amount} was attempted on your account. If this was not you, cancel it now at {url}.", "Banking Phishing", 1),
-        ("{bank} Security: Unusual login from {country}. Confirm your identity now at {url} to prevent account freeze.", "Banking Phishing", 1),
+        ("Dear Customer, Your debit card ending in {digits} is locked due to pending KYC. Click {url} to update within 24 hours.", "Banking Phishing", 1),
+        ("ALERT: An unauthorized transaction of ${amount} was attempted on your account. If this was not you, cancel it immediately at {url}.", "Banking Phishing", 1),
+        ("{bank} Security Alert: Unusual login from {country}. Confirm your identity now at {url} to prevent immediate account freeze.", "Banking Phishing", 1),
+        ("Your NetBanking access is blocked. Complete mandatory PAN-KYC verification at {url} within 12 hours to restore services.", "Banking Phishing", 1),
         
         # Crypto & Investment Fraud
         ("Guaranteed 450% return in 48 hours! Join our automated crypto arbitrage pool today. Send {crypto_amount} ETH to {wallet} and start earning.", "Crypto Investment Scam", 1),
-        ("Congratulations! You've been whitelisted for the Exclusive {crypto} Airdrop. Claim your free $5,000 token grant at {url}.", "Crypto Investment Scam", 1),
+        ("Official Airdrop: You've been whitelisted for the Exclusive {crypto} Token Grant. Connect your wallet and claim at {url}.", "Crypto Investment Scam", 1),
         ("Invest $200 today and receive $3,500 daily guaranteed passive income! Contact our VIP forex manager on Telegram @{handle}.", "Crypto Investment Scam", 1),
-        ("Tesla & Elon Musk 100M Crypto Giveaway! Send 0.1 BTC to receive 0.5 BTC back immediately: {url}", "Crypto Investment Scam", 1),
+        ("Tesla & Elon Musk 100M Crypto Giveaway! Send 0.1 BTC to receive 0.5 BTC back immediately at {url}.", "Crypto Investment Scam", 1),
+        ("Double your Bitcoin in 24 hours. Automated smart contract payout verified. Deposit to wallet {wallet} now.", "Crypto Investment Scam", 1),
         
         # Lottery, Prize & Gift Fraud
-        ("WINNER! You have won the {country} Mega Millions International Draw of ${lottery_amount}! Call {phone} immediately with code WIN{digits} to claim.", "Lottery / Prize Fraud", 1),
-        ("Amazon Notification: Your mobile number was selected for an iPhone 15 Pro giveaway. Claim within 10 minutes at {url}.", "Lottery / Prize Fraud", 1),
-        ("Walmart Reward: You have a pending voucher worth $1,000. Complete this short survey at {url} before expiration.", "Lottery / Prize Fraud", 1),
+        ("WINNER! You have won the {country} Mega Millions International Draw of ${lottery_amount}! Call {phone} with code WIN{digits} to claim your prize.", "Lottery / Prize Fraud", 1),
+        ("Amazon Reward Center: Your mobile number won an iPhone 15 Pro. Claim your reward within 10 minutes at {url}.", "Lottery / Prize Fraud", 1),
+        ("Walmart Promotion: You have a pending voucher worth $1,000. Complete this claim form at {url} before expiration.", "Lottery / Prize Fraud", 1),
+        ("Congratulations! You are the 1,000,000th visitor today. Claim your $500 cash gift card now at {url}.", "Lottery / Prize Fraud", 1),
         
         # Job & Work-from-Home Scams
-        ("Part-time Online Job Offer: Earn $300-$800 daily by rating hotels/apps on your phone for 1 hour. No experience required. WhatsApp: {phone}", "Fake Job Offer", 1),
-        ("HR Global Recruiter: You have been shortlisted for Remote Data Entry role paying $65/hr. Pay registration fee $49 at {url} to get started.", "Fake Job Offer", 1),
-        ("Immediate hiring for Amazon Product Reviewer. Daily payout $500. Message Telegram @{handle} for instant onboarding.", "Fake Job Offer", 1),
+        ("Part-time Online Job Offer: Earn $300-$800 daily by rating hotels and YouTube videos on your phone. No experience needed. Contact WhatsApp: {phone}", "Fake Job Offer", 1),
+        ("HR Global Recruiter: You are shortlisted for Remote Data Entry role paying $65/hr. Pay registration fee $49 at {url} to get started.", "Fake Job Offer", 1),
+        ("Immediate hiring for Product Reviewer. Daily payout $500 directly to bank. Message Telegram @{handle} for instant onboarding.", "Fake Job Offer", 1),
+        ("Work 30 minutes a day from home and earn $2,000 weekly. Sign up now and pay refundable deposit at {url}.", "Fake Job Offer", 1),
         
         # Impersonation & Extortion
-        ("IRS / Tax Notice: A federal warrant is issued for tax evasion. Call {phone} immediately or law enforcement will be dispatched.", "Impersonation / Extortion", 1),
-        ("This is the Chief Financial Officer. I am in an urgent meeting and need you to purchase 5x $100 Apple Gift Cards and email the codes.", "Executive Impersonation", 1),
-        ("Package Delivery Failed: USPS tracking #{tracking} is held at terminal due to unpaid duty fees of $2.30. Pay at {url}.", "Delivery Phishing", 1),
-        ("Netflix Member Alert: We could not process your latest payment. Update billing details at {url} to avoid service cancellation.", "Subscription Phishing", 1)
+        ("IRS / Tax Notice: A federal warrant has been issued for tax evasion. Call {phone} immediately or law enforcement will be dispatched.", "Impersonation / Extortion", 1),
+        ("This is your CFO. I am in an urgent confidential meeting and need you to purchase 5x $100 Apple Gift Cards and email the PIN codes immediately.", "Executive Impersonation", 1),
+        ("USPS Package Exception: Package #{tracking} is held at terminal due to unpaid address redelivery fee of $2.30. Update details at {url}.", "Delivery Phishing", 1),
+        ("Netflix Member Alert: We could not process your latest payment. Update your billing details at {url} to avoid immediate service cancellation.", "Subscription Phishing", 1)
     ]
     
     authentic_templates = [
-        ("Hi team, please find the quarterly performance slide deck attached for tomorrow's review meeting.", "Legitimate Business", 0),
-        ("Your verification code for {service} is {otp}. This code will expire in 10 minutes. Do not share it with anyone.", "Legitimate OTP", 0),
-        ("Your order #{order_id} has been shipped via FedEx. Expected delivery is Friday by 5:00 PM. Track at official app.", "Legitimate E-commerce", 0),
-        ("Reminder: Your dentist appointment with Dr. Smith is scheduled for tomorrow at 2:30 PM. Reply 1 to confirm, 2 to reschedule.", "Legitimate Service", 0),
-        ("Your monthly bank statement for account ending in {digits} is now ready to view in the official mobile banking app.", "Legitimate Banking", 0),
+        # Daily Conversations & WhatsApp Chats
         ("Hey, are we still meeting for lunch at the cafeteria around 1:00 PM today?", "Legitimate Personal", 0),
-        ("GitHub: A new security advisory was published for your repository. Check security tab for details.", "Legitimate Notification", 0),
+        ("Hi bro, I reached home safely. Let me know when you are free to talk.", "Legitimate Personal", 0),
+        ("Can you send me the lecture notes for today's class whenever you get a chance?", "Legitimate Personal", 0),
+        ("Happy Birthday! Wishing you a fantastic year ahead filled with happiness and success.", "Legitimate Personal", 0),
+        ("Ok, see you tomorrow morning at the office.", "Legitimate Personal", 0),
+        ("I'm running about 10 minutes late due to traffic, please start without me.", "Legitimate Personal", 0),
+        ("Did you watch the match last night? What an incredible finish!", "Legitimate Personal", 0),
+        ("Thanks a lot for the help yesterday, really appreciate it!", "Legitimate Personal", 0),
+        ("Sure thing, I will check the document and get back to you by evening.", "Legitimate Personal", 0),
+        ("Call me when you are free.", "Legitimate Personal", 0),
+        ("Where are you guys sitting? I just entered the venue.", "Legitimate Personal", 0),
+        ("Let's plan a trip this weekend. What do you think?", "Legitimate Personal", 0),
+        ("Br", "Legitimate Personal", 0),
+        ("Sounds good!", "Legitimate Personal", 0),
+        ("Good morning! Have a great day ahead.", "Legitimate Personal", 0),
+        ("Yes, I got the file you sent on WhatsApp.", "Legitimate Personal", 0),
+        ("Check the Telegram group for the assignment pdf.", "Legitimate Personal", 0),
+        
+        # Legitimate Business & Work
+        ("Hi team, please find the quarterly performance slide deck attached for tomorrow's review meeting.", "Legitimate Business", 0),
+        ("Zoom meeting invitation: Weekly Engineering Sync on Thursday at 3:00 PM EST. Join with meeting ID {digits}.", "Legitimate Work", 0),
         ("Google Calendar: Standup meeting starts in 10 minutes (10:00 AM - 10:15 AM).", "Legitimate Calendar", 0),
+        ("GitHub: A new pull request has been submitted for review on your repository.", "Legitimate Notification", 0),
+        ("Please review the updated project proposal before our client presentation.", "Legitimate Work", 0),
+        ("HR Update: The office will remain closed on Monday for the public holiday.", "Legitimate Business", 0),
+        ("Here is the summary notes from today's sprint planning session.", "Legitimate Work", 0),
+        
+        # Legitimate Services & Transnational Notifications
+        ("Your verification code for {service} is {otp}. Valid for 10 minutes. Do not share this OTP with anyone.", "Legitimate OTP", 0),
+        ("Your order #{order_id} has been shipped via FedEx. Expected delivery is Friday by 5:00 PM. Track in official app.", "Legitimate E-commerce", 0),
+        ("Reminder: Your dentist appointment with Dr. Smith is scheduled for tomorrow at 2:30 PM. Reply 1 to confirm.", "Legitimate Service", 0),
+        ("Your monthly bank statement for account ending in {digits} is now available in your official banking app.", "Legitimate Banking", 0),
         ("Thanks for reaching out to customer support. Your ticket #{ticket} has been resolved. Please rate our service.", "Legitimate Support", 0),
-        ("Here is the updated recipe for the chocolate cake we discussed last weekend. Let me know if you need vanilla extract.", "Legitimate Personal", 0),
         ("Payment received: You paid $42.50 at Trader Joe's using Apple Pay on {date}.", "Legitimate Transaction", 0),
-        ("Zoom meeting invitation: Weekly Engineering Sync on Thursday at 3:00 PM EST. Join with meeting ID {digits}.", "Legitimate Work", 0)
+        ("Uber receipt: Your trip with driver Alex cost $18.20 on {date}. Thank you for riding.", "Legitimate E-commerce", 0),
+        ("Flight Confirmation: Your booking #{ticket} for flight AA-204 is confirmed. Check-in opens 24h prior.", "Legitimate Travel", 0)
     ]
 
     banks = ["Chase", "Bank of America", "Wells Fargo", "Citibank", "Barclays", "HSBC", "HDFC", "State Bank", "Capital One"]
     urls = ["http://secure-verify-auth2.xyz", "https://login-update-online-service.top", "http://claim-crypto-giveaway.net", "http://usps-delivery-portal.cc", "https://bank-security-center.ru", "http://kyc-urgent-support.info"]
-    services = ["Google", "Microsoft", "Amazon", "Apple ID", "PayPal", "Twitter", "Instagram", "Uber"]
-    countries = ["United States", "Nigeria", "Russia", "Singapore", "United Kingdom", "Germany"]
+    services = ["Google", "Microsoft", "Amazon", "Apple ID", "PayPal", "Twitter", "Instagram", "Uber", "WhatsApp", "Telegram", "Netflix"]
+    countries = ["United States", "Nigeria", "Russia", "Singapore", "United Kingdom", "Germany", "India"]
     
     rows = []
     
@@ -103,7 +132,7 @@ def generate_text_dataset(n_samples=1200):
             "text": text,
             "category": category,
             "is_scam": 0,
-            "urgency_score": round(random.uniform(0.05, 0.35), 3),
+            "urgency_score": round(random.uniform(0.01, 0.20), 3),
             "threat_level": "LOW"
         })
 
