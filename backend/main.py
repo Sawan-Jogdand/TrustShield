@@ -6,6 +6,8 @@ import pandas as pd
 from datetime import datetime
 from typing import Optional, List
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -26,6 +28,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 REPORTS_FILE = os.path.join(DATA_DIR, "reports_history.json")
+
+# Static frontend assets directory resolution (production Docker /app/static or local dev ../frontend/dist)
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+if not os.path.exists(os.path.join(STATIC_DIR, "index.html")):
+    dev_static = os.path.join(BASE_DIR, "..", "frontend", "dist")
+    if os.path.exists(os.path.join(dev_static, "index.html")):
+        STATIC_DIR = os.path.abspath(dev_static)
+
+# Mount /assets if available
+if os.path.exists(os.path.join(STATIC_DIR, "assets")):
+    app.mount("/assets", StaticFiles(directory=os.path.join(STATIC_DIR, "assets")), name="assets")
 
 # In-memory / persistent reports storage
 def load_reports():
@@ -148,6 +161,18 @@ class ReportSaveRequest(BaseModel):
 
 @app.get("/")
 def read_root():
+    if os.path.exists(os.path.join(STATIC_DIR, "index.html")):
+        return FileResponse(os.path.join(STATIC_DIR, "index.html"))
+    return {
+        "system": "Trust Shield Multimodal Forensic Intelligence Engine",
+        "status": "ACTIVE",
+        "version": "2.0.0",
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api")
+@app.get("/api/health")
+def api_health():
     return {
         "system": "Trust Shield Multimodal Forensic Intelligence Engine",
         "status": "ACTIVE",
@@ -276,3 +301,20 @@ def get_report_by_id(report_id: str):
         if r.get("id") == report_id:
             return r
     raise HTTPException(status_code=404, detail="Report not found")
+
+# SPA fallback route - must be registered after all API routes
+@app.get("/{full_path:path}")
+async def serve_spa(full_path: str):
+    # Never intercept API or OpenAPI documentation routes
+    if full_path.startswith("api") or full_path in ["docs", "redoc", "openapi.json"]:
+        raise HTTPException(status_code=404, detail="Endpoint not found")
+
+    if STATIC_DIR:
+        file_path = os.path.join(STATIC_DIR, full_path)
+        if full_path and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        index_file = os.path.join(STATIC_DIR, "index.html")
+        if os.path.exists(index_file):
+            return FileResponse(index_file)
+
+    raise HTTPException(status_code=404, detail="Page not found")

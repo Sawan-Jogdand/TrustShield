@@ -20,6 +20,7 @@ import {
   Info,
   Radio
 } from 'lucide-react';
+import { API_ENDPOINTS } from '../api';
 
 // Preset sample test templates for instant testing
 const SAMPLE_PRESETS = [
@@ -288,33 +289,19 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
 
     // 2. Attempt backend API call to sync and store report history
     try {
-      const endpoints = ['/api/analyze/text', 'http://127.0.0.1:8000/api/analyze/text', 'http://localhost:8000/api/analyze/text'];
-      let serverData = null;
-      
-      for (const ep of endpoints) {
-        try {
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 1200);
-          const res = await fetch(ep, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text }),
-            signal: controller.signal
-          });
-          clearTimeout(timeoutId);
-          if (res.ok) {
-            serverData = await res.json();
-            setBackendStatus('connected');
-            break;
-          }
-        } catch {
-          // Continue to next endpoint or fallback
-        }
+      const res = await fetch(API_ENDPOINTS.ANALYZE_TEXT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+      if (res.ok) {
+        const serverData = await res.json();
+        setBackendStatus('connected');
+        setAnalysisResult(serverData);
+        if (onSetCurrentReport) onSetCurrentReport(serverData);
+      } else {
+        throw new Error(`API error: ${res.status}`);
       }
-
-      const finalResult = serverData || localResult;
-      setAnalysisResult(finalResult);
-      if (onSetCurrentReport) onSetCurrentReport(finalResult);
     } catch {
       // Fallback seamlessly to local NLP engine
       setBackendStatus('fallback');

@@ -12,6 +12,7 @@ import {
   ArrowUpDown,
   RefreshCw
 } from 'lucide-react';
+import { API_ENDPOINTS } from '../api';
 
 export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
   const [logs, setLogs] = useState([]);
@@ -22,7 +23,7 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const res = await fetch('/api/reports/history');
+        const res = await fetch(API_ENDPOINTS.REPORTS_HISTORY);
         if (res.ok) {
           setLogs(await res.json());
         }

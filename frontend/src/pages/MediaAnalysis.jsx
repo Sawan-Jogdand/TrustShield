@@ -23,6 +23,7 @@ import {
   Video,
   Music
 } from 'lucide-react';
+import { API_ENDPOINTS } from '../api';
 
 export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }) {
   const [activeModality, setActiveModality] = useState('IMG'); // IMG, VID, AUD, TEXT
@@ -76,7 +77,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
     try {
       if (mod === 'TEXT') {
         const textToAnalyze = text.trim();
-        const res = await fetch('/api/analyze/text', {
+        const res = await fetch(API_ENDPOINTS.ANALYZE_TEXT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ text: textToAnalyze })
@@ -93,7 +94,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
         if (file) {
           formData.append('file', file);
         }
-        const res = await fetch('/api/analyze/media', {
+        const res = await fetch(API_ENDPOINTS.ANALYZE_MEDIA, {
           method: 'POST',
           body: formData
         });
