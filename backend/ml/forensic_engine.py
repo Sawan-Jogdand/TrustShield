@@ -7,17 +7,30 @@ import numpy as np
 from PIL import Image
 import io
 import pytesseract
+import shutil
 
-# Configure Tesseract OCR binary path for Windows
-tesseract_candidates = [
-    r'C:\Program Files\Tesseract-OCR\tesseract.exe',
-    r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe',
-    r'C:\Users\HP\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-]
-for p in tesseract_candidates:
-    if os.path.exists(p):
-        pytesseract.pytesseract.tesseract_cmd = p
-        break
+# Configure Tesseract OCR binary path
+tesseract_path = shutil.which("tesseract")
+
+# Windows fallback paths
+if not tesseract_path:
+    tesseract_candidates = [
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+        r"C:\Users\HP\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+    ]
+
+    for path in tesseract_candidates:
+        if os.path.exists(path):
+            tesseract_path = path
+            break
+
+# Configure pytesseract
+if tesseract_path:
+    pytesseract.pytesseract.tesseract_cmd = tesseract_path
+    print(f"Tesseract found: {tesseract_path}")
+else:
+    print("Warning: Tesseract OCR executable not found.")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "..", "models")
