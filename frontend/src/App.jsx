@@ -10,6 +10,7 @@ import AuditLogs from './pages/AuditLogs';
 export default function App() {
   const [activeTab, setActiveTab] = useState('media'); // Default to Media Analysis
   const [currentReport, setCurrentReport] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleNavigateToReport = (reportData) => {
     if (reportData) {
@@ -23,14 +24,22 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex bg-[#F4F7FB] font-sans antialiased text-slate-800">
-      {/* Fixed Left Navigation Sidebar */}
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+    <div className="min-h-screen flex bg-[#F4F7FB] font-sans antialiased text-slate-800 overflow-x-hidden">
+      {/* Responsive Left Navigation Sidebar & Mobile Drawer */}
+      <Sidebar 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0 overflow-y-auto">
         {/* Top Header */}
-        <Header activeTab={activeTab} />
+        <Header 
+          activeTab={activeTab} 
+          onOpenMobileMenu={() => setIsMobileMenuOpen(true)}
+        />
 
         {/* Dynamic Page Views */}
         <main className="flex-1 pb-16">
@@ -69,7 +78,6 @@ export default function App() {
               onSetCurrentReport={handleSetCurrentReport}
             />
           )}
-
         </main>
       </div>
     </div>

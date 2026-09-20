@@ -46,16 +46,16 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
   });
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6">
       
       {/* Header */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center border border-indigo-100">
+            <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center border border-indigo-100 shrink-0">
               <History className="w-4.5 h-4.5" />
             </div>
-            <h2 className="text-xl font-bold text-slate-900">Forensic Investigation Audit Logs</h2>
+            <h2 className="text-lg sm:text-xl font-bold text-slate-900">Forensic Investigation Audit Logs</h2>
           </div>
           <p className="text-xs text-slate-500 mt-1">
             Tamper-evident chronological logs of all scanned images, video frames, voice clips, and text messages.
@@ -70,7 +70,7 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
       </div>
 
       {/* Filter & Search Bar */}
-      <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-card flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div className="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/80 shadow-card flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
         <div className="relative w-full sm:w-80">
           <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
@@ -82,13 +82,13 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
           />
         </div>
 
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-          <span className="text-xs font-bold text-slate-400">Modality:</span>
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 w-full sm:w-auto">
+          <span className="text-xs font-bold text-slate-400 mr-1">Modality:</span>
           {['ALL', 'IMAGE', 'VIDEO', 'AUDIO', 'TEXT'].map((mod) => (
             <button
               key={mod}
               onClick={() => setModalityFilter(mod)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
                 modalityFilter === mod
                   ? 'bg-sky-600 text-white shadow-xs'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
@@ -103,18 +103,18 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
       {/* Table */}
       <div className="bg-white rounded-2xl border border-slate-200/80 shadow-card overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs border-collapse">
+          <table className="w-full min-w-[760px] text-left text-xs border-collapse">
             <thead className="bg-slate-50 text-slate-500 uppercase text-[10px] font-bold tracking-wider border-b border-slate-200">
               <tr>
-                <th className="py-3 px-4">Audit Certificate</th>
-                <th className="py-3 px-4">Subject Media</th>
-                <th className="py-3 px-4">Modality</th>
-                <th className="py-3 px-4">Prediction</th>
-                <th className="py-3 px-4">Confidence</th>
-                <th className="py-3 px-4">Trust Score</th>
-                <th className="py-3 px-4">Risk Tier</th>
-                <th className="py-3 px-4">Timestamp</th>
-                <th className="py-3 px-4 text-right">Action</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Audit Certificate</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Subject Media</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Modality</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Prediction</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Confidence</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Trust Score</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Risk Tier</th>
+                <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Timestamp</th>
+                <th className="py-3 px-3 sm:px-4 text-right whitespace-nowrap">Action</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100 font-sans">
@@ -123,16 +123,16 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
                   const isFake = item.prediction === 'FAKE' || item.prediction === 'SCAM';
                   return (
                     <tr key={idx} className="hover:bg-slate-50/50">
-                      <td className="py-3 px-4 font-mono font-bold text-slate-900">{item.id}</td>
-                      <td className="py-3 px-4 font-semibold text-slate-800 max-w-[200px] truncate">
+                      <td className="py-3 px-3 sm:px-4 font-mono font-bold text-slate-900 whitespace-nowrap">{item.id}</td>
+                      <td className="py-3 px-3 sm:px-4 font-semibold text-slate-800 max-w-[200px] truncate">
                         {item.target || item.filename || 'Input Media'}
                       </td>
-                      <td className="py-3 px-4 font-mono">
+                      <td className="py-3 px-3 sm:px-4 font-mono whitespace-nowrap">
                         <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-slate-100 text-slate-700">
                           {item.modality}
                         </span>
                       </td>
-                      <td className="py-3 px-4">
+                      <td className="py-3 px-3 sm:px-4 whitespace-nowrap">
                         <span
                           className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase ${
                             isFake ? 'bg-rose-50 text-rose-700 border border-rose-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
@@ -141,17 +141,17 @@ export default function AuditLogs({ onNavigateToReport, onSetCurrentReport }) {
                           {item.prediction}
                         </span>
                       </td>
-                      <td className="py-3 px-4 font-mono font-bold text-slate-800">{item.confidence}%</td>
-                      <td className="py-3 px-4 font-mono font-extrabold text-slate-900">{item.trust_score}/100</td>
-                      <td className="py-3 px-4">
+                      <td className="py-3 px-3 sm:px-4 font-mono font-bold text-slate-800 whitespace-nowrap">{item.confidence}%</td>
+                      <td className="py-3 px-3 sm:px-4 font-mono font-extrabold text-slate-900 whitespace-nowrap">{item.trust_score}/100</td>
+                      <td className="py-3 px-3 sm:px-4 whitespace-nowrap">
                         <span className="font-bold text-xs">
                           {item.risk_level === 'CRITICAL' ? '🔴 CRITICAL' :
                            item.risk_level === 'HIGH' ? '🟠 HIGH' :
                            item.risk_level === 'MEDIUM' ? '🟡 MEDIUM' : '🟢 LOW'}
                         </span>
                       </td>
-                      <td className="py-3 px-4 text-slate-500 font-mono text-[11px]">{item.timestamp}</td>
-                      <td className="py-3 px-4 text-right">
+                      <td className="py-3 px-3 sm:px-4 text-slate-500 font-mono text-[11px] whitespace-nowrap">{item.timestamp}</td>
+                      <td className="py-3 px-3 sm:px-4 text-right whitespace-nowrap">
                         <button
                           onClick={() => {
                             if (onSetCurrentReport) onSetCurrentReport(item);

@@ -380,17 +380,17 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
   };
 
   return (
-    <div className="p-6 md:p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 md:p-8 max-w-7xl mx-auto space-y-6">
       
       {/* Header Banner */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center border border-rose-100 shadow-xs">
+            <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center border border-rose-100 shadow-xs shrink-0">
               <MessageSquareWarning className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-xl font-extrabold text-slate-900 flex items-center gap-2">
+              <h2 className="text-lg sm:text-xl font-extrabold text-slate-900 flex flex-wrap items-center gap-2">
                 <span>Communication & Text Scam Scanner</span>
                 <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-sky-50 text-sky-700 border border-sky-200">
                   NLP v2.0
@@ -404,7 +404,7 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
         </div>
 
         {/* Action Controls in Header */}
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           {/* Live Scan Toggle */}
           <button
             onClick={() => setLiveScan(!liveScan)}
@@ -439,14 +439,14 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
 
       {/* Quick Test Sample Presets Bar */}
       <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs space-y-2">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
           <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
             <Radio className="w-3.5 h-3.5 text-sky-600 animate-pulse" />
             Quick Test Examples (1-Click Presets):
           </span>
           <span className="text-[11px] text-slate-400">Click any scenario to instantly inspect threat vectors</span>
         </div>
-        <div className="flex flex-wrap gap-2 pt-1">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
           {SAMPLE_PRESETS.map((p) => (
             <button
               key={p.id}
@@ -468,7 +468,7 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
         
         {/* Left: Input Text Box (6 Cols) */}
         <div className="lg:col-span-6 space-y-4">
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
             
             <div className="flex items-center justify-between">
               <label className="text-xs font-bold uppercase tracking-wider text-slate-600 flex items-center gap-1.5">
@@ -512,7 +512,7 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
               ></textarea>
             </div>
 
-            <div className="flex items-center justify-between text-xs text-slate-400 pt-1 border-t border-slate-100">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-400 pt-1 border-t border-slate-100">
               <div className="flex items-center gap-3">
                 <span className="font-semibold text-slate-600">{inputText.length} chars</span>
                 <span>•</span>
@@ -550,20 +550,20 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
         <div className="lg:col-span-6 space-y-4">
           {analysisResult ? (
             <div
-              className={`bg-white rounded-2xl p-6 border-t-4 shadow-card space-y-4 transition-all animate-fadeIn ${
+              className={`bg-white rounded-2xl p-4 sm:p-6 border-t-4 shadow-card space-y-4 transition-all animate-fadeIn ${
                 analysisResult.prediction === 'SCAM'
                   ? 'border-t-rose-500 border-slate-200/80'
                   : 'border-t-emerald-500 border-slate-200/80'
               }`}
             >
               {/* Verdict Banner Header */}
-              <div className="flex items-start justify-between gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="text-2xl">
                       {analysisResult.prediction === 'SCAM' ? '🚨' : '✅'}
                     </span>
-                    <h3 className="text-xl font-black text-slate-900">
+                    <h3 className="text-lg sm:text-xl font-black text-slate-900">
                       {analysisResult.verdict}
                     </h3>
                   </div>
@@ -573,7 +573,7 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
                 </div>
 
                 <span
-                  className={`px-3 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shrink-0 border ${
+                  className={`px-3 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shrink-0 self-start sm:self-auto border ${
                     analysisResult.prediction === 'SCAM'
                       ? 'bg-rose-50 text-rose-700 border-rose-200'
                       : 'bg-emerald-50 text-emerald-700 border-emerald-200'
@@ -584,14 +584,14 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
               </div>
 
               {/* 3 Metric Summary Badges */}
-              <div className="grid grid-cols-3 gap-3 pt-1">
-                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
-                  <span className="text-[10px] font-bold text-slate-400 uppercase block">Confidence</span>
-                  <span className="text-lg font-black text-slate-900">{analysisResult.confidence}%</span>
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-3 pt-1">
+                <div className="p-2 sm:p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase block">Confidence</span>
+                  <span className="text-sm sm:text-lg font-black text-slate-900">{analysisResult.confidence}%</span>
                 </div>
-                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
-                  <span className="text-[10px] font-bold text-slate-400 uppercase block">Risk Level</span>
-                  <span className={`text-base font-black ${
+                <div className="p-2 sm:p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase block">Risk Level</span>
+                  <span className={`text-xs sm:text-base font-black ${
                     analysisResult.risk_level === 'CRITICAL' ? 'text-rose-600' :
                     analysisResult.risk_level === 'HIGH' ? 'text-orange-600' :
                     analysisResult.risk_level === 'MEDIUM' ? 'text-amber-600' : 'text-emerald-600'
@@ -599,9 +599,9 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
                     {analysisResult.risk_level}
                   </span>
                 </div>
-                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
-                  <span className="text-[10px] font-bold text-slate-400 uppercase block">Trust Score</span>
-                  <span className="text-lg font-black text-slate-900">{analysisResult.trust_score}/100</span>
+                <div className="p-2 sm:p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-center">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase block">Trust Score</span>
+                  <span className="text-sm sm:text-lg font-black text-slate-900">{analysisResult.trust_score}/100</span>
                 </div>
               </div>
 
@@ -688,7 +688,7 @@ export default function TextScanner({ onNavigateToReport, onSetCurrentReport }) 
 
             </div>
           ) : (
-            <div className="bg-white rounded-2xl p-12 border border-slate-200/80 shadow-card text-center space-y-4">
+            <div className="bg-white rounded-2xl p-6 sm:p-12 border border-slate-200/80 shadow-card text-center space-y-4">
               <div className="w-14 h-14 rounded-2xl bg-sky-50 text-sky-600 mx-auto flex items-center justify-center border border-sky-100 shadow-xs">
                 <Sparkles className="w-7 h-7" />
               </div>

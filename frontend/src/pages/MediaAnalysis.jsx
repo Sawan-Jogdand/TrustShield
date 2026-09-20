@@ -59,7 +59,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
     const mod = modalityToScan || activeModality;
     const text = customText !== undefined ? customText : inputText;
 
-    if (!file && (!text.trim() || mod !== 'TEXT')) return;
+    if (!file && (!text.trim() || (mod !== 'TEXT' && mod !== 'TXT'))) return;
 
     setIsScanning(true);
     setScanProgress(0);
@@ -75,7 +75,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
     }, 100);
 
     try {
-      if (mod === 'TEXT') {
+      if (mod === 'TEXT' || mod === 'TXT') {
         const textToAnalyze = text.trim();
         const res = await fetch(API_ENDPOINTS.ANALYZE_TEXT, {
           method: 'POST',
@@ -188,7 +188,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
   };
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6">
 
       {/* Main Grid: Left Upload/Preview Pane vs Right Forensic Analysis Pane */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -197,10 +197,10 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
         <div className="lg:col-span-5 space-y-5">
 
           {/* Upload Media Card (Matching Reference Image Layout) */}
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
 
             {/* Top Card Header with Tabs */}
-            <div className="flex items-center justify-between pb-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-2">
               <div className="flex items-center gap-2">
                 <FolderOpen className="w-5 h-5 text-amber-500 fill-amber-500/20" />
                 <h3 className="font-bold text-slate-900 text-base">Upload Media</h3>
@@ -224,7 +224,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
             </div>
 
             {/* Media Box: Upload Dropzone vs Active Media Preview */}
-            <div className="relative rounded-xl overflow-hidden bg-slate-950 border border-slate-850 flex items-center justify-center min-h-[260px] max-h-[320px]">
+            <div className="relative rounded-xl overflow-hidden bg-slate-950 border border-slate-850 flex items-center justify-center min-h-[240px] sm:min-h-[260px] max-h-[320px]">
 
               {/* 1. NO FILE UPLOADED STATE: UPLOAD DROPZONE */}
               {!uploadedFile && (
@@ -233,28 +233,28 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
                   onClick={() => fileInputRef.current?.click()}
-                  className={`w-full h-[270px] flex flex-col items-center justify-center p-6 text-center cursor-pointer transition-all border-2 border-dashed ${isDragOver
+                  className={`w-full min-h-[240px] sm:h-[270px] flex flex-col items-center justify-center p-4 sm:p-6 text-center cursor-pointer transition-all border-2 border-dashed ${isDragOver
                     ? 'border-sky-400 bg-sky-950/40 text-sky-200'
                     : 'border-slate-750 hover:border-sky-500/60 bg-slate-900 hover:bg-slate-850 text-slate-300'
                     }`}
                 >
-                  <div className="w-14 h-14 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-3 border border-sky-500/20 shadow-inner">
-                    {activeModality === 'IMG' && <ImageIcon className="w-7 h-7" />}
-                    {activeModality === 'VID' && <Video className="w-7 h-7" />}
-                    {activeModality === 'AUD' && <Music className="w-7 h-7" />}
-                    {activeModality === 'TXT' && <FileText className="w-7 h-7" />}
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-2.5 sm:mb-3 border border-sky-500/20 shadow-inner">
+                    {activeModality === 'IMG' && <ImageIcon className="w-6 h-6 sm:w-7 sm:h-7" />}
+                    {activeModality === 'VID' && <Video className="w-6 h-6 sm:w-7 sm:h-7" />}
+                    {activeModality === 'AUD' && <Music className="w-6 h-6 sm:w-7 sm:h-7" />}
+                    {activeModality === 'TXT' && <FileText className="w-6 h-6 sm:w-7 sm:h-7" />}
                   </div>
 
-                  <p className="text-sm font-bold text-white mb-1">
+                  <p className="text-xs sm:text-sm font-bold text-white mb-1">
                     Upload {activeModality === 'IMG' ? 'Image' : activeModality === 'VID' ? 'Video' : activeModality === 'AUD' ? 'Audio' : 'Text File'}
                   </p>
-                  <p className="text-xs text-slate-400 max-w-xs mb-3">
+                  <p className="text-[11px] sm:text-xs text-slate-400 max-w-xs mb-3">
                     Drag and drop file here or click the upload button to select from your device.
                   </p>
 
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs shadow-md shadow-sky-600/30 flex items-center gap-2 transition-transform active:scale-95"
+                    className="px-3.5 sm:px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs shadow-md shadow-sky-600/30 flex items-center gap-2 transition-transform active:scale-95"
                   >
                     <UploadCloud className="w-4 h-4" />
                     <span>Upload {activeModality} File</span>
@@ -272,7 +272,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
 
               {/* 2. IMAGE PREVIEW */}
               {uploadedFile && activeModality === 'IMG' && filePreviewUrl && (
-                <div className="relative w-full h-[270px] flex items-center justify-center bg-slate-900">
+                <div className="relative w-full h-[240px] sm:h-[270px] flex items-center justify-center bg-slate-900">
                   <img
                     src={filePreviewUrl}
                     alt="Uploaded Media Preview"
@@ -286,7 +286,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
 
               {/* 3. VIDEO PREVIEW */}
               {uploadedFile && activeModality === 'VID' && filePreviewUrl && (
-                <div className="relative w-full h-[270px] bg-slate-900 flex flex-col items-center justify-center">
+                <div className="relative w-full h-[240px] sm:h-[270px] bg-slate-900 flex flex-col items-center justify-center">
                   <video
                     src={filePreviewUrl}
                     controls
@@ -300,21 +300,21 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
 
               {/* 4. AUDIO PREVIEW */}
               {uploadedFile && activeModality === 'AUD' && filePreviewUrl && (
-                <div className="w-full h-[270px] bg-slate-900 p-6 flex flex-col justify-between text-white">
-                  <div className="flex items-center justify-between text-xs text-slate-400">
+                <div className="w-full h-[240px] sm:h-[270px] bg-slate-900 p-4 sm:p-6 flex flex-col justify-between text-white">
+                  <div className="flex flex-wrap items-center justify-between gap-1 text-xs text-slate-400">
                     <div className="flex items-center gap-2">
                       <Volume2 className="w-4 h-4 text-sky-400" />
                       <span className="font-mono text-slate-200">Audio Waveform Stream</span>
                     </div>
-                    <span className="text-[11px] font-mono text-emerald-400">{uploadedFile.name}</span>
+                    <span className="text-[11px] font-mono text-emerald-400 truncate max-w-[150px]">{uploadedFile.name}</span>
                   </div>
 
                   {/* Synthetic Audio Waveform Graphic */}
-                  <div className="py-4 flex items-center justify-center gap-1 h-20">
+                  <div className="py-3 sm:py-4 flex items-center justify-center gap-1 h-16 sm:h-20">
                     {[12, 28, 45, 80, 55, 95, 40, 20, 65, 90, 110, 75, 45, 85, 95, 60, 30, 70, 85, 40, 15, 35, 60, 25].map((h, i) => (
                       <div
                         key={i}
-                        className={`w-1.5 rounded-full transition-all duration-300 ${isPlayingAudio ? 'bg-sky-400 animate-pulse' : 'bg-emerald-400/80'
+                        className={`w-1 sm:w-1.5 rounded-full transition-all duration-300 ${isPlayingAudio ? 'bg-sky-400 animate-pulse' : 'bg-emerald-400/80'
                           }`}
                         style={{ height: `${isPlayingAudio ? Math.min(90, h + (i % 3) * 15) : h}%` }}
                       ></div>
@@ -333,9 +333,9 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
               )}
 
               {/* 5. TEXT INPUT / PREVIEW */}
-              {activeModality === 'TEXT' && (
-                <div className="w-full h-[270px] bg-slate-900 p-4 flex flex-col justify-between text-white font-mono text-xs">
-                  <div className="flex items-center justify-between text-slate-400 border-b border-slate-800 pb-2">
+              {activeModality === 'TXT' && (
+                <div className="w-full h-[240px] sm:h-[270px] bg-slate-900 p-4 flex flex-col gap-2 text-white font-mono text-xs">
+                  <div className="flex flex-wrap items-center justify-between gap-1 text-slate-400 border-b border-slate-800 pb-2">
                     <div className="flex items-center gap-1.5">
                       <FileText className="w-4 h-4 text-sky-400" />
                       <span>Text / Message Content</span>
@@ -343,9 +343,14 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
                     <span className="text-[10px] text-sky-400 font-sans">Type or Paste Text Below</span>
                   </div>
 
+                  <textarea
+                    value={inputText}
+                    onChange={(e) => setInputText(e.target.value)}
+                    placeholder="Paste suspicious message, SMS, email, or any text content here..."
+                    className="flex-1 w-full bg-transparent text-slate-200 placeholder:text-slate-600 resize-none focus:outline-none text-xs leading-relaxed"
+                  />
 
-
-                  <div className="text-[11px] text-slate-400 flex justify-between pt-1">
+                  <div className="text-[11px] text-slate-400 flex flex-wrap items-center justify-between gap-1 border-t border-slate-800 pt-1">
                     <span>Length: {inputText.length} characters</span>
                     <button
                       type="button"
@@ -363,18 +368,18 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
 
             {/* Target Filename & Replace Trigger (Only visible when a file is selected) */}
             {uploadedFile && (
-              <div className="flex items-center justify-between text-xs py-2 px-3 bg-slate-50 border border-slate-200/80 rounded-xl">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs py-2 px-3 bg-slate-50 border border-slate-200/80 rounded-xl">
                 <div className="flex items-center gap-2 truncate">
                   <FileCheck className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                  <span className="font-semibold text-slate-800 font-mono truncate max-w-[200px]">
+                  <span className="font-semibold text-slate-800 font-mono truncate max-w-[150px] sm:max-w-[200px]">
                     {uploadedFile.name}
                   </span>
-                  <span className="text-[10px] text-slate-400 font-sans">
+                  <span className="text-[10px] text-slate-400 font-sans shrink-0">
                     ({(uploadedFile.size / 1024).toFixed(1)} KB)
                   </span>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 self-end sm:self-auto">
                   <button
                     type="button"
                     onClick={handleRemoveFile}
@@ -403,7 +408,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
             <button
               onClick={handleRunAnalysis}
               disabled={isScanning || (!uploadedFile && !inputText.trim())}
-              className={`w-full py-3.5 rounded-xl text-sm font-bold tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 ${isScanning
+              className={`w-full py-3 sm:py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 ${isScanning
                 ? 'bg-slate-200 text-slate-500 cursor-not-allowed'
                 : (!uploadedFile && !inputText.trim())
                   ? 'bg-slate-100 text-slate-400 cursor-not-allowed border border-slate-200'
@@ -412,12 +417,12 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
             >
               {isScanning ? (
                 <>
-                  <RefreshCw className="w-4 h-4 animate-spin text-sky-600" />
-                  <span>Scanning Forensic Vectors ({scanProgress}%)...</span>
+                  <RefreshCw className="w-4 h-4 animate-spin text-sky-600 shrink-0" />
+                  <span className="truncate">Scanning Forensic Vectors ({scanProgress}%)...</span>
                 </>
               ) : (
                 <>
-                  <Sparkles className="w-4 h-4 text-sky-600" />
+                  <Sparkles className="w-4 h-4 text-sky-600 shrink-0" />
                   <span>Scan For Scam/Deepfake</span>
                 </>
               )}
@@ -425,39 +430,39 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
           </div>
 
           {/* System Metrics Card (Matching Reference Images 1, 2, 3) */}
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
             <div className="flex items-center gap-2 pb-1 border-b border-slate-100">
               <Activity className="w-4.5 h-4.5 text-sky-500" />
               <h3 className="font-bold text-slate-900 text-sm">System Metrics</h3>
             </div>
 
-            <div className="grid grid-cols-2 gap-y-4 gap-x-4">
+            <div className="grid grid-cols-2 gap-y-3 sm:gap-y-4 gap-x-3 sm:gap-x-4">
               <div>
-                <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Processing Time</p>
-                <p className="text-sm font-extrabold text-slate-800 mt-0.5">
+                <p className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">Processing Time</p>
+                <p className="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">
                   {activeAnalysis ? activeAnalysis.processing_time : '--'}
                 </p>
               </div>
 
               <div>
-                <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Analysis Engine</p>
-                <p className="text-sm font-extrabold text-slate-800 mt-0.5 truncate">
+                <p className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">Analysis Engine</p>
+                <p className="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5 truncate">
                   {activeAnalysis
                     ? activeAnalysis.analysis_engine
-                    : (activeModality === 'AUD' ? 'Wav2Vec2-Forensic' : activeModality === 'TEXT' ? 'TrustShield-ScamGuard-NLP-v2' : 'EfficientNet-B0-Vision')}
+                    : (activeModality === 'AUD' ? 'Wav2Vec2-Forensic' : (activeModality === 'TEXT' || activeModality === 'TXT') ? 'TrustShield-ScamGuard-NLP-v2' : 'EfficientNet-B0-Vision')}
                 </p>
               </div>
 
               <div>
-                <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Model Confidence</p>
-                <p className="text-sm font-extrabold text-slate-800 mt-0.5">
+                <p className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">Model Confidence</p>
+                <p className="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">
                   {activeAnalysis ? `${activeAnalysis.confidence}%` : '--'}
                 </p>
               </div>
 
               <div>
-                <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Trust Score</p>
-                <p className="text-sm font-extrabold text-slate-800 mt-0.5">
+                <p className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">Trust Score</p>
+                <p className="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">
                   {activeAnalysis ? `${activeAnalysis.trust_score}/100` : '--'}
                 </p>
               </div>
@@ -473,21 +478,21 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
             <>
               {/* 1. Big Verdict Banner (Matching Reference Design) */}
               <div
-                className={`bg-white rounded-2xl p-7 border transition-all duration-300 shadow-card ${isFakeOrScam
+                className={`bg-white rounded-2xl p-4 sm:p-7 border transition-all duration-300 shadow-card ${isFakeOrScam
                   ? 'border-t-4 border-t-rose-500 border-slate-200/80 shadow-verdict-fake'
                   : 'border-t-4 border-t-emerald-500 border-slate-200/80 shadow-verdict-real'
                   }`}
               >
-                <div className="flex items-start justify-between">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                   <div>
-                    <div className="flex items-center gap-2.5">
-                      <h2 className="text-2xl font-black text-slate-900 tracking-tight">
+                    <div className="flex items-center gap-2 sm:gap-2.5">
+                      <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                         {activeAnalysis.verdict}
                       </h2>
                       {isFakeOrScam ? (
-                        <span className="text-2xl">⚠️</span>
+                        <span className="text-xl sm:text-2xl">⚠️</span>
                       ) : (
-                        <span className="text-2xl">✅</span>
+                        <span className="text-xl sm:text-2xl">✅</span>
                       )}
                     </div>
                     <p className="text-xs text-slate-500 font-medium mt-1.5 leading-relaxed">
@@ -501,7 +506,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
                       if (onSetCurrentReport) onSetCurrentReport(activeAnalysis);
                       if (onNavigateToReport) onNavigateToReport(activeAnalysis);
                     }}
-                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold transition-colors border border-sky-200/80 shrink-0"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold transition-colors border border-sky-200/80 shrink-0 self-start sm:self-auto"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>PDF Report</span>
@@ -510,28 +515,28 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
               </div>
 
               {/* 2. Key Metrics Grid: Prediction, Confidence, Risk Level, Trust Score */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3.5">
 
                 {/* Prediction */}
-                <div className="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-card">
+                <div className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-card">
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Prediction</p>
-                  <div className="text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
+                  <div className="text-base sm:text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
                     {activeAnalysis.prediction}
                   </div>
                 </div>
 
                 {/* Confidence */}
-                <div className="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-card">
+                <div className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-card">
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Confidence</p>
-                  <div className="text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
+                  <div className="text-base sm:text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
                     {activeAnalysis.confidence}%
                   </div>
                 </div>
 
                 {/* Risk Level */}
-                <div className="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-card">
+                <div className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-card">
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Risk Level</p>
-                  <div className="flex items-center gap-1.5 text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
+                  <div className="flex items-center gap-1.5 text-base sm:text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
                     <span>{activeAnalysis.risk_level}</span>
                     <span>
                       {activeAnalysis.risk_level === 'CRITICAL' ? '🔴' :
@@ -542,17 +547,17 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
                 </div>
 
                 {/* Trust Score */}
-                <div className="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-card">
+                <div className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/80 shadow-card">
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Trust Score</p>
-                  <div className="text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
+                  <div className="text-base sm:text-lg font-black mt-1 text-slate-900 font-sans tracking-tight">
                     {activeAnalysis.trust_score}
                   </div>
                 </div>
               </div>
 
               {/* 3. Fake Signal Strength Section */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
-                <div className="flex items-center justify-between">
+              <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <div className="flex items-center gap-2">
                     <span className="text-base">📊</span>
                     <h3 className="font-bold text-slate-900 text-sm">Fake Signal Strength</h3>
@@ -581,19 +586,19 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
               </div>
 
               {/* 4. Forensic Feature Analysis Chips Grid */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
+              <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
                 <div className="flex items-center gap-2 pb-1 border-b border-slate-100">
                   <Search className="w-4.5 h-4.5 text-sky-500" />
                   <h3 className="font-bold text-slate-900 text-sm">Forensic Feature Analysis</h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
                   {(activeAnalysis.forensic_features || []).map((feat, idx) => (
                     <div
                       key={idx}
-                      className="bg-slate-50/80 rounded-xl p-3.5 border border-slate-200/60 flex items-center justify-between"
+                      className="bg-slate-50/80 rounded-xl p-3 sm:p-3.5 border border-slate-200/60 flex items-center justify-between gap-2"
                     >
-                      <span className="text-xs font-semibold text-slate-600 truncate pr-2">{feat.name}</span>
+                      <span className="text-xs font-semibold text-slate-600 truncate">{feat.name}</span>
                       <span className="text-xs font-extrabold px-2 py-0.5 rounded-md text-sky-700 bg-sky-50 border border-sky-100 shrink-0">
                         {feat.value}
                       </span>
@@ -603,7 +608,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
               </div>
 
               {/* 5. 1-Click Action to Open Full PDF Report */}
-              <div className="bg-gradient-to-r from-sky-600 via-sky-700 to-indigo-800 rounded-2xl p-5 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md shadow-sky-700/10">
+              <div className="bg-gradient-to-r from-sky-600 via-sky-700 to-indigo-800 rounded-2xl p-4 sm:p-5 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-md shadow-sky-700/10">
                 <div>
                   <h4 className="font-bold text-sm text-white">Generate Official Forensic Scam Audit Report</h4>
                   <p className="text-xs text-sky-100 mt-0.5">
@@ -615,7 +620,7 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
                     if (onSetCurrentReport) onSetCurrentReport(activeAnalysis);
                     if (onNavigateToReport) onNavigateToReport(activeAnalysis);
                   }}
-                  className="px-4 py-2.5 rounded-xl bg-white hover:bg-sky-50 text-sky-800 font-extrabold text-xs flex items-center gap-2 shadow-xs transition-all active:scale-95 shrink-0"
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-white hover:bg-sky-50 text-sky-800 font-extrabold text-xs flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 shrink-0"
                 >
                   <FileText className="w-4 h-4 text-sky-600" />
                   <span>View Report & Export PDF</span>
@@ -625,14 +630,14 @@ export default function MediaAnalysis({ onNavigateToReport, onSetCurrentReport }
             </>
           ) : (
             /* Empty State Waiting for Upload */
-            <div className="bg-white rounded-2xl p-12 border border-slate-200/80 shadow-card text-center space-y-4">
-              <div className="w-16 h-16 rounded-3xl bg-sky-50 text-sky-600 mx-auto flex items-center justify-center border border-sky-100 shadow-inner">
-                <Sparkles className="w-8 h-8" />
+            <div className="bg-white rounded-2xl p-6 sm:p-12 border border-slate-200/80 shadow-card text-center space-y-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-3xl bg-sky-50 text-sky-600 mx-auto flex items-center justify-center border border-sky-100 shadow-inner">
+                <Sparkles className="w-7 h-7 sm:w-8 sm:h-8" />
               </div>
               <div className="max-w-md mx-auto space-y-1.5">
-                <h3 className="font-bold text-slate-800 text-base">Awaiting Neural Forensic Scan</h3>
+                <h3 className="font-bold text-slate-800 text-sm sm:text-base">Awaiting Neural Forensic Scan</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
-                  Upload an image, video, audio file, or enter text on the left, then click <strong>"Initialize Neural Analysis"</strong> to run supervised machine learning scam detection.
+                  Upload an image, video, audio file, or enter text on the left, then click <strong>"Scan For Scam/Deepfake"</strong> to run supervised machine learning scam detection.
                 </p>
               </div>
             </div>

@@ -181,26 +181,26 @@ export default function ReportPage({ currentReport, onBackToScan }) {
   };
 
   return (
-    <div className="p-8 max-w-5xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto space-y-6">
       
       {/* Top Action & Navigation Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-4 no-print">
-        <div className="flex items-center gap-3">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 no-print">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           <button
             onClick={onBackToScan}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white border border-slate-200/80 text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors shadow-xs"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white border border-slate-200/80 text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors shadow-xs shrink-0"
           >
             <ArrowLeft className="w-4 h-4 text-slate-500" />
             <span>Back to Live Scan</span>
           </button>
 
           {/* Report History Switcher */}
-          <div className="flex items-center bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 shadow-xs">
-            <span className="text-xs font-bold text-slate-400 mr-2">Audit Report:</span>
+          <div className="flex items-center bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 shadow-xs max-w-full">
+            <span className="text-xs font-bold text-slate-400 mr-2 shrink-0">Audit:</span>
             <select
               value={selectedReportId}
               onChange={(e) => setSelectedReportId(e.target.value)}
-              className="text-xs font-bold text-slate-800 bg-transparent border-none focus:ring-0 cursor-pointer outline-none"
+              className="text-xs font-bold text-slate-800 bg-transparent border-none focus:ring-0 cursor-pointer outline-none max-w-[180px] sm:max-w-xs truncate"
             >
               {historicalReports.map((item) => (
                 <option key={item.id} value={item.id}>
@@ -212,10 +212,10 @@ export default function ReportPage({ currentReport, onBackToScan }) {
         </div>
 
         {/* 1-CLICK DOWNLOAD BUTTON */}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
           <button
             onClick={() => window.print()}
-            className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white border border-slate-200/80 text-xs font-bold text-slate-700 hover:bg-slate-50 transition-all shadow-xs"
+            className="flex-1 sm:flex-none justify-center flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white border border-slate-200/80 text-xs font-bold text-slate-700 hover:bg-slate-50 transition-all shadow-xs"
           >
             <Printer className="w-4 h-4 text-slate-500" />
             <span>Print View</span>
@@ -224,10 +224,10 @@ export default function ReportPage({ currentReport, onBackToScan }) {
           <button
             onClick={handleDownloadPdf}
             disabled={isGeneratingPdf}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-extrabold shadow-md shadow-sky-600/20 transition-all active:scale-95"
+            className="flex-1 sm:flex-none justify-center flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-extrabold shadow-md shadow-sky-600/20 transition-all active:scale-95"
           >
             <Download className="w-4 h-4 stroke-[2.5]" />
-            <span>{isGeneratingPdf ? 'Generating PDF...' : 'Download PDF Report (1-Click)'}</span>
+            <span>{isGeneratingPdf ? 'Generating PDF...' : 'Download PDF Report'}</span>
           </button>
         </div>
       </div>
@@ -238,17 +238,17 @@ export default function ReportPage({ currentReport, onBackToScan }) {
       <div 
         ref={reportRef}
         id="forensic-scam-report-pdf"
-        className="bg-white rounded-3xl p-10 border border-slate-200/80 shadow-card-hover space-y-8 pdf-container"
+        className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 border border-slate-200/80 shadow-card-hover space-y-6 sm:space-y-8 pdf-container overflow-hidden"
       >
         {/* PDF Header with Trust Shield Logo & Report Credentials */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b-2 border-slate-100 gap-4">
           <div className="flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-white shadow-md">
-              <ShieldCheck className="w-7 h-7 stroke-[2.2]" />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-white shadow-md shrink-0">
+              <ShieldCheck className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.2]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-2xl font-black text-slate-900 tracking-tight font-sans">
+                <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight font-sans">
                   Trust<span className="text-sky-600">Shield</span> AI
                 </h1>
                 <span className="text-[10px] font-extrabold uppercase bg-slate-900 text-white px-2 py-0.5 rounded tracking-wider">
@@ -259,15 +259,15 @@ export default function ReportPage({ currentReport, onBackToScan }) {
             </div>
           </div>
 
-          <div className="text-right sm:border-l sm:border-slate-100 sm:pl-6 space-y-0.5">
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Certificate ID</div>
-            <div className="text-sm font-mono font-extrabold text-slate-900">{report.id || 'REP-TS-849201'}</div>
-            <div className="text-[10px] text-slate-400 font-mono">ISO/IEC 27037 Forensic Standard Compliant</div>
+          <div className="text-left sm:text-right sm:border-l sm:border-slate-100 sm:pl-6 space-y-0.5">
+            <div className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">Certificate ID</div>
+            <div className="text-xs sm:text-sm font-mono font-extrabold text-slate-900">{report.id || 'REP-TS-849201'}</div>
+            <div className="text-[9px] sm:text-[10px] text-slate-400 font-mono">ISO/IEC 27037 Forensic Standard Compliant</div>
           </div>
         </div>
 
         {/* Report Metadata Banner */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/60 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50 border border-slate-200/60 text-xs">
           <div>
             <span className="text-[10px] font-bold text-slate-400 uppercase block tracking-wider">Target Subject</span>
             <span className="font-extrabold text-slate-800 font-mono truncate block mt-0.5">{report.target || report.filename || 'Input Media'}</span>
@@ -288,7 +288,7 @@ export default function ReportPage({ currentReport, onBackToScan }) {
 
         {/* Executive Verdict Callout Box */}
         <div
-          className={`p-6 rounded-2xl border-2 transition-all ${
+          className={`p-4 sm:p-6 rounded-2xl border-2 transition-all ${
             isMalicious
               ? 'bg-rose-50/50 border-rose-400/80 text-rose-950'
               : 'bg-emerald-50/50 border-emerald-400/80 text-emerald-950'
@@ -298,11 +298,11 @@ export default function ReportPage({ currentReport, onBackToScan }) {
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 {isMalicious ? (
-                  <ShieldAlert className="w-6 h-6 text-rose-600" />
+                  <ShieldAlert className="w-5 h-5 sm:w-6 sm:h-6 text-rose-600 shrink-0" />
                 ) : (
-                  <ShieldCheck className="w-6 h-6 text-emerald-600" />
+                  <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600 shrink-0" />
                 )}
-                <h2 className="text-xl font-black tracking-tight">
+                <h2 className="text-lg sm:text-xl font-black tracking-tight">
                   EXECUTIVE VERDICT: {report.verdict ? report.verdict.toUpperCase() : (isMalicious ? 'THREAT FLAGGED' : 'ORGANIC CONTENT')}
                 </h2>
               </div>
@@ -313,7 +313,7 @@ export default function ReportPage({ currentReport, onBackToScan }) {
 
             {/* Verdict Stamp */}
             <div
-              className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider border-2 shrink-0 ${
+              className={`px-3.5 sm:px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider border-2 shrink-0 self-start sm:self-auto ${
                 isMalicious
                   ? 'bg-rose-100 text-rose-800 border-rose-300'
                   : 'bg-emerald-100 text-emerald-800 border-emerald-300'
@@ -325,22 +325,22 @@ export default function ReportPage({ currentReport, onBackToScan }) {
         </div>
 
         {/* High-Level Forensic Scoring Matrix */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4">
+          <div className="p-3 sm:p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Model Prediction</p>
-            <p className="text-xl font-black text-slate-900 mt-1">{report.prediction || 'REAL'}</p>
+            <p className="text-lg sm:text-xl font-black text-slate-900 mt-1">{report.prediction || 'REAL'}</p>
             <p className="text-[10px] text-slate-400 mt-0.5">Supervised Ensemble</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
+          <div className="p-3 sm:p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Confidence Level</p>
-            <p className="text-xl font-black text-slate-900 mt-1">{report.confidence}%</p>
+            <p className="text-lg sm:text-xl font-black text-slate-900 mt-1">{report.confidence}%</p>
             <p className="text-[10px] text-slate-400 mt-0.5">Probability Density</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
+          <div className="p-3 sm:p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Risk Level</p>
-            <p className="text-xl font-black text-slate-900 mt-1 flex items-center gap-1">
+            <p className="text-lg sm:text-xl font-black text-slate-900 mt-1 flex items-center gap-1">
               <span>{report.risk_level || 'LOW'}</span>
               <span className="text-sm">
                 {report.risk_level === 'CRITICAL' ? '🔴' :
@@ -351,16 +351,16 @@ export default function ReportPage({ currentReport, onBackToScan }) {
             <p className="text-[10px] text-slate-400 mt-0.5">Threat Matrix Tier</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
+          <div className="p-3 sm:p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Authenticity Trust Score</p>
-            <p className="text-xl font-black text-slate-900 mt-1">{report.trust_score}/100</p>
+            <p className="text-lg sm:text-xl font-black text-slate-900 mt-1">{report.trust_score}/100</p>
             <p className="text-[10px] text-slate-400 mt-0.5">0 (Synthetic) - 100 (Clean)</p>
           </div>
         </div>
 
         {/* Forensic Spectrum Representation */}
-        <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-200/60 space-y-3">
-          <div className="flex items-center justify-between text-xs font-bold">
+        <div className="bg-slate-50/80 p-4 sm:p-5 rounded-2xl border border-slate-200/60 space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-bold">
             <span className="text-slate-800">Synthetic / Malicious Signal Distribution</span>
             <span className="font-mono text-slate-600">{report.fake_signal_strength}% Synthetic Indicator</span>
           </div>
@@ -372,7 +372,7 @@ export default function ReportPage({ currentReport, onBackToScan }) {
             ></div>
           </div>
 
-          <div className="flex justify-between text-[10px] text-slate-400 font-mono font-semibold">
+          <div className="flex justify-between text-[9px] sm:text-[10px] text-slate-400 font-mono font-semibold">
             <span>0% (Clean Organic)</span>
             <span>50% (Ambiguous Zone)</span>
             <span>100% (High Confidence Threat)</span>
@@ -383,19 +383,19 @@ export default function ReportPage({ currentReport, onBackToScan }) {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-sky-600" />
-            <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
+            <h3 className="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider">
               Forensic Vector Breakdown & Evidence Log
             </h3>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-slate-200/80">
-            <table className="w-full text-left text-xs border-collapse">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200/80">
+            <table className="w-full min-w-[550px] text-left text-xs border-collapse">
               <thead className="bg-slate-100/80 text-slate-600 font-bold uppercase text-[10px] tracking-wider border-b border-slate-200">
                 <tr>
-                  <th className="py-3 px-4">Forensic Parameter</th>
-                  <th className="py-3 px-4">Observed Metric</th>
-                  <th className="py-3 px-4">Assessment Status</th>
-                  <th className="py-3 px-4">Forensic Significance</th>
+                  <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Forensic Parameter</th>
+                  <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Observed Metric</th>
+                  <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Assessment Status</th>
+                  <th className="py-3 px-3 sm:px-4">Forensic Significance</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -403,9 +403,9 @@ export default function ReportPage({ currentReport, onBackToScan }) {
                   const isArt = feat.status === 'Artificial' || feat.status === 'Warped' || feat.status === 'Inconsistent';
                   return (
                     <tr key={i} className="hover:bg-slate-50/50">
-                      <td className="py-3 px-4 font-bold text-slate-800">{feat.name}</td>
-                      <td className="py-3 px-4 font-mono text-slate-700">{feat.value}</td>
-                      <td className="py-3 px-4">
+                      <td className="py-3 px-3 sm:px-4 font-bold text-slate-800 whitespace-nowrap">{feat.name}</td>
+                      <td className="py-3 px-3 sm:px-4 font-mono text-slate-700 whitespace-nowrap">{feat.value}</td>
+                      <td className="py-3 px-3 sm:px-4 whitespace-nowrap">
                         <span
                           className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wide ${
                             isArt
@@ -416,7 +416,7 @@ export default function ReportPage({ currentReport, onBackToScan }) {
                           {feat.status}
                         </span>
                       </td>
-                      <td className="py-3 px-4 text-slate-500 text-[11px]">
+                      <td className="py-3 px-3 sm:px-4 text-slate-500 text-[11px] min-w-[200px]">
                         {isArt ? 'Displays signature neural synthesis / manipulation anomaly' : 'Consistent with natural physical capture optics / genuine context'}
                       </td>
                     </tr>
@@ -428,9 +428,9 @@ export default function ReportPage({ currentReport, onBackToScan }) {
         </div>
 
         {/* Mitigation & Recommended Security Protocol */}
-        <div className="p-5 rounded-2xl bg-sky-50/50 border border-sky-200/80 space-y-2 text-xs">
+        <div className="p-4 sm:p-5 rounded-2xl bg-sky-50/50 border border-sky-200/80 space-y-2 text-xs">
           <h4 className="font-extrabold text-sky-950 flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-sky-600" />
+            <ShieldCheck className="w-4 h-4 text-sky-600 shrink-0" />
             <span>Recommended Mitigation Actions</span>
           </h4>
           <ul className="list-disc pl-5 space-y-1 text-slate-600 leading-relaxed">
@@ -450,15 +450,15 @@ export default function ReportPage({ currentReport, onBackToScan }) {
         </div>
 
         {/* Cryptographic Hash & Digital Signature Seal Footer */}
-        <div className="pt-6 border-t-2 border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+        <div className="pt-6 border-t-2 border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between text-[11px] text-slate-400 gap-4">
           <div className="space-y-0.5">
-            <div className="font-mono text-[10px] text-slate-500">
+            <div className="font-mono text-[10px] text-slate-500 break-all">
               SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
             </div>
             <div>Trust Shield Automated Neural Forensic Engine v2.0.0</div>
           </div>
 
-          <div className="flex items-center gap-2 bg-slate-100/90 px-3 py-1.5 rounded-xl border border-slate-200 text-slate-700 font-mono text-[10px] font-bold">
+          <div className="flex items-center gap-2 bg-slate-100/90 px-3 py-1.5 rounded-xl border border-slate-200 text-slate-700 font-mono text-[10px] font-bold shrink-0">
             <Lock className="w-3.5 h-3.5 text-sky-600" />
             <span>DIGITALLY SIGNED AUDIT CERTIFICATE</span>
           </div>

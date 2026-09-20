@@ -67,16 +67,16 @@ export default function Dashboard({ setActiveTab, onNavigateToReport, onSetCurre
   ];
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6">
       
       {/* Welcome Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-card-hover border border-slate-800">
+      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white relative overflow-hidden shadow-card-hover border border-slate-800">
         <div className="relative z-10 max-w-2xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Multimodal Neural Forensic Shield Active</span>
           </div>
-          <h1 className="text-3xl font-black tracking-tight leading-tight">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight leading-tight">
             Comprehensive AI Scam & Deepfake Protection
           </h1>
           <p className="text-xs text-slate-300 leading-relaxed">
@@ -146,7 +146,7 @@ export default function Dashboard({ setActiveTab, onNavigateToReport, onSetCurre
       </div>
 
       {/* Modality Scanner Launchers */}
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
         <button
           onClick={() => setActiveTab('media')}
@@ -195,24 +195,24 @@ export default function Dashboard({ setActiveTab, onNavigateToReport, onSetCurre
       </div>
 
       {/* Recent Forensic Activity Table */}
-      <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-card space-y-4">
-        <div className="flex items-center justify-between">
+      <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-card space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <h3 className="font-bold text-slate-900 text-base">Recent Forensic Investigations</h3>
             <p className="text-xs text-slate-400">Inspected multi-spectral media and communication logs</p>
           </div>
           <button
             onClick={() => setActiveTab('audit')}
-            className="text-xs font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1"
+            className="text-xs font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1 self-start sm:self-auto"
           >
             <span>View All Logs</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs border-collapse">
-            <thead className="bg-slate-50 text-slate-400 uppercase text-[10px] font-bold tracking-wider border-b border-slate-200">
+        <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+          <table className="w-full text-left text-xs border-collapse min-w-[600px]">
+            <thead className="bg-slate-50 text-slate-400 uppercase text-[10px] font-bold tracking-wider border-b border-slate-200 whitespace-nowrap">
               <tr>
                 <th className="py-3 px-4">Subject Target</th>
                 <th className="py-3 px-4">Modality</th>
