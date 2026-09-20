@@ -11,13 +11,6 @@ from pydantic import BaseModel
 
 from ml.forensic_engine import TrustShieldForensicEngine
 
-import sys
-import os
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from main import app
-
 app = FastAPI(title="Trust Shield Multimodal Scam & Deepfake Detection API", version="2.0.0")
 
 # Enable CORS for frontend development
